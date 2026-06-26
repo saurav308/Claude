@@ -25,6 +25,7 @@
 | `10-Lead-and-Revenue-Model.md` | Conservative / Expected / Aggressive projections with assumptions |
 | `11-90-Day-Execution-Roadmap.md` | Week-by-week plan, prioritized by Impact × Effort × Confidence × Business Value |
 | `12-KPI-and-Measurement-Framework.md` | What to track, how to attribute leads to organic |
+| `13-First-Party-GSC-GA4-Data.md` | ⭐ **VERIFIED** GSC + Web Analytics data (real traffic, device, CTR, channels, geography) — supersedes estimates where they conflict |
 
 ---
 
@@ -95,7 +96,10 @@ This is why CRO (`08`) is sequenced into **Week 1**, not "later."
 ## 6. What I could and could not access (full transparency)
 
 - ✅ **Verified live data:** Ahrefs API (authority, keywords, pages, competitors, backlinks) — pulled 25 Jun 2026 and cited throughout.
+- ✅ **VERIFIED first-party data:** **Google Search Console + Web Analytics (GA4-equivalent)** via the connected Ahrefs project "Desimachines" (9518353) — real traffic, device split, CTR-by-position, channels (incl. AI/LLM), geography. **See `13`.** This is the first-party calibration the brief asked for, and it sharpens the thesis (84% mobile, a quantified CTR goldmine, a verified international/export opportunity).
 - ✅ **Public/secondary:** PR coverage, news, business context (PRNewswire, EquipmentIndia, Tribune, etc.).
-- ⚠️ **Could NOT access:** the two Google Sheets (Website/Internal info + Competitor DB) — both returned **HTTP 403** to the fetch tool because Drive `drivesdk` links require authenticated Google access, which is not available in this environment. **The GSC/GA4 exports those sheets likely contain are therefore not reflected here.** Where I rely on those, I have substituted Ahrefs-modeled equivalents and flagged the gap. **Action for the team:** export those sheets to CSV (or share publicly/"anyone with link – viewer") and I will fold the real GSC/GA4 numbers into the lead model in `10` and the quick-win table in `04`.
+- ⚠️ **Still missing:** the two Google Sheets returned **HTTP 403** (Drive auth), but their core GSC/GA4 content is now obtained directly via the Ahrefs project (`13`), so that gap is largely closed. **The one remaining gap is CRM/lead-event data** (actual enquiry/RFQ/call counts) — wire GA4 lead events in Week 1 (`08` §5) and the lead model (`10`) becomes fully first-party-calibrated.
 
-See `01` for the full provenance ledger.
+> **Note on numbers:** where the Ahrefs *estimate* (~39k organic visits/mo) and first-party GSC (~24k organic clicks/mo) differ, **`13` first-party data is authoritative.** Headline figures retain the verified Ahrefs keyword/authority metrics alongside the corrected first-party traffic baseline.
+
+See `01` and `13` for the full provenance ledger and verified data.

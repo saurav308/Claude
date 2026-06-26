@@ -25,6 +25,7 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | 10 | [`10-Lead-and-Revenue-Model.md`](10-Lead-and-Revenue-Model.md) | Conservative/Expected/Aggressive projections + assumptions |
 | 11 | [`11-90-Day-Execution-Roadmap.md`](11-90-Day-Execution-Roadmap.md) | Week-by-week plan, prioritized by Impact×Effort×Confidence×Value |
 | 12 | [`12-KPI-and-Measurement-Framework.md`](12-KPI-and-Measurement-Framework.md) | What to track; lead/revenue attribution |
+| **13** | [`13-First-Party-GSC-GA4-Data.md`](13-First-Party-GSC-GA4-Data.md) | ⭐ **VERIFIED** GSC + Web Analytics: real traffic, 84% mobile, CTR goldmine, AI/LLM traffic, export geography — supersedes estimates where they conflict |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
 
 ## The 5 things to do first (from `11`)
@@ -35,6 +36,7 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 5. **Disavow the toxic backlink cluster** — a real, specific risk found in the live data.
 
 ## Data & honesty notes
-- All authority/keyword/competitor/backlink figures are **live from the Ahrefs API (25 Jun 2026)**, India market, and are cited inline.
-- The two **Google Sheets** named as primary sources returned **HTTP 403** (Drive auth required, unavailable in this environment); their GSC/GA4 exports are therefore **not** reflected. `01` explains exactly how to feed them in to upgrade the lead model from estimate to first-party-calibrated.
+- All authority/keyword/competitor/backlink figures are **live from the Ahrefs API (25 Jun 2026)**, India market, cited inline.
+- **First-party Google Search Console + Web Analytics (GA4-equivalent) data is now included** (`13`), pulled live via the connected Ahrefs project "Desimachines" (9518353). Real traffic is **~33.8k visits/mo / ~24k organic clicks/mo** (the Ahrefs ~39k figure was an over-estimate; first-party is authoritative). This verified the mobile-first thesis (84% mobile) and surfaced new opportunities (CTR fixes, AI/LLM traffic, export markets).
+- The two **Google Sheets** still returned **HTTP 403**, but their core GSC/GA4 content is now obtained directly from the Ahrefs project. The one remaining gap is **CRM/lead-event data** — wire GA4 lead events (Week 1, `08`) to fully calibrate `10`.
 - Claims are tagged **[FACT] / [EST] / [ASSUMPTION] / [REC]** throughout.

@@ -17,10 +17,12 @@ Every material claim is tagged so you can trust it appropriately:
 |---|---|---|
 | **Ahrefs API v3** | ✅ Live, authenticated | Domain Rating, backlinks, referring domains, 2,369 organic keywords, top pages, organic competitors. **Primary source of truth for this document.** |
 | Web search / public web | ✅ | Business model, launch history, PR coverage, founder background |
-| Google Sheet #1 (Website/Internal) | ❌ **HTTP 403** | *Intended* to hold GSC + GA4 + Ahrefs/SEMrush exports. Not accessible — `drivesdk` link requires authenticated Google session unavailable in this environment. |
-| Google Sheet #2 (Competitor DB) | ❌ **HTTP 403** | Same. |
-| Live site crawl (desimachines.com) | ⚠️ 403 to fetch bot | Site blocks the unauthenticated fetch agent. Architecture inferred from Ahrefs' crawled URL inventory instead (reliable for structure). |
-| GA4 / GSC direct | ➖ Not connected | No GA4/GSC property is connected to this session. Ahrefs' GSC tools require the property to be linked to an Ahrefs project, which is not present. |
+| **Google Search Console** (via Ahrefs project 9518353, verified) | ✅ **Live, connected** | **Real query/page/position/device/country data — see `13`.** The first-party source the brief asked for. |
+| **Web Analytics** (GA4-equivalent, Ahrefs project 9518353) | ✅ **Live, connected** | **Real sessions, bounce, channels incl. LLM/AI, engagement — see `13`.** |
+| Google Sheet #1 (Website/Internal) | ❌ **HTTP 403** | Sheet itself inaccessible (`drivesdk` needs auth), **but its underlying GSC/GA4 data is now available directly via the connected Ahrefs project (`13`)** — gap largely closed. |
+| Google Sheet #2 (Competitor DB) | ❌ **HTTP 403** | Still inaccessible; competitor analysis built from Ahrefs organic-competitors instead (`05`). |
+| Live site crawl (desimachines.com) | ⚠️ 403 to fetch bot | Site blocks the unauthenticated fetch agent. Architecture inferred from Ahrefs' crawled URL inventory + GSC pages (reliable for structure). |
+| CRM / lead events (GA4 conversions) | ➖ Not yet wired | The one remaining gap — actual enquiry/RFQ/call counts. Instrument in Week 1 (`08` §5) to calibrate the lead model (`10`). |
 
 ### Why the Google Sheets matter and what to do
 The brief names those two sheets as the **primary source of truth** (GSC queries, GA4 conversions, competitor research). They are the missing piece for two things only first-party data can give:
