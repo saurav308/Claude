@@ -136,5 +136,24 @@ These are few in number — knock them out in a single sprint.
 
 ---
 
+## Cross-validation — Semrush (independent second source)
+
+To make sure these conclusions aren't a single-tool artifact, here is Semrush's independent read of the domain (India database, pulled 27 Jun 2026) next to Ahrefs and your first-party GSC:
+
+| Metric | Ahrefs | **Semrush** | First-party (GSC/GA4) |
+|---|---|---|---|
+| Organic keywords | 2,369 | **6,176** | ~86k (GSC, incl. long-tail) |
+| Est. organic traffic / mo | ~39,070 | **42,770** | **~24,400 clicks (authoritative)** |
+| Traffic value / mo (paid equiv.) | ~$2,483 | **~$6,948** | — |
+| Paid/Adwords keywords | 1 | 0 | minor paid in GA4 |
+
+**Two things this confirms:**
+1. **Tool estimates agree with each other (~39k–43k) but run ~1.6× higher than first-party reality (~24k clicks).** Plan to the **GSC number** — the tool figures are modeled, not measured. (This is why `13`/`10` use first-party data.)
+2. **Semrush values the traffic at ~$6,948/mo equivalent — ~2.8× Ahrefs' estimate.** Independent confirmation that this is **high commercial-value traffic** (expensive-to-buy "price"/buyer keywords) — which is exactly why the lead-capture leak (Priority 3) is the most expensive problem on the site: you're sitting on ~₹6 lakh+/month of equivalent paid-search value and converting a fraction of it.
+
+> Semrush's higher keyword count (6,176 vs Ahrefs 2,369) also reinforces Priority 2: a large, long-tail page footprint makes **internal linking and crawl-budget discipline** more important, not less.
+
+---
+
 ### Data note
-Issue counts are from the Ahrefs Site Audit crawl dated 12 Jun 2026 (re-crawl to refresh). The exact URL lists for each issue (e.g. the 1,365 orphan pages, the 510 schema errors) are available in the Ahrefs Site Audit project and can be exported for the implementation team. The detailed per-issue technical guidance is in `03-Technical-SEO-Audit.md`.
+Issue counts are from the Ahrefs Site Audit crawl dated 12 Jun 2026 (re-crawl to refresh). Traffic/keyword figures cross-checked against Semrush (India database) and Google Search Console + Web Analytics — all live, this session. The exact URL lists for each issue (e.g. the 1,365 orphan pages, the 510 schema errors) are available in the Ahrefs Site Audit project and can be exported for the implementation team. Detailed per-issue technical guidance is in `03-Technical-SEO-Audit.md`.
