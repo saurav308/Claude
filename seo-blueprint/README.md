@@ -26,6 +26,7 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | 11 | [`11-90-Day-Execution-Roadmap.md`](11-90-Day-Execution-Roadmap.md) | Week-by-week plan, prioritized by Impact×Effort×Confidence×Value |
 | 12 | [`12-KPI-and-Measurement-Framework.md`](12-KPI-and-Measurement-Framework.md) | What to track; lead/revenue attribution |
 | **13** | [`13-First-Party-GSC-GA4-Data.md`](13-First-Party-GSC-GA4-Data.md) | ⭐ **VERIFIED** GSC + Web Analytics: real traffic, 84% mobile, CTR goldmine, AI/LLM traffic, export geography — supersedes estimates where they conflict |
+| **14** | [`14-Website-Audit.md`](14-Website-Audit.md) | ⭐ **Crawl-backed website SEO audit** (Ahrefs Site Audit): the CTR leak (10k+ long titles/descriptions), 1,365 orphan pages, crawl bloat, lead leak — prioritized for traffic + leads |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
 
 ## The 5 things to do first (from `11`)
