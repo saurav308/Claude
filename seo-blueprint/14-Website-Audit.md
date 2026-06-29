@@ -78,10 +78,10 @@ Your site is **technically healthy per-page (health score 96/100) and already ra
 
 **Symptom:** virtually every ranking keyword is **research-stage price intent** (`is_transactional: false` across the portfolio), and **84% of visitors are on mobile**, yet there's no frictionless capture. Your own math — ~33,800 visits/mo × cited "600+ buyers/mo" ≈ **1.7% conversion** — proves capture works; it's just not optimized.
 
-**Fix (mobile-first, see `08` for the full system):**
-1. **Sticky WhatsApp price bar** on every model/price page, pre-filled: *"Hi, I want the on-road price for [model] in [city]."*
-2. **2-field RFQ** (name + phone) + **click-to-call**, with trust cues ("free", "verified dealers", "600+ buyers/month").
-3. **Show a price band, gate the exact figure** behind the enquiry ("₹XX–YY lakh — get your exact on-road price").
+**Fix (mobile-first, see `08` for the full system). Positioning: DesiMachines is the OEM-connected channel — every CTA pulls the buyer to *you* with the deal + finance + insurance value, never to a third-party dealer:**
+1. **Sticky WhatsApp deal bar** on every model/price page, pre-filled: *"Hi, I want the best price, finance & insurance on the [model] in [city] from DesiMachines."*
+2. **2-field RFQ** (name + phone) + **click-to-call**, headline *"Get the best deal on the [model] — plus finance & insurance. Free, on DesiMachines."* Trust cues: "free", "connected directly with OEMs", "600+ buyers/month".
+3. **Show a price band, gate the exact figure + offer** behind the enquiry ("₹XX–YY lakh — get the best deal + finance + insurance").
 4. Add a **B2B / bulk enquiry CTA** on the EPC-companies page (your highest traffic-value page, $269) and category hubs — capture dealer/distributor/enterprise leads.
 5. **Wire GA4 lead events** (`whatsapp_click`, `rfq_submit`, `call_click`) first — you can't optimize what you don't measure.
 
