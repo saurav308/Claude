@@ -29,6 +29,8 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | **14** | [`14-Website-Audit.md`](14-Website-Audit.md) | ⭐ **Crawl-backed website SEO audit** (Ahrefs Site Audit): the CTR leak (10k+ long titles/descriptions), 1,365 orphan pages, crawl bloat, lead leak — prioritized for traffic + leads |
 | **15** | [`15-CTR-Rewrites-Batch1.md`](15-CTR-Rewrites-Batch1.md) | ⭐ Ready-to-paste title + meta + schema rewrites, **top 20 pages** (CTR fix) |
 | **16** | [`16-CTR-Rewrites-Batch2.md`](16-CTR-Rewrites-Batch2.md) | ⭐ Title + meta + schema rewrites, **next ~40 pages** (CTR fix) |
+| **17** | [`17-CTR-Implementation-Checklist.md`](17-CTR-Implementation-Checklist.md) | One-page do-this-in-order checklist for the dev + content team to ship the CTR fix |
+| **18** | [`18-Internal-Linking-and-Orphan-Fix.md`](18-Internal-Linking-and-Orphan-Fix.md) | ⭐ Next lever: fix 1,365 orphan pages + crawl bloat (internal-linking architecture + 2-week plan) |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
 
 ## The 5 things to do first (from `11`)
