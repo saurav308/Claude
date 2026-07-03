@@ -32,8 +32,11 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | **17** | [`17-CTR-Implementation-Checklist.md`](17-CTR-Implementation-Checklist.md) | One-page do-this-in-order checklist for the dev + content team to ship the CTR fix |
 | **18** | [`18-Internal-Linking-and-Orphan-Fix.md`](18-Internal-Linking-and-Orphan-Fix.md) | ⭐ Next lever: fix 1,365 orphan pages + crawl bloat (internal-linking architecture + 2-week plan) |
 | **19** | [`19-RankMath-Implementation.md`](19-RankMath-Implementation.md) | ⭐ How to ship the CTR fix in WordPress + RankMath (templates, CSV bulk import, WP-CLI, schema) |
+| **20** | [`20-GSC-Indexing-Errors-Triage-and-Fix.md`](20-GSC-Indexing-Errors-Triage-and-Fix.md) | ⭐ **GSC error triage (3 Jul 2026)**: robots.txt block, redirect validation, soft 404 — root causes + fix runbook |
 | data | [`data/ctr-rewrites-rankmath.csv`](data/ctr-rewrites-rankmath.csv) | 63 pages: `url, rank_math_title, rank_math_description` — ready for RankMath import / WP-CLI |
 | data | [`data/apply-rankmath-meta.sh`](data/apply-rankmath-meta.sh) | WP-CLI script to apply the CSV to WordPress in bulk (dry-run supported) |
+| data | [`data/gsc-error-audit.sh`](data/gsc-error-audit.sh) | Read-only site audit script for the GSC errors (run from any machine that can reach the site) |
+| data | [`data/robots-recommended.txt`](data/robots-recommended.txt) | Known-safe robots.txt reference for desimachines.com (diff, don't paste blindly) |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
 
 ## The 5 things to do first (from `11`)

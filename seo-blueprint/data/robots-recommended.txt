@@ -1,0 +1,39 @@
+# Recommended robots.txt for https://desimachines.com/
+# ---------------------------------------------------------------
+# HOW TO USE (do not paste blindly):
+#   1. Run gsc-error-audit.sh — it saves the LIVE robots.txt to gsc-audit-out/robots.txt
+#   2. diff that file against this one
+#   3. Keep any intentional live rules that don't match money-page paths;
+#      remove any rule that matches /excavator/ /backhoe-loader/ /crane/
+#      /compactor/ /self-loading-concrete-mixer/ /blog/ or category hubs.
+#   4. Deploy via RankMath -> General Settings -> Edit robots.txt
+#   5. Verify in GSC -> Settings -> robots.txt report
+#
+# REMINDER (see 20 §2): robots.txt blocks CRAWLING, not INDEXING.
+# URLs you want REMOVED from the index must be crawlable + noindex first;
+# only re-add a Disallow after GSC shows them "Excluded by noindex".
+# ---------------------------------------------------------------
+
+User-agent: *
+# --- WordPress core (standard, safe) ---
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# --- Internal site search (never indexable, infinite space) ---
+Disallow: /?s=
+Disallow: /search/
+
+# --- DO NOT add Disallow rules for filter/sort/query parameters here
+#     until those URLs are deindexed via noindex (20 §2, step A→B→C).
+#     When that's done, the eventual rules will look like:
+# Disallow: /*?*orderby=
+# Disallow: /*?*filter_
+# Disallow: /*?*min_price=
+# Disallow: /*?*max_price=
+
+# --- Never block these (money pages / rendering assets) ---
+# /excavator/  /backhoe-loader/  /crane/  /compactor/
+# /self-loading-concrete-mixer/  /blog/  /wp-content/uploads/
+# CSS/JS must stay crawlable or Google can't render pages.
+
+Sitemap: https://desimachines.com/sitemap_index.xml
