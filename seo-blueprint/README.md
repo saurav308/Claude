@@ -32,8 +32,15 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | **17** | [`17-CTR-Implementation-Checklist.md`](17-CTR-Implementation-Checklist.md) | One-page do-this-in-order checklist for the dev + content team to ship the CTR fix |
 | **18** | [`18-Internal-Linking-and-Orphan-Fix.md`](18-Internal-Linking-and-Orphan-Fix.md) | ⭐ Next lever: fix 1,365 orphan pages + crawl bloat (internal-linking architecture + 2-week plan) |
 | **19** | [`19-RankMath-Implementation.md`](19-RankMath-Implementation.md) | ⭐ How to ship the CTR fix in WordPress + RankMath (templates, CSV bulk import, WP-CLI, schema) |
+| **20** | [`20-Performance-Hardening-Cloudways-Cloudflare.md`](20-Performance-Hardening-Cloudways-Cloudflare.md) | ⭐ The P0 CWV pass: full-page caching (Varnish + Cloudflare edge on Cloudways), AVIF/WebP + srcset, plugin prune, third-party JS deferral — phased, reversible, with QA gates |
 | data | [`data/ctr-rewrites-rankmath.csv`](data/ctr-rewrites-rankmath.csv) | 63 pages: `url, rank_math_title, rank_math_description` — ready for RankMath import / WP-CLI |
 | data | [`data/apply-rankmath-meta.sh`](data/apply-rankmath-meta.sh) | WP-CLI script to apply the CSV to WordPress in bulk (dry-run supported) |
+| data | [`data/cwv-priority-urls.txt`](data/cwv-priority-urls.txt) | 20 highest-stakes URLs (from verified GSC data) for CWV measurement |
+| data | [`data/psi-cwv-baseline.sh`](data/psi-cwv-baseline.sh) | CWV field+lab measurement via PageSpeed Insights API → CSV (before/after evidence) |
+| data | [`data/convert-images-webp.sh`](data/convert-images-webp.sh) | Bulk WebP/AVIF sibling conversion for uploads (dry-run, additive, reversible) |
+| data | [`data/htaccess-webp-avif.txt`](data/htaccess-webp-avif.txt) | Apache rules to serve WebP/AVIF siblings with correct `Vary: Accept` |
+| data | [`data/plugin-audit.sh`](data/plugin-audit.sh) | Read-only WP-CLI audit: redundant/heavy plugins, autoload bloat, transients, cron |
+| data | [`data/defer-third-party.php`](data/defer-third-party.php) | mu-plugin: defer JS + load chat/GTM on first interaction (the INP fix) |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
 
 ## The 5 things to do first (from `11`)

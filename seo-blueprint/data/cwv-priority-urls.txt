@@ -1,0 +1,23 @@
+# CWV priority URLs — 20 highest-stakes pages, from verified GSC data (13-First-Party-GSC-GA4-Data.md, Jun 2026)
+# Selection: top pages by clicks + the three huge-impression/low-CTR pages + all category hubs + homepage.
+# Lines starting with # are ignored by psi-cwv-baseline.sh
+https://desimachines.com/
+https://desimachines.com/excavator/jcb-nxt-215-lc-fuel-master/
+https://desimachines.com/excavator/cat-345-gc/
+https://desimachines.com/excavator/tata-hitachi-zaxis-490h-ultra/
+https://desimachines.com/excavator/tata-hitachi-ex-210-infra/
+https://desimachines.com/excavator/
+https://desimachines.com/backhoe-loader/jcb/
+https://desimachines.com/crane/
+https://desimachines.com/crane/hydra/
+https://desimachines.com/crane/ace-f150/
+https://desimachines.com/crane/ace-f230/
+https://desimachines.com/crane/ace-16xw/
+https://desimachines.com/crane/escorts-hydra-15/
+https://desimachines.com/compactor/
+https://desimachines.com/self-loading-concrete-mixer/ajax-argo-4500/
+https://desimachines.com/self-loading-concrete-mixer/ajax-argo-3000/
+https://desimachines.com/blog/poclain-machines-in-india-the-ultimate-guide/
+https://desimachines.com/blog/top-10-epc-companies-in-india/
+https://desimachines.com/blog/10-most-advanced-electric-excavators/
+https://desimachines.com/blog/hydra-vs-farana-cranes/

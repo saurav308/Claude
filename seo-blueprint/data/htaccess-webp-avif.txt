@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# Serve pre-generated .avif / .webp siblings (created by convert-images-webp.sh)
+# to browsers that advertise support — with correct Vary so caches/CDN split
+# variants properly. Append this block to the WordPress app's .htaccess,
+# ABOVE the "# BEGIN WordPress" block.
+#
+# SKIP if Cloudflare Polish / Cloudways CF Enterprise handles format conversion
+# at the edge (doc 20 §3.1) — one image optimizer per stack.
+# Rollback: delete this block, purge Varnish + Cloudflare.
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # AVIF first (better compression), then WebP
+  RewriteCond %{HTTP_ACCEPT} image/avif
+  RewriteCond %{REQUEST_FILENAME} (.+)\.(jpe?g|png)$
+  RewriteCond %{REQUEST_FILENAME}.avif -f
+  RewriteRule ^(.+)\.(jpe?g|png)$ $1.$2.avif [T=image/avif,L]
+
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{REQUEST_FILENAME} (.+)\.(jpe?g|png)$
+  RewriteCond %{REQUEST_FILENAME}.webp -f
+  RewriteRule ^(.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpe?g|png)$">
+    Header append Vary Accept
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/avif .avif
+</IfModule>
