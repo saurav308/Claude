@@ -33,6 +33,7 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | **18** | [`18-Internal-Linking-and-Orphan-Fix.md`](18-Internal-Linking-and-Orphan-Fix.md) | ⭐ Next lever: fix 1,365 orphan pages + crawl bloat (internal-linking architecture + 2-week plan) |
 | **19** | [`19-RankMath-Implementation.md`](19-RankMath-Implementation.md) | ⭐ How to ship the CTR fix in WordPress + RankMath (templates, CSV bulk import, WP-CLI, schema) |
 | **20** | [`20-Performance-Hardening-Cloudways-Cloudflare.md`](20-Performance-Hardening-Cloudways-Cloudflare.md) | ⭐ The P0 CWV pass: full-page caching (Varnish + Cloudflare edge on Cloudways), AVIF/WebP + srcset, plugin prune, third-party JS deferral — phased, reversible, with QA gates |
+| **21** | [`21-Bot-Access-Control-Anti-Scraping.md`](21-Bot-Access-Control-Anti-Scraping.md) | ⭐ Block scrapers, welcome ranking crawlers: Cloudflare verified-bot rules, robots.txt policy, WP side-door hardening, make-copies-worthless content defense — without harming SEO/AEO/GEO bots |
 | data | [`data/ctr-rewrites-rankmath.csv`](data/ctr-rewrites-rankmath.csv) | 63 pages: `url, rank_math_title, rank_math_description` — ready for RankMath import / WP-CLI |
 | data | [`data/apply-rankmath-meta.sh`](data/apply-rankmath-meta.sh) | WP-CLI script to apply the CSV to WordPress in bulk (dry-run supported) |
 | data | [`data/cwv-priority-urls.txt`](data/cwv-priority-urls.txt) | 20 highest-stakes URLs (from verified GSC data) for CWV measurement |
@@ -41,6 +42,10 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | data | [`data/htaccess-webp-avif.txt`](data/htaccess-webp-avif.txt) | Apache rules to serve WebP/AVIF siblings with correct `Vary: Accept` |
 | data | [`data/plugin-audit.sh`](data/plugin-audit.sh) | Read-only WP-CLI audit: redundant/heavy plugins, autoload bloat, transients, cron |
 | data | [`data/defer-third-party.php`](data/defer-third-party.php) | mu-plugin: defer JS + load chat/GTM on first interaction (the INP fix) |
+| data | [`data/robots-bot-policy.txt`](data/robots-bot-policy.txt) | robots.txt: explicit allow for SEO/AEO/GEO crawlers, disallow data resellers |
+| data | [`data/cloudflare-bot-rules.md`](data/cloudflare-bot-rules.md) | Copy-paste Cloudflare WAF/rate-limit rules: verified-bot skip, spoofer block, script challenge |
+| data | [`data/htaccess-antiscrape.txt`](data/htaccess-antiscrape.txt) | Origin hardening: xmlrpc off, author-enum off, hotlink protection with search/AI exceptions |
+| data | [`data/feed-attribution.php`](data/feed-attribution.php) | mu-plugin: feed attribution line (copies cite you) + REST enumeration/dump limits |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
 
 ## The 5 things to do first (from `11`)

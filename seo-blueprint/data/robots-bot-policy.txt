@@ -1,0 +1,124 @@
+# robots.txt for desimachines.com — bot access policy (doc 21 §3)
+# Deploy: WP Admin -> RankMath -> General Settings -> Edit robots.txt
+# Remember: this is the POLITENESS layer. Enforcement = Cloudflare (doc 21 §2).
+
+# ---------- Search engines (SEO) ----------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ---------- Answer engines (AEO — cite you in AI answers) ----------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# ---------- AI training crawlers (GEO — in the model = in the answers) ----------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ---------- Own SEO tooling ----------
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: AhrefsSiteAudit
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: SiteAuditBot
+Allow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# ---------- Data resellers / aggressive crawlers: not welcome ----------
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ---------- Everyone else: normal WP hygiene + crawl-bloat control (14 P2) ----------
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /*?orderby=
+Disallow: /*?filter_
+Disallow: /*&filter_
+Disallow: /*?s=
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+
+# ---------- Sitemaps (segmented, per 14 P2) ----------
+Sitemap: https://desimachines.com/sitemap_index.xml
