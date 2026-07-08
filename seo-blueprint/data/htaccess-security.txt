@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# Security hardening for .htaccess (doc 22 §3.7, §3.11-12). Append ABOVE the
+# "# BEGIN WordPress" block. Independent sections — deploy all or pick.
+# Test on Cloudways STAGING first. Rollback: delete the block, purge caches.
+# (Login rate-limiting is best done as a Cloudflare rule — see note at bottom.)
+# ---------------------------------------------------------------------------
+
+# --- 1. Block PHP execution in uploads (a shell uploaded here won't run) -----
+#     Highest-value/cheapest control. If a legit plugin genuinely needs PHP in
+#     uploads (rare), whitelist that one file instead of removing this.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^wp-content/uploads/.*\.(php|php3|php4|php5|php7|phtml|pht)$ - [F,L,NC]
+</IfModule>
+# Belt-and-suspenders: also drop a separate .htaccess in wp-content/uploads/:
+#   <FilesMatch "\.(php|phtml|pht|php[0-9])$">
+#     Require all denied
+#   </FilesMatch>
+
+# --- 2. Protect sensitive files ---------------------------------------------
+<FilesMatch "^(wp-config\.php|\.htaccess|\.htpasswd|readme\.html|license\.txt|xmlrpc\.php)$">
+  Require all denied
+</FilesMatch>
+# Block dotfiles and common leak files (.env, .git, backups, sql dumps)
+<FilesMatch "(^\.|\.(env|bak|old|orig|save|swp|sql|log|zip|tar|gz)$)">
+  Require all denied
+</FilesMatch>
+
+# --- 3. Disable directory browsing ------------------------------------------
+Options -Indexes
+
+# --- 4. Block author enumeration + xmlrpc (also in 21; harmless if duplicated)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{QUERY_STRING} (^|&)author=\d+ [NC]
+  RewriteRule ^ /? [L,R=301]
+</IfModule>
+
+# --- 5. Security headers (defense-in-depth; §3.11) ---------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  # HSTS — only enable once you're 100% HTTPS-only (you are, via Cloudflare/Cloudways):
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+  # Content-Security-Policy: START IN REPORT-ONLY, tune to your real scripts, THEN enforce.
+  # A wrong CSP breaks the site; a right CSP is the best anti-XSS/skimmer control.
+  # Header always set Content-Security-Policy-Report-Only "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://wa.me; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'"
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# LOGIN BRUTE-FORCE: prefer a Cloudflare rule over origin .htaccess, since
+# Cloudflare sees the attacker first.
+#   Cloudflare -> Security -> Rate limiting rule:
+#     If: (http.request.uri.path eq "/wp-login.php" and http.request.method eq "POST")
+#     Rate: > 5 requests / 1 min per IP  ->  Managed Challenge, 1 hour.
+#   Plus a login-attempt-limiter plugin (or Wordfence Login Security) at the app.
+# ---------------------------------------------------------------------------

@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# WordPress side-door hardening (doc 21 §4). Append to the app's .htaccess,
+# ABOVE the "# BEGIN WordPress" block. Each section independent — deploy all
+# or pick. Rollback: delete the block, purge Varnish + Cloudflare.
+# ---------------------------------------------------------------------------
+
+# --- 1. Block xmlrpc.php (legacy API; scraping + brute-force vector) --------
+#     KEEP OPEN only if you use Jetpack / the WP mobile app / remote publishing.
+<Files xmlrpc.php>
+  Require all denied
+</Files>
+
+# --- 2. Block author/user enumeration (?author=N -> username leak) ----------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{QUERY_STRING} (^|&)author=\d+ [NC]
+  RewriteRule ^ /? [L,R=301]
+</IfModule>
+
+# --- 3. Image hotlink protection WITH bot/search exceptions -----------------
+#     Blocks other sites embedding images from YOUR server (their pages, your
+#     bandwidth). Exceptions keep Google Images & AI crawlers working — you
+#     rank #1 on image queries (doc 14 P4); do not break that.
+#     NOTE: empty-referer requests are ALLOWED (that's how crawlers and many
+#     apps fetch) — this stops <img>-embedding from other websites only.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !desimachines\.com [NC]
+  RewriteCond %{HTTP_REFERER} !google\.       [NC]
+  RewriteCond %{HTTP_REFERER} !bing\.         [NC]
+  RewriteCond %{HTTP_REFERER} !duckduckgo\.   [NC]
+  RewriteCond %{HTTP_REFERER} !openai\.com    [NC]
+  RewriteCond %{HTTP_REFERER} !chatgpt\.com   [NC]
+  RewriteCond %{HTTP_REFERER} !perplexity\.ai [NC]
+  RewriteCond %{HTTP_REFERER} !claude\.ai     [NC]
+  RewriteCond %{HTTP_REFERER} !whatsapp\.     [NC]
+  RewriteCond %{HTTP_REFERER} !facebook\.     [NC]
+  RewriteCond %{HTTP_REFERER} !linkedin\.     [NC]
+  RewriteRule \.(jpe?g|png|gif|webp|avif)$ - [F,NC,L]
+</IfModule>
+
+# --- 4. Deny obvious harvest tooling at origin (backstop to Cloudflare R3) --
+#     Cloudflare should catch these first; this covers direct-to-origin hits.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_USER_AGENT} (python-requests|python-httpx|aiohttp|Scrapy|Go-http-client|node-fetch|libwww|PhantomJS) [NC]
+  RewriteRule ^ - [F,L]
+</IfModule>
