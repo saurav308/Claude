@@ -17,6 +17,9 @@ Every crawler on the doc-21 allowlist (Googlebot, Bingbot, GPTBot, OAI-SearchBot
 Claude-SearchBot, PerplexityBot, CCBot, Applebot, Amazonbot, AhrefsBot, SemrushBot, …) is in
 Cloudflare's verified-bots directory and passes this check from its real IPs.
 
+**Scope the Skip to "All remaining custom rules" only — do NOT skip the Rate limiting phase**,
+so Rule 4b below still applies to verified AI fetchers.
+
 ## Rule 2 — "block-bot-spoofers" (action: **Block**)
 
 Scrapers pretending to be search/AI crawlers from non-verified IPs:
@@ -43,6 +46,23 @@ Managed Challenge (not Block): a rare legitimate tool passes the challenge; harv
 - **Action:** Managed Challenge, duration 1 hour.
 
 Humans browse ~a few pages/min. Only harvesters sweep the catalog faster.
+
+## Rule 4b — "rate-limit-ai-user-fetchers" (Rate limiting rule) — the extraction-via-AI guardrail
+
+Verified AI *user* fetchers (Claude-User, ChatGPT-User, Perplexity-User) fetch ~1 page per user
+question — that's the citation channel and it must flow. But an operator can also drive them as a
+slow extraction tool. This rule caps them at question-answering scale without touching citations:
+
+- **If incoming requests match:**
+  ```
+  (http.user_agent contains "Claude-User" or http.user_agent contains "ChatGPT-User" or http.user_agent contains "Perplexity-User" or http.user_agent contains "MistralAI-User" or http.user_agent contains "DuckAssistBot")
+  ```
+- **Rate:** more than **20 requests / 1 minute** per IP
+- **Action:** Managed Challenge, duration 10 minutes.
+
+Real user-triggered fetching never approaches 20 pages/min from one IP; bulk extraction does.
+Do NOT apply this to GPTBot/ClaudeBot/Googlebot training/index crawlers — they legitimately
+crawl in volume and honor robots.txt; throttling them slows your own indexing and GEO presence.
 
 ## Rule 5 — "block-known-offender" (action: **Block**) — fill in after identifying the scraper
 
