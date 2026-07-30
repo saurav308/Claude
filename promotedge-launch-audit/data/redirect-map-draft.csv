@@ -1,0 +1,27 @@
+legacy_url,new_url,type,status,notes
+https://www.promotedge.com/,https://www.promotedge.com/,none,confirmed,"same URL — new content; keep 'kolkata' in title for continuity"
+https://www.promotedge.com/about-us/,/about/,301,confirmed,
+https://www.promotedge.com/contact-us/,/contact/,301,confirmed,
+https://www.promotedge.com/career/,/careers/,301,confirmed,
+https://www.promotedge.com/promotedge-career/,/careers/,301,confirmed,robots-blocked legacy path
+https://www.promotedge.com/case-study/,/work/,301,confirmed,
+https://www.promotedge.com/case-study/{slug}/,/work/{slug}/,301,pattern,"1:1 for named studies; unmatched → /work/ hub decision per page"
+https://www.promotedge.com/digital-marketing/,/services/,301,decide,"or /services/performance-marketing/ — check GSC query mix"
+https://www.promotedge.com/digital-marketing/{industry}/,/industries/{mapped}/,301,pattern,complete industry mapping table from Yoast sitemap
+https://www.promotedge.com/web-solutions/,/services/web-design/,301,confirmed,
+https://www.promotedge.com/web-solutions/{industry}/,/industries/{mapped}/,301,pattern,
+https://www.promotedge.com/brand-strategy/,/services/branding/,301,verify-slug,
+https://www.promotedge.com/creative-designing/,/services/branding/,301,verify-slug,
+https://www.promotedge.com/audio-visual/,/services/audio-visual/,301,build-target,"recommend building AV page; else /services/content-marketing/"
+https://www.promotedge.com/digital-marketing-company-india/,/,301,decide,"ranks for 'digital marketing company india'; consider recreating as landing page"
+https://www.promotedge.com/knowledge/,/blog/,301,confirmed,
+https://www.promotedge.com/knowledge/{slug}/,/blog/{slug-or-ported}/,301,pattern,"port unmatched posts to /blog/{old-slug}/ — do not let 65 legacy posts die"
+https://www.promotedge.com/faq/,410,410,confirmed,robots-blocked; low equity
+https://www.promotedge.com/testimonial/,410,410,confirmed,robots-blocked
+https://www.promotedge.com/feed/,410,410,confirmed,
+https://www.promotedge.com/*/index.html,directory URL,301,rule,static-export twins on NEW site
+https://www.promotedge.com/case-studies/,/work/,301,insurance,
+https://www.promotedge.com/insights/,/blog/,301,insurance,
+http://promotedge.com/*,https://www.promotedge.com/*,301,rule,protocol+host normalisation — one hop
+https://promotedge.com/*,https://www.promotedge.com/*,301,rule,
+TODO,,,"pending","Add every URL from GSC top-200 pages + Ahrefs best-by-links (05 §3) before T-0; wp-content assets with backlinks keep serving or 301"

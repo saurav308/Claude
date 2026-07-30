@@ -1,0 +1,108 @@
+legacy_url,family,action,proposed_target,priority,notes
+https://www.promotedge.com/,core,same-url,/,P0,home; keep 'kolkata' keyword in new title
+https://www.promotedge.com/about-us/,core,301,/about/,P0,confirmed live
+https://www.promotedge.com/contact-us/,core,301,/contact/,P0,confirmed live; holds CIN/legal NAP
+https://www.promotedge.com/career/,core,301,/careers/,P1,
+https://www.promotedge.com/services/,core,same-url,/services/,P0,same path exists on new site
+https://www.promotedge.com/industries/,core,same-url,/industries/,P0,same path exists on new site
+https://www.promotedge.com/location/,core,decide,/ or future /locations/,P2,new site has no locations hub
+https://www.promotedge.com/knowledge-hub/,core,301,/blog/,P1,
+https://www.promotedge.com/digital-marketing-company-india/,landing,decide,/ (or recreate landing),P1,ranks for 'digital marketing company india'; created Sep 2025
+https://www.promotedge.com/case-study/,core,301,/work/,P0,
+https://www.promotedge.com/digital-marketing/,service,301,/services/,P0,or /services/performance-marketing/ per GSC query mix
+https://www.promotedge.com/digital-marketing/search-engine-optimization/,service,301,/services/seo/,P0,
+https://www.promotedge.com/digital-marketing/social-media-optimisation/,service,301,/services/social-media/,P0,
+https://www.promotedge.com/digital-marketing/performance-marketing/,service,301,/services/performance-marketing/,P0,
+https://www.promotedge.com/digital-marketing/influencer-marketing/,service,301,/services/influencer-marketing/,P1,
+https://www.promotedge.com/web-solutions/,service,301,/services/web-design/,P0,
+https://www.promotedge.com/web-solutions/website-design-and-development/,service,301,/services/web-design/,P0,
+https://www.promotedge.com/web-solutions/e-commerce-portals/,service,301,/services/web-design/ (ecommerce sub-service if built),P1,
+https://www.promotedge.com/creative-designing/brand-campaign/,service,301,/services/branding/,P1,
+https://www.promotedge.com/brand-strategy/real-estate/,service,301,/industries/real-estate/,P1,
+https://www.promotedge.com/audio-visual/,service,port-then-301,/services/audio-visual/ (BUILD),P1,"AV practice missing on new site; build page, else /services/content-marketing/"
+https://www.promotedge.com/audio-visual/3d-modeling-and-walkthrough-services/,service-sub,301,/services/audio-visual/ (BUILD; sub-pages optional),P1,AV sub-service
+https://www.promotedge.com/audio-visual/animated-films/,service-sub,301,/services/audio-visual/ (BUILD; sub-pages optional),P1,AV sub-service
+https://www.promotedge.com/audio-visual/corporate-video-production/,service-sub,301,/services/audio-visual/ (BUILD; sub-pages optional),P1,AV sub-service
+https://www.promotedge.com/audio-visual/explainer-videos/,service-sub,301,/services/audio-visual/ (BUILD; sub-pages optional),P1,AV sub-service
+https://www.promotedge.com/audio-visual/product-facility-shoot/,service-sub,301,/services/audio-visual/ (BUILD; sub-pages optional),P1,AV sub-service
+https://www.promotedge.com/audio-visual/tv-commercials/,service-sub,301,/services/audio-visual/ (BUILD; sub-pages optional),P1,AV sub-service
+https://www.promotedge.com/digital-marketing/construction-building-materials/,service-x-industry,301,/industries/manufacturing/,P1,building materials ~ manufacturing; no exact new page
+https://www.promotedge.com/digital-marketing/industrial-machinery-equipment/,service-x-industry,301,/industries/manufacturing/,P1,
+https://www.promotedge.com/digital-marketing/professional-services/,service-x-industry,301,/industries/chartered-accountants/ or /industries/legal/,P1,no 'professional services' page on new site — decide
+https://www.promotedge.com/web-solutions/construction-building-materials/,service-x-industry,301,/industries/manufacturing/,P1,
+https://www.promotedge.com/web-solutions/fmcg-fmcd/,service-x-industry,301,/industries/fmcg/,P1,
+https://www.promotedge.com/web-solutions/industrial-machinery-equipment/,service-x-industry,301,/industries/manufacturing/,P1,
+https://www.promotedge.com/web-solutions/professional-services/,service-x-industry,301,/industries/chartered-accountants/ or /industries/legal/,P1,decide
+https://www.promotedge.com/web-solutions/real-estate/,service-x-industry,301,/industries/real-estate/,P1,
+https://www.promotedge.com/audio-visual/fashion-lifestyle-brands/,service-x-industry,301,/industries/fashion/,P1,
+https://www.promotedge.com/audio-visual/fmcg-fmcd/,service-x-industry,301,/industries/fmcg/,P1,
+https://www.promotedge.com/audio-visual/industrial-machinery-equipment/,service-x-industry,301,/industries/manufacturing/,P1,
+https://www.promotedge.com/audio-visual/ipo-and-listed-companies/,service-x-industry,301,/industries/bfsi/ or /services/audio-visual/,P1,no IPO/IR page on new site — decide
+https://www.promotedge.com/audio-visual/professional-services/,service-x-industry,301,/industries/chartered-accountants/ or /services/audio-visual/,P1,decide
+https://www.promotedge.com/audio-visual/real-estate/,service-x-industry,301,/industries/real-estate/,P1,
+https://www.promotedge.com/professional-services/,industry-top-level,301,/industries/chartered-accountants/ or /industries/legal/,P1,decide — or map to /industries/ hub
+https://www.promotedge.com/education-and-skilling/,industry-top-level,301,/industries/education/,P1,
+https://www.promotedge.com/ipo-and-listed-companies/,industry-top-level,301,/industries/bfsi/,P1,imperfect; consider building IR/IPO industry page — unique differentiator
+https://www.promotedge.com/industrial-machinery-equipment/,industry-top-level,301,/industries/manufacturing/,P1,
+https://www.promotedge.com/building-material/,industry-top-level,301,/industries/manufacturing/,P1,
+https://www.promotedge.com/automobile-dealership/,industry-top-level,301,/industries/automotive-aftermarket/,P1,closest match
+https://www.promotedge.com/kolkata/digital-marketing/,city-x-service,decide: port or 301,/ (or BUILD /locations/kolkata/),P0,HQ city; likely ranks; strongest build-case
+https://www.promotedge.com/kolkata/3d-animation-company/,city-x-service,decide: port or 301,/services/audio-visual/ (BUILD),P1,
+https://www.promotedge.com/kolkata/tvc-agency/,city-x-service,decide: port or 301,/services/audio-visual/ (BUILD),P1,
+https://www.promotedge.com/kolkata/vfx-company/,city-x-service,decide: port or 301,/services/audio-visual/ (BUILD),P1,
+https://www.promotedge.com/mumbai/digital-marketing/,city-x-service,decide: port or 301,/contact/ or BUILD /locations/mumbai/,P1,
+https://www.promotedge.com/mumbai/advertising-agency/,city-x-service,decide: port or 301,/services/ or /locations/mumbai/,P1,
+https://www.promotedge.com/mumbai/creative-design-agency/,city-x-service,decide: port or 301,/services/branding/,P1,
+https://www.promotedge.com/mumbai/e-commerce-website-design-agency/,city-x-service,decide: port or 301,/services/web-design/,P1,
+https://www.promotedge.com/delhi/digital-marketing/,city-x-service,decide: port or 301,/contact/ or BUILD /locations/delhi/,P1,
+https://www.promotedge.com/delhi/advertising/,city-x-service,decide: port or 301,/services/,P2,
+https://www.promotedge.com/bangalore/digital-marketing/,city-x-service,decide: port or 301,/contact/ or BUILD /locations/bangalore/,P1,
+https://www.promotedge.com/hyderabad/digital-marketing/,city-x-service,decide: port or 301,/contact/ or BUILD,P2,
+https://www.promotedge.com/pune/digital-marketing/,city-x-service,decide: port or 301,/contact/ or BUILD /locations/pune/,P1,
+https://www.promotedge.com/pune/seo-company/,city-x-service,decide: port or 301,/services/seo/,P1,
+https://www.promotedge.com/pune/creative-designing-agency/,city-x-service,decide: port or 301,/services/branding/,P2,
+https://www.promotedge.com/pune/website-design-development-company/,city-x-service,decide: port or 301,/services/web-design/,P1,
+https://www.promotedge.com/ranchi/digital-marketing/,city-x-service,decide: port or 301,/contact/ or closest,P2,
+https://www.promotedge.com/ranchi/website-design-development/,city-x-service,decide: port or 301,/services/web-design/,P2,
+https://www.promotedge.com/guwahati/digital-marketing/,city-x-service,decide: port or 301,/contact/ or closest,P2,
+https://www.promotedge.com/jamshedpur/advertising-agency/,city-x-service,decide: port or 301,/services/,P2,
+https://www.promotedge.com/dubai/digital-marketing/,city-x-service,decide: port or 301,/ or promotedgedigital.com decision,P2,international page
+https://www.promotedge.com/singapore/digital-marketing/,city-x-service,decide: port or 301,/ or promotedgedigital.com decision,P2,international page
+https://promotedge.com/us/,international,decide,301 -> https://www.promotedgedigital.com/ (cross-domain),P1,US content belongs to PromotEdge Digital entity now
+https://promotedge.com/us/digital-marketing/search-engine-optimization/,international,decide,301 -> promotedgedigital.com SEO service page,P1,
+https://www.promotedge.com/case-study/weichai-india/,case-study,301,/work/weichai-india/,P1,1:1 exists
+https://www.promotedge.com/case-study/sany-india/,case-study,301,/work/sany-india/,P1,verify new slug
+https://www.promotedge.com/case-study/alumaze/,case-study,port-or-301,/work/ (or port Alumaze study),P1,no Alumaze on new /work/ list
+https://www.promotedge.com/case-study/desi-machines/,case-study,port-or-301,/work/ (or port),P1,client of record; consider porting
+https://www.promotedge.com/case-study/{other-slugs}/,case-study,pattern,/work/{match}/ else /work/,P1,"complete from sitemap: skipper, bp-poddar, kolkata-thunderbolts, utkarsh, ilead, nitya, dtc-southern-heights, kni-airport, pspl..."
+https://www.promotedge.com/knowledge/ai-in-digital-marketing-guide/,knowledge-post,port-same-slug,/blog/ai-in-digital-marketing-guide/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/ai-marketing-tools-for-indian-businesses/,knowledge-post,port-same-slug,/blog/ai-marketing-tools-for-indian-businesses/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/digital-marketing-tools-for-indian-businesses/,knowledge-post,port-same-slug,/blog/digital-marketing-tools-for-indian-businesses/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/digital-marketing-trends-guide/,knowledge-post,port-same-slug,/blog/digital-marketing-trends-guide/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/email-marketing-india-tips-conversions/,knowledge-post,port-same-slug,/blog/email-marketing-india-tips-conversions/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/influencer-marketing-in-india/,knowledge-post,port-same-slug,/blog/influencer-marketing-in-india/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/keyword-research-guide-for-your-business/,knowledge-post,port-same-slug,/blog/keyword-research-guide-for-your-business/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/social-media-marketing-strategy-for-brands/,knowledge-post,port-same-slug,/blog/social-media-marketing-strategy-for-brands/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/user-generated-content-strategy/,knowledge-post,port-same-slug,/blog/user-generated-content-strategy/,P0,"2025-26 posts with freshness+links; port verbatim -> zero-redirect, else 301"
+https://www.promotedge.com/knowledge/{all-other-slugs}/,knowledge-post,pattern,/blog/{same-slug}/ (port) else 301 topical else 410,P0,complete list from post-sitemap.xml
+https://www.promotedge.com/blog/4-powerful-tools-to-optimize-your-social-media-conversions/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/digital-marketing-tips-to-grow-your-ecommerce-business/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/digital-marketing-trends/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/how-audio-visual-agencies-can-help-your-business/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/how-does-social-media-marketing-benefit-your-business/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/how-use-social-media-seo/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/promotedge-set-to-introduce-the-best-in-industry-advertising-digital-marketing-expertise-across-all-regions/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/roadmap-to-a-successful-social-media-marketing-agency-in-india/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/search-everywhere-optimization-future-of-modern-seo-services/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/social-media-marketing-for-brand-managers/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/what-could-have-gone-wrong-with-your-most-recent-social-media-campaign/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/what-is-programmatic-advertising/,old-blog-post,triage,/blog/{topical-match}/ if links/traffic else 410,P2,old-era post; value-check via GSC/Ahrefs
+https://www.promotedge.com/blog/{all-other-slugs}/,old-blog-post,pattern,triage: port | 301-topical | 410,P2,~200+ posts implied by /blog/page/20/; complete from sitemap
+https://www.promotedge.com/blog/page/{n}/,pagination,301,/blog/,P2,all paginated archives
+https://www.promotedge.com/faq/,junk,410,-,P2,robots-blocked
+https://www.promotedge.com/testimonial/,junk,410,-,P2,robots-blocked
+https://www.promotedge.com/feed/,junk,410,-,P2,feeds
+https://www.promotedge.com/wp-content/uploads/{assets-with-backlinks},asset,keep-or-301,new asset path,P2,check Ahrefs best-by-links for hotlinked PDFs/images
+http://www.promotedge.com/*,normalisation,301-rule,https://www.promotedge.com/*,P0,single hop
+https://promotedge.com/*,normalisation,301-rule,https://www.promotedge.com/*,P0,single hop
+https://www.promotedge.com/*/index.html,normalisation,301-rule,directory URL,P1,new static-export twins

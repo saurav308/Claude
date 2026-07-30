@@ -1,0 +1,27 @@
+id,severity,scope,issue,fix,owner_suggested
+1,P0,/contact/ + sitewide CTAs,"Form is demo — 'does not submit' disclaimer live","Wire backend + /thank-you/ + GA4 generate_lead; remove disclaimer string sitewide",Dev
+2,P0,sitewide,"No /privacy-policy/ or /terms/ (404); no legal links","Publish both; footer links; include legal entity + CIN; DPDP-consistent consent notice",Content+Legal
+3,P0,~60 industry pages,"Literal (/path) tokens rendered as text; targets 404 (root-relative instead of /services/…)","Token→URL lookup table; convert to real <a>; grep built HTML for '(/' until zero",Dev+Content
+4,P0,industry pages,"Angle-bracket placeholders swallowed by HTML → broken quoted phrases; stray [city] variants","Escape/rewrite placeholders; grep prose for '<' and '[city]'",Content
+5,P0,all case studies + /about/,"Empty sections: 'What we ran/The work behind it.'; About 'Featured in' empty","Populate or remove sections; Featured-in: add publication names (alt text at minimum)",Content
+6,P0,staging domain,"/promotedge-next2/ not in promotedge.net robots.txt disallow; noindex unverified","Add Disallow now + meta/X-Robots noindex on staging; keep until post-launch takedown",Dev
+7,P0,sitewide stats,"Conflicts: cities 37/175; industries 30+/60; capabilities 10+/50+/102; duplicate '320 EOIs' on 2 case studies; unsourced '38% AI' stat","Single stats.json source of truth; render all stats from it; source or soften 38%",Content lead
+8,P1,~/services/* + industries,"Title tags are 80–113 char H1 sentences; will truncate/rewrite","Distinct ≤60-char titles per pattern '{Keyword} | PromotEdge'; keep H1s as-is; one separator style",SEO
+9,P1,homepage,"Title has no category keyword","'PromotEdge | Integrated Marketing Agency in Kolkata India' (preserve 'kolkata' equity from old home)",SEO
+10,P1,industry template,"Breadcrumb shows full H1 sentence","Short entity label ('Real Estate'); add BreadcrumbList schema",Dev
+11,P1,/industries/ hub,"Label casing bugs: Fmcg / It Services / Ngos; missing ampersands (Astrology Spiritual etc.)","Label override map: FMCG; IT Services; NGOs; Astrology & Spiritual; Salons & Parlours; Travel & Tourism; Music & Dance Academies; Sportswear & Fitness Equipment",Dev
+12,P1,blog template,"No author bylines; no published/updated dates; no Article schema","Add byline (Person entity) + dates + Article JSON-LD to all 65 posts",Dev+Content
+13,P1,/work/ hub,"7× 'SaaS Platform' + 2× 'D2C Beauty Brand' duplicate card titles","Differentiate by outcome; name clients where NDA allows; verify distinct slugs",Content
+14,P1,static export,"…/index.html duplicates every directory URL","301 */index.html → */; self-canonicals on final domain",Dev
+15,P1,sitewide,"No sitemap.xml; no llms.txt","Generate both at build; submit sitemap GSC+Bing; IndexNow on deploy",Dev
+16,P1,typos,"'sustainance' (/services/seo/); 'Magicbrickets' (/work/active-acres/); lowercase H3 starts (GST page)","Fix + full spellcheck pass (aspell/LanguageTool) over built HTML",Content
+17,P1,NAP,"Address format differs from live site/GBP; legal entity + CIN absent; emails machine-unreadable (CF obfuscation)","Standardise GBP-format address sitewide + schema; add CIN to footer/privacy; expose one plaintext email or schema contactPoint",Content+Dev
+18,P1,Cloudflare (production),"WAF 403s AI/bot fetchers on BOTH domains today; promotedge.net robots blocks GPTBot/ClaudeBot/CCBot/Google-Extended","Configure production zone: allow retrieval bots (GPTBot OAI-SearchBot ClaudeBot PerplexityBot); decide training-bot policy; verify with UA matrix script",Dev
+19,P1,rendering,"SSR unproven (crawler executes JS so can't distinguish)","curl test: content present in initial HTML; fix any JS-injected sections",Dev
+20,P2,performance,"No lab CWV data (PSI rate-limited)","PSI 6-template set at T-1; hold to <2s/4G promise; font preload; explicit img dimensions",Dev
+21,P2,schema,"No JSON-LD verified anywhere","Implement template schema plan (04 §3); validate in Rich Results Test",Dev
+22,P2,internal links,"Case studies don't link services-used; industry→service links broken (see #3)","Services-used tag links on case studies; verify hub↔spoke lattice post-#3",SEO
+23,P2,content,"Anonymized case studies weak for GEO citation","Add descriptive anonymity ('Bengaluru HR-tech SaaS'); pursue 1 named study/quarter",Content
+24,P2,author entities,"'Satesh Shaw' vs 'Satesh Kumar Shaw' inconsistency; no author profile pages","Canonical name forms; author bio anchors/pages with sameAs LinkedIn",Content
+25,P2,coverage,"No AV service page though live site + LinkedIn list Audio-Visual practice","Build /services/audio-visual/ (also needed by redirect map)",Content
+26,P2,local layer,"No Kolkata commercial landing beyond home brand line","Add Kolkata-specific page or keep equity via home title; align GBP",SEO
