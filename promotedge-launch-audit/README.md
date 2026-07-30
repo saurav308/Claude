@@ -16,8 +16,9 @@ Full SEO / AEO / GEO / content / launch-readiness audit of the new PromotEdge si
 | 6 | [Data baseline & gaps (GA4/GSC/Semrush/Ahrefs)](05-data-baseline-gaps.md) |
 | 7 | [Redirect map & go-live runbook](06-redirect-map-launch-runbook.md) |
 | 8 | [Content pillars & post-launch Routines](07-content-pillars-routines.md) |
+| 9 | [Legacy sitemap inventory & full redirect plan v2](08-legacy-sitemap-and-redirect-plan.md) — **supersedes the pattern table in 06 §2** |
 
-Working data: [`data/crawl-inventory.csv`](data/crawl-inventory.csv) · [`data/content-qa-fixlist.csv`](data/content-qa-fixlist.csv) · [`data/redirect-map-draft.csv`](data/redirect-map-draft.csv)
+Working data: [`data/crawl-inventory.csv`](data/crawl-inventory.csv) · [`data/content-qa-fixlist.csv`](data/content-qa-fixlist.csv) · [`data/redirect-map-v2.csv`](data/redirect-map-v2.csv) (107 rows, current) · [`data/legacy-urls-harvested.txt`](data/legacy-urls-harvested.txt) · [`data/redirect-map-draft.csv`](data/redirect-map-draft.csv) (v1, superseded)
 Launch-day tooling: [`scripts/verify-at-launch.sh`](scripts/verify-at-launch.sh)
 
 Method note: the staging host's WAF blocks non-browser fetchers, so the crawl used a browser-rendering fetcher
