@@ -7,6 +7,10 @@ dials actually reduce that consumption, and how to keep headroom for interactive
 account — Anthropic does not publish subscription limits in tokens, so percentages can only
 come from the usage bars on your account.
 
+> **See also:** [`routine-optimisation-review.md`](routine-optimisation-review.md) — a review of
+> the routines actually running (ORCH, S-EXEC, and the four uncharted external sessions), with
+> the specific fixes ranked by size. The dominant finding is summarised in §3 below.
+
 ---
 
 ## 1. How the limits actually work
@@ -81,6 +85,14 @@ daily, that is ~1.4M tokens/month of pure re-reading.
 The second driver is **connector payloads**. Ahrefs and Semrush endpoints return large result
 sets; every row lands in context. Constrain with `display_limit`, date ranges, and specific
 endpoints rather than exploratory sweeps.
+
+**The largest driver in practice is neither of those.** The ORCH cycle log of 2026-08-07
+records a full master-sheet pull at **625,850 chars (~174k tokens)**, growing ~29,400
+chars/day — roughly **3.6× the entire blueprint, read once per day**, to produce a ~1k-token
+digest. At the observed growth rate the daily pull alone runs ~5–7M tokens/month and rises
+every month. Fix: have the sheet pipeline emit a compact delta digest that ORCH reads instead.
+Full analysis and the ~97% reduction path are in
+[`routine-optimisation-review.md`](routine-optimisation-review.md) §Finding 1.
 
 ---
 
