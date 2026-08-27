@@ -2,7 +2,7 @@
 
 **Single source of truth for every Claude session running on this site.** Every session reads this before acting and logs each cycle to `./seo-ops/logs/`. Maintained by ORCH.
 
-Last updated: 2026-08-02 (ORCH)
+Last updated: 2026-08-27 (ORCH)
 
 ---
 
@@ -14,11 +14,11 @@ Last updated: 2026-08-02 (ORCH)
 - **KPI / target:** portfolio-level — organic clicks ~31k → ≥60k/mo by 2026-11-01 (2x), ~95k/mo by month 5–6 (3x); lead rate ≥14.6% held; top-3 keywords 8,426 → ≥9,500.
 - **Inputs:** master sheet (`14pJu0Ji-5LRZKkYR2F6uZYay-GUs-HzVC7d0gVeTaz0`, daily 5 PM refresh); Ahrefs project 9518353 GSC/web-analytics (0-unit endpoints); session logs in `seo-ops/logs/`.
 - **Outputs:** daily diff + routing notes → `seo-ops/logs/orch/`; weekly `seo-ops/SCORECARD.md`; registry updates; session charters + prompts.
-- **Cadence:** daily pull ~17:45 IST (post-refresh); weekly scorecard Monday.
+- **Cadence:** daily pull 00:30 IST (after the sheet's 23:45 IST refresh) — LIVE via Routine `trig_01KeDdx4Bw8NaELHwdU4mzhQ` (created 2026-08-27); weekly scorecard Monday.
 - **Guardrails:** never spends Ahrefs paid units without budgeting (quota exhausted until 2026-08-09; ≤5k units/week after); ask-first list per Saurav's rules applies portfolio-wide.
 
-### S-EXEC — Site Execution Engineer  *(chartered 2026-08-02, GO by Saurav)*
-- **Where:** new session — prompt at `seo-ops/prompts/01-site-executor.md`; branch `claude/desimachines-site-executor`. Must run with site access (local Claude Code + SSH/WP-CLI, or cloud + WAF allowlist + WP app password).
+### S-EXEC — Site Execution Engineer  *(chartered 2026-08-02; LAUNCHED 2026-08-27 by ORCH on Saurav's GO)*
+- **Where:** cloud session `session_01DjyxjKen4GXYxo3XCByLDN` (model claude-sonnet-5), branch `claude/desimachines-site-executor`; charter at `seo-ops/prompts/01-site-executor.md` + kickoff addendum (Ahrefs API lapsed; site unreachable from cloud — Exa for reads; Semrush fix package F1–F5 = batch #0, prepared as ready-to-apply artifacts in `seo-ops/exec/ready/`). **Write access still BLOCKED on Saurav: WP application password + real REST route (WP-Hide), or SSH/WP-CLI.**
 - **Objective:** Phase 1 deep-dive (traffic forensics, whole-site model, content-bucket map, link graph), then direct implementation on the live WP site + growth tooling: W1 meta/AEO (60 targets + remaining template titles + schema hygiene), W2 own crawler/index hygiene, W3 internal-linking engine, W4 used-valuation tool, W5 WhatsApp platform, W6 Hindi `/hi/` surface, W7 AI-engine distribution (llms.txt, feeds, Brand Radar prompts), W8 SERP wargaming.
 - **KPI / targets:** 60-target head-term CTR 0.2%→0.6%; blended CTR ≥1.2% (+6 wks); orphans 1,365→<100; top-3 ≥9,500 by 11-01; ≥100 valuation leads/mo (+8 wks); ≥300 WhatsApp RFQs/mo (+8 wks); Hindi clicks 0→2k/mo (+10 wks); LLM sessions 292→900/28d; AIO citations ≥15/60; competitor-template detection <7 days.
 - **Inputs:** master sheet; Ahrefs project 9518353; `seo-blueprint/` docs 04/08/15/16/18/19 + `data/`; branch `claude/tech-stack-seo-viability-4qo1vc` docs 20–23 + scripts.
