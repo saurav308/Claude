@@ -19,7 +19,7 @@ page_info shows: item `PRODUCT`, cause `REQUIRED`, missing `["aggregateRating","
 A compare-generator bug created an X-vs-X page; it 404s but is internally linked.
 **Fix: remove it + its inlinks; add a generator guard `left != right`.** Owner: agency/S-EXEC.
 
-**F4 · 9 compare pages canonicalize to a non-existent reversed-order URL (issue 38 — canonical → broken page).**
+**F4 · 9 compare pages canonicalize to a non-existent reversed-order URL (issue 38 — canonical → broken page). — ✅ CLOSED 2026-09-12.** Confirmed via Semrush Site Audit snapshot `6aa4aea26246167e456577f1` (finished 2026-09-12 07:31 UTC): issue 38 count is now **0** (was 10 in the 08-29 snapshot, 9 as originally flagged here). Verified by ORCH directly via the Semrush MCP (`history` report, 3-snapshot trend: 08-22 baseline → 10 (08-29) → 0 (09-12)) — not yet independently re-checked page-by-page against the 9 URLs below, but the aggregate issue count going to zero across a fresh 20,000-page crawl is strong evidence. Owner/fixer unconfirmed — most likely the same fleet pipeline (`desimachines-weekly-audit-fix` or similar) that also appears to have resolved the separate `/compare/` HTTP 500 issue and shipped a large Core Web Vitals improvement (slow-page count 7,981→826) in the same window; see `seo-ops/logs/orch/2026-09-12-daily.md`.
 The A-vs-B → B-vs-A canonical dedup points at orderings that were never generated. Affected (source → broken canonical target):
 - /compare/xcmg-xe140i-infra-vs-sany-sy120c-9-excavator/ → sany-sy120c-9-vs-xcmg-xe140i-infra
 - /compare/sany-sy390c-10hd-grama-vs-jcb-345lc-hd-excavator/ → jcb-345lc-hd-vs-sany-sy390c-10hd-grama
@@ -59,7 +59,7 @@ All pairs where the title template collapses model variants: Manitou "MBL 745 HT
 
 ## Sequence
 1. Today: F1 (menu slashes), F3 (kill X-vs-X page).
-2. This week: F2a (Saurav's 10 P1 prices) + F2b (schema suppression rule), F4 (9 canonicals), F5 (16 titles).
+2. This week: F2a (Saurav's 10 P1 prices) + F2b (schema suppression rule), ~~F4 (9 canonicals)~~ **done 09-12**, F5 (16 titles).
 3. Next audit (~08-29): read F6 slow-page count as the CWV before/after; recheck F7–F9.
 
 ## Expected effect on the Semrush dashboard Saurav is looking at
