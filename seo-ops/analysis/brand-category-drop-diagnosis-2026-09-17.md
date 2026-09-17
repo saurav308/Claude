@@ -87,3 +87,22 @@ Three of the four reports converge on this, each ruling out a different alternat
 - A live verification attempt (`curl`) was blocked by a 403 from the sandbox/site, so nothing was independently confirmed outside Ahrefs' cached data.
 - All findings are **correlational (same-day timing)**, not a confirmed causal diff of before/after HTML, canonical tags, or menu structure.
 - The report on `/dozer/`'s prior-verified "not fixed" disclaimer claim (said fixed 09-08, actually still 404 through 09-14) is a reminder that "verified on production" claims from the fleet's 09-08 batch should not be taken at face value without direct re-verification.
+---
+
+## 7. Addendum (2026-09-17, later same day) — clicks-vs-impressions check, Saurav's call
+
+**Saurav's decision:** acceptable outcome, conditional on traffic (not just visibility) not actually being lost.
+
+**Direct verification via `gsc-page-history` (daily, 2026-08-20→09-14, Ahrefs project 9518353):** comparing the same two matched weeks used in Section 2/3 (Aug 25-31 vs Sep 8-14) for the two pages responsible for essentially the entire alert:
+
+| | Impressions | Clicks |
+|---|---|---|
+| `/backhoe-loader/jcb/` | 56,973 → 6,749 (-88.2%) | 126 → 27 |
+| `/backhoe-loader/` (parent) | 47,771 → 57,478 (+20.3%) | 205 → 362 |
+| **Combined** | 104,744 → 64,227 (-38.7%) | **331 → 389 (+17.5%)** |
+
+**Combined clicks rose despite combined impressions falling.** The alert is impressions-only; actual traffic for this cluster did not decline — it improved slightly, consistent with average position improving on the surviving/reallocated rankings. This directly satisfies Saurav's stated condition ("unless traffic is lost... I am okay").
+
+**Scope caveat:** verified for the 2 pages driving the bulk of the alert, not all ~85 Brand Category URLs individually — but the fact that no separate "Clicks | Brand Category" alert fired alongside the visibility one is a corroborating signal that clicks are not collapsing bucket-wide either.
+
+**Disposition: downgraded from active investigation to routine monitoring.** Not pursuing recapture of `/backhoe-loader/jcb/`'s standalone visibility unless a future cycle shows an actual click/lead decline for the cluster.
