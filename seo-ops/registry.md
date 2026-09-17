@@ -89,6 +89,8 @@ Two previously-undocumented tabs appeared in the master sheet on 2026-09-17: **"
 
 First baseline read: 2026-09-17 (see that day's log in `seo-ops/logs/orch/`).
 
+**KNOWN TOOLING LIMITATION, found on the first read — important for calibrating confidence on every future pass.** Site Inventory has ~17,335 rows; neither Drive tool available to this session can pull it in full: `read_file_content`'s natural-language conversion truncates the tab (the 09-17 read got only the top 83 rows by 90-day impressions, all `Type=product`, zero Category/Brand/Brand-Category rows); `download_file_content` exported as CSV returns only the *first* sheet (Overview), not Site Inventory, regardless of which tab is wanted — tested directly on 09-17. **No full-coverage path currently exists from this session.** Consequence: every Mon/Thu Site Inventory pass is a partial, best-effort spot-check (currently: ~83 product-type rows out of 17,335, no brand/category coverage at all), not a census. Report findings accordingly — "N anomalies found in the M rows checked," never "clean scan" or "0 anomalies" without stating the coverage denominator. If a future session finds a way to pull the tab in full (e.g. a Google Sheets API connector with per-tab range support, or a pre-filtered export from whoever owns the pipeline), switch to that immediately — full coverage would make the Missing-Prices cross-check and indexation scan far more useful than the current sample allows.
+
 ## Retired / out of scope
 
 - PR#2 `claude/search-console-errors-9frpb9` (GSC triage) — one-shot runbook; merge into canonical branch, retire session.
