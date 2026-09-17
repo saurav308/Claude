@@ -76,6 +76,19 @@ While re-checking S-EXEC's status, its session ID returned "not found" — indep
 - S3 Lead Engine (CRO ship + CRM join + bot-lead purge + newsletter) → partially in S-EXEC (W5); **CRM join, GA4 event QA, newsletter activation still unowned.**
 - S5 Data-Ops & Intel (sheet integrity, quota governance, connector auth) → **unowned.**
 
+## Site Inventory tab — regular read cadence (added 2026-09-17, Saurav's instruction)
+
+Two previously-undocumented tabs appeared in the master sheet on 2026-09-17: **"ENTITIES"** (a position-band/intent rollup by page-surface type) and **"SITE INVENTORY"** (a live, hourly-refreshed-from-WordPress per-URL census of all live URLs — type, title, SEO title, robots status, sitemap status, brand/category/model key, price, clicks/impressions/position at 28d & 90d, position band, demand, intents present/missing). Neither is listed in the Overview tab's own reading guide. Flagged to Saurav same day; his instruction: start reading Site Inventory regularly, but not hourly/daily — twice a week is fine, "use best of your logics."
+
+**Decision: Mondays and Thursdays** (roughly even 3-4 day spacing; avoids Tuesday's fleet-task day and Friday's Semrush-audit day). Baked directly into the ORCH daily Routine's prompt (`trig_01KeDdx4Bw8NaELHwdU4mzhQ`) on 2026-09-17 rather than left as a manual reminder, so it survives session handoffs.
+
+**What each Site Inventory pass does, and why:**
+1. **Cross-check the Missing Prices tab's 169 unpriced products against Site Inventory's own price column.** The Missing Prices tracker hasn't moved (0/169) since it was generated 2026-08-04 — Site Inventory is a live, independent source that can reveal whether prices were actually added directly in WordPress without the tracker being updated (stale tracker) or confirm the gap is real.
+2. **Scan Category/Brand/Brand Category/Product page types for indexation anomalies** (unexpected noindex/robots-block/sitemap-exclusion) — a proactive check for the same class of bug as the 09-08 dozer-noindex incident, using a source that updates hourly rather than waiting for it to surface elsewhere.
+3. **Track total live URL count and a rough per-type breakdown week-over-week** as a simple sanity trend for bulk publish/depublish events.
+
+First baseline read: 2026-09-17 (see that day's log in `seo-ops/logs/orch/`).
+
 ## Retired / out of scope
 
 - PR#2 `claude/search-console-errors-9frpb9` (GSC triage) — one-shot runbook; merge into canonical branch, retire session.
