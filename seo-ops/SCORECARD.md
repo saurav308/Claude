@@ -2,6 +2,27 @@
 
 Weekly KPI check against the targets in `seo-ops/registry.md`. Compiled by ORCH, normally Mondays.
 
+## 2026-09-21
+
+**Headline: real traffic growth this week (trailing-28d clicks +21%) and the CWV issue is essentially resolved — but a newly-discovered GA4 measurement gap is now the thing to watch, having gone from a 3-point curiosity to a confirmed 4-day accelerating decline (83%→48% capture of real leads).** This is the first cycle in a while with unambiguous good news on raw traffic and technical health; the open question is now about measurement accuracy, not site performance.
+
+| Metric | Baseline (2026-08-01) | Current (2026-09-21) | Target | Status |
+|---|---|---|---|---|
+| Organic clicks/mo | ~31k (Jun) | **Trailing 28d: 43,000 clicks (Recent tab, final day 09-19), up from 35,410 the prior 28d — +21%.** August itself: 40,930 (Trends & Movers monthly table — this is now the only Aug figure present anywhere in the sheet; the previously-cited 39,486 "confirmed close" no longer traceable, formally still unreconciled). September is mid-month, no full-month figure yet. | ≥60k by 2026-11-01 (2x); 95k stretch (3x) | 🟢 first real acceleration signal in weeks — trailing-28d run-rate (~46k/mo annualized from the 28d figure) is meaningfully closer to the 2x target than any prior read |
+| Top-3 keywords | 8,426 | **7,878** (Trends & Movers, Position Band 1-3, window ending 09-16) — prior 28d was 8,797, 28d-before was 8,483: a non-monotonic up-then-down pattern, likely a window-comparability artifact rather than a real reversal-then-decline. The new Keyword Positions tab (453 tracked keywords, daily) could eventually replace this reconciliation-prone series, but this cycle's pull only sampled 51 of 453 rows (impression-biased) — not yet a clean substitute. | ≥9,500 | 🟡 83% of target; volatile/hard-to-trust series, flagged for a full Keyword Positions pull next cycle to finally get one clean source |
+| Lead measurement (was "Lead rate") | 14.6% | **Reframed this cycle — the real story is a measurement gap, not the rate itself.** GA4 now captures only 48% of real leads as of 09-20 (was 83% just 3 days earlier, 09-17) — a confirmed 4-day accelerating decline via the new Website Record vs GA4 table, not noise. True click-to-lead rate is understated by GA4 and increasingly so; no clean website-record-based rate exists yet to replace the old GA4-derived figure. | ≥14.6% held | 🔴 can't currently give a trustworthy number — the measurement gap itself is this cycle's real finding |
+| AIO citations (core set) | 1/3 | 3/4, unchanged since 09-15 — **now 6 days without a fresher spot-check** | ≥15/60 full target | 🟡 holding but stale; overdue for a re-check |
+| AI/LLM sessions/28d | 292 | **523 (weekly-bucket sum, trailing 4 completed weeks: 08-24/08-31/09-07/09-14)** — up from the 464 carried-forward figure, but this is a weekly-sum not a rolling-28d pull, so treat as directionally better, not a strict apples-to-apples improvement. 90d total: 1,411 sessions / 145 leads / 10.3% lead rate. | ≥900/28d | 🔴 58.1% of target on the fresher read (was 51.6%) — improving but still well short |
+
+### This week's major developments
+
+- **CWV essentially resolved, confirmed via Semrush.** Slow-page count: 7,981 (baseline) → 826 (09-12) → **47 (09-19)**, a -99.4% total drop. This has been the single largest recurring technical-health flag in this document for six weeks; it's done.
+- **New headline risk: GA4 lead-capture rate in free-fall.** 53%(09-16)→83%(09-17, peak)→71%(09-18)→60%(09-19)→**48%(09-20)** — 4 straight declining days, ~-12 points/day, now below the pre-peak baseline with no reversal yet. This directly affects every lead/conversion number anyone (including this document) reports from GA4. Recommend treating this as this week's top priority to root-cause, not just track.
+- **Sunday Ahrefs-competitor refresh missed for a second consecutive week** — Competitors/Competitor Pages/Backlink Gap/Whitespace stuck at 09-16, now 5 days stale. The 09-19 "Routine v2" change cut this job's weekly Ahrefs budget 30k→10k units, which may be a contributing factor but doesn't fully explain a total miss.
+- **Real technical/content work shipped this week**, independent of the above: dozer sub-category titles/descriptions, 41 dozer PDP descriptions, 21 oversized images compressed (132MB→51MB), 2 broken internal links fixed, a new "Audit Inputs" triage tab cross-referencing Ahrefs+Semrush findings against the live site.
+- **GSC Daily Trend appendix table now 36 days frozen (08-16)** — but continues to read as a broken presentation table, not a real feed problem: Recent and Keyword Positions tabs both remain current (09-19), a normal 2-day lag.
+- **Mac-fleet handoff document, sent 09-12, still shows no sign of pickup after 9 days.**
+
 ## 2026-09-14
 
 **Headline: multiple independent signals point the same direction this week — rankings, visibility, and AI-referral lead quality are all softening at once, on top of a second data pipeline now stalled alongside the 22-day-frozen GSC feed.** Top-3 keyword count has declined across three consecutive read points (8,743→8,490→8,288). The Brand Category visibility alert that first fired 09-13 (-31% WoW) worsened to -40% WoW by 09-14 — two consecutive days deepening, not a blip. AI-referral lead rate slipped from 13.8% to 12.0%. None of these alone would be alarming; together, in the same week, they're worth someone looking at what's actually happening on the Brand Category template/pages rather than waiting for next week's read.
@@ -49,28 +70,28 @@ Weekly KPI check against the targets in `seo-ops/registry.md`. Compiled by ORCH,
 - Semrush access restored (was blocked 09-05), but its weekly audit cadence slipped to biweekly — no new snapshot since 08-29, next due 09-12. No CWV before/after is possible yet regardless, since nothing has been deployed to WordPress.
 - **New finding (09-07): Ahrefs workspace usage jumped to 63,475/100,000 (63.5%)** — far more than this session's own 4,914-unit spend on 09-05, consistent with the newly-discovered ~100-session fleet drawing on the same shared account. No centralized budget tracking across that fleet is visible from here.
 
-## Data-integrity flags — as of 2026-09-14
+## Data-integrity flags — as of 2026-09-21
 
-- **GSC daily feed frozen at 2026-08-23 — now 22 days stale.** Every "current" click figure in this document is the best available read, not a live one.
-- **New: the weekly/Ahrefs-fed tab pipeline appears to have missed its 09-13 (Sunday) scheduled refresh** — 16 tabs stuck at 09-08/09-09, 5-6 days stale. A second stalled pipeline, independent of the GSC freeze and of this session's own confirmed-working Ahrefs API access.
-- Top-3 keyword count now has a **third** distinct "current" value in three cycles (8,710 → 8,461 → 8,288) from different tab snapshot dates — the reconciliation ask from 09-07 is still open, and the underlying trend across the three reads is downward, so this isn't just noise to average away.
-- August organic-clicks figure now has **two disagreeing sources**: 39,486 (confirmed monthly close, 09-07) vs. 40,930 (this cycle's Trends & Movers Seasonality table, 09-09) — needs one authoritative source picked, not two numbers coexisting.
-- Authority Dashboard/Engine frozen since `run_date` 2026-07-30 — no new run in 6+ weeks.
-- Missing Prices tab static since "Generated 2026-08-04" (41 days), still 0/169 filled — no session may invent this data; it needs Saurav's real price sheet.
+- **GSC Daily Trend appendix table: 36 days frozen at 08-16** (worsened from 08-23 during a since-partial repair). Continues to read as a broken presentation table, not a real feed problem — Recent and Keyword Positions tabs both remain current (09-19, normal 2-day lag).
+- **New headline flag: GA4 lead-capture rate fell from 83% to 48% over 4 consecutive days (09-17→09-20)** — a confirmed, accelerating measurement gap, not noise. Affects every lead/conversion figure sourced from GA4, including this document's own "lead rate" row historically.
+- **Sunday Ahrefs-competitor refresh missed for a second consecutive week** — 5 days stale as of today, likely related to the 09-19 Ahrefs-budget cut (30k→10k weekly units) but not fully explained by it.
+- Top-3 keyword count remains a volatile, hard-to-trust series across cycles (7,878 this week, non-monotonic vs. the prior two reads) — still not resolved by a single clean source, though the new Keyword Positions tab is a candidate once fully sampled.
+- August organic-clicks figure: only one value (40,930) is now traceable in the sheet; the earlier "confirmed close" of 39,486 is no longer independently reconcilable — treating 40,930 as current by default, flagging the discrepancy as unresolved rather than silently dropped.
+- Authority Dashboard/Engine frozen since `run_date` 2026-07-30 — now 52 days, no new run.
+- Missing Prices tab static since "Generated 2026-08-04" (48 days), still 0/169 filled.
 
-## WP access — status as of 2026-09-14 (see registry.md for full history)
+## WP access — status as of 2026-09-21 (see registry.md for full history)
 
-The ~100-session-fleet mystery from 09-05 is **resolved** (via Gmail, confirmed 09-10): this is one governed 19-task Claude Code operation (Mac + Cloudways server) under a standing SEO-strategist mandate, not an unknown sprawl — `desimachines-weekly-audit-fix` (Sat 09:08) and `desimachines-seo-dashboard-weekly` (Tue 00:01) are the most likely owners of the Semrush/Ahrefs technical-fix content. What's still unresolved: **ORCH itself has no WordPress access and, per a 09-12 live test, this environment's network policy actively blocks outbound calls to desimachines.com** — so even a valid Application Password wouldn't currently let this session reach the site. The WordPress.com connector route was tried and ruled out (no Jetpack, no WordPress.com account on the site). Given no direct or programmatic path exists to the Mac fleet session either (confirmed via `list_triggers`/`ListAgents` on 09-12 — it runs as local launchd/cron jobs, not registered sessions on this account), ORCH compiled everything into one consolidated handoff document (`seo-ops/handoff/mac-fleet-handoff-2026-09-12.md`, sent to Saurav 09-12) for manual relay — no sign of pickup as of 09-14.
+Unchanged since 09-14: ORCH still has no WordPress access (this environment's network policy blocks outbound calls to desimachines.com; the WordPress.com connector route was tried and ruled out). The consolidated handoff document (`seo-ops/handoff/mac-fleet-handoff-2026-09-12.md`) has now shown **no sign of pickup for 9 consecutive days**. Worth a direct check-in with Saurav on whether it was ever relayed.
 
-## Sessions — status at compile time (2026-09-14)
+## Sessions — status at compile time (2026-09-21)
 
-- **ORCH**: running, daily loop live (`trig_01KeDdx4Bw8NaELHwdU4mzhQ`).
-- **S-EXEC**: gone since 09-05 (reclaimed after 8+ days idle). All prepared fixes finalized as deployable content directly in this repo (`seo-ops/fixes/*.md`, `seo-ops/content/*.md`, and the consolidated `seo-ops/handoff/mac-fleet-handoff-2026-09-12.md`) — none confirmed deployed yet.
-- **Mac fleet** (19 named scheduled tasks, external, confirmed via Gmail 09-10): actively shipping real fixes as of 09-08 (dozer noindex, author-page fix) with "Verified on production" language; also independently appears to have fixed the `/compare/` HTTP 500 issue and a broken-canonical issue (Semrush F4) by 09-12, per Semrush data — though the sheet's own disclaimer-page claim from the same 09-08 batch still doesn't match production as of 09-14.
-- **Blog-refresh engine** (external): recovering since 09-07, ordinary daily growth continuing (279+ posts refreshed as of 09-12).
-- **Authority Engine** (external): frozen 6+ weeks, zero outreach ever sent, one approval-ready item sitting unsent in the Blocked-Queue.
-- **Weekly/Ahrefs-fed sheet pipeline** (external): now itself stalled — see data-integrity flags above.
+- **ORCH**: running, daily loop live (`trig_01KeDdx4Bw8NaELHwdU4mzhQ`), now also reading the new Site Inventory tab Mondays/Thursdays (added 09-17, known partial-coverage limitation documented in registry.md).
+- **Mac fleet** (19 named scheduled tasks, external): clearly active and shipping real fixes throughout this past week — a large 09-18 dashboard-accuracy self-audit (9 closures), a 09-19/09-20 content/technical-fix batch (dozer titles, image compression, broken links), and the new Audit Inputs/Website-Record-vs-GA4 tracking tabs, both built in direct response to findings ORCH surfaced (schema/CWV data, GA4 undercounting). Quality and responsiveness look genuinely good this week.
+- **Blog-refresh engine** (external): found on 09-19 to have been quietly stalled since 08-27 (~3+ weeks) despite the tracking tab re-exporting cumulative totals daily — corrected after ORCH had mischaracterized it as active in earlier cycles.
+- **Authority Engine** (external): frozen 52 days, zero outreach ever sent, one approval-ready item still sitting unsent.
+- **Sunday Ahrefs-competitor pipeline** (external): now itself stalled 2 weeks running — see data-integrity flags above.
 
 ## Re-prioritization notes
 
-Three items remain overdue for a decision rather than another status check: (1) the dealer-phone click-test (48 days untested), (2) Authority Engine's frozen outreach (6+ weeks, one email away from LIVE — needs only Saurav's one-word approval on the Blocked-Queue item), (3) the newly-worsening Brand Category visibility alert, which needs a root-cause look before next Monday rather than another week of "still firing, still worsening."
+Three items are overdue for a decision or root-cause rather than another status check: (1) **the GA4 capture-rate collapse (83%→48% in 4 days)** — this week's most urgent item, needs actual investigation into why, not just continued tracking; (2) Authority Engine's frozen outreach (52 days, one email away from LIVE — needs only Saurav's one-word approval); (3) the Mac-fleet handoff sitting unactioned for 9 days — worth confirming directly with Saurav whether it was ever relayed, rather than continuing to check silently each day.
