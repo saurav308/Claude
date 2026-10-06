@@ -33,6 +33,7 @@ DesiMachines has already won the hard part — **DR 41, 2,369 ranking keywords, 
 | **18** | [`18-Internal-Linking-and-Orphan-Fix.md`](18-Internal-Linking-and-Orphan-Fix.md) | ⭐ Next lever: fix 1,365 orphan pages + crawl bloat (internal-linking architecture + 2-week plan) |
 | **19** | [`19-RankMath-Implementation.md`](19-RankMath-Implementation.md) | ⭐ How to ship the CTR fix in WordPress + RankMath (templates, CSV bulk import, WP-CLI, schema) |
 | **20** | [`20-Long-Form-Video-Topics.md`](20-Long-Form-Video-Topics.md) | ⭐ **Top 5 long-form YouTube topics** ranked for SEO value + audience pull (GSC 90-day impressions, Ahrefs volumes, SERP video features, Shorts-overlap check, paired embed pages, day-30 scorecard) |
+| **21** | [`21-Video-04-Mini-Excavator-Script-and-Publish-Kit.md`](21-Video-04-Mini-Excavator-Script-and-Publish-Kit.md) | ⭐ **Video #4 script + publish kit** (Mini JCB ka Poora Hisaab): live price truth, 18-scene Hindi VO with English subs, shot plan, title/description/tags/pinned/thumbnails, site embed + VideoObject schema, day-30 scorecard |
 | data | [`data/ctr-rewrites-rankmath.csv`](data/ctr-rewrites-rankmath.csv) | 63 pages: `url, rank_math_title, rank_math_description` — ready for RankMath import / WP-CLI |
 | data | [`data/apply-rankmath-meta.sh`](data/apply-rankmath-meta.sh) | WP-CLI script to apply the CSV to WordPress in bulk (dry-run supported) |
 | A | [`appendix-A-keyword-data.md`](appendix-A-keyword-data.md) | Live keyword data + programmatic seed sets |
