@@ -1,267 +1,199 @@
-# 25 — Video #8 · "JCB se Mahine ka Kitna Bachta Hai? Pehle saal ka poora ledger" · Script + Publish Kit (v1)
+# 25 — Video #8 · "JCB Business Kaise Chalayein: Pehle saal ka poora process" · Script + Publish Kit (v2, process-first)
 
-**Channel:** @desimachinesofficial · **Series:** Machine Ka Hisaab · **Franchise:** Pehli Machine (closes the arc: #4 which machine → #5 the loan → #8 the year) · **Target length:** 7:00
-**Status:** SCRIPT v1 from the strategy desk, for the audit desk's read and Saurav's go. Nothing generated yet.
-**Topic source:** doc `20`, pick #5. Batch position: video #8.
+**Channel:** @desimachinesofficial · **Series:** Machine Ka Hisaab · **Franchise:** Pehli Machine (closes the arc: #4 which machine → #5 the loan → #8 the year) · **Target length:** 6:45
+**Status:** SCRIPT v2 from the strategy desk, for the audit desk's read and Saurav's go. Nothing generated yet.
+**What changed from v1 (Saurav, 13 Oct 2026):** no rupee amounts, EMI, hire rates or a worked twelve-month ledger with figures in the video. The video teaches the six-step *process* of running a first-year JCB business: the season calendar, the hire basis, the fixed-cost provisions, the contract terms, keeping the machine working, and the year-end review. The worked example with figures stays on `/blog/jcb-business-profit/`, linked from the description. v1 remains in git history (commit `ae25a60`).
 
-> ⚠️ **Shorts-overlap gate.** Rent-vs-buy, TCO and the "₹1,000/hr ka rent dekh kar machine mat uthao" warning exist as Shorts. None of those one-liners is repeated. This video is a twelve-month ledger performed on screen, month by month, monsoon included.
+> ⚠️ **Shorts-overlap gate (unchanged):** rent-vs-buy, TCO and the "₹1,000/hr ka rent" warning exist as Shorts; none is repeated. This video is the owner's operating process for year one.
 
 ---
 
 ## 0. The video in one breath
 
-The question is "JCB se mahine ka kitna bachta hai", and every answer on YouTube is a single number. The honest answer is twelve numbers, because the same machine earns ₹85,000 in November and loses ₹23,000 in August. The video walks one first-year owner's ledger using DesiMachines' own figures: a ₹30–32 lakh 3DX bought with ₹10 lakh down and a ₹20 lakh loan (EMI ₹44,500), dry-hired at ₹750 an hour, billed 216 days in the year. Income ₹12.96 lakh, fixed costs ₹7.08 lakh, one unplanned repair, and about ₹5.3 lakh left, roughly ₹44,000 a month on average, with two negative months in the monsoon and a 90-day payment gap that nearly stops the machine in month three. Wet hire with your own diesel wipes the margin out. The rule: *the business runs on billed days, not on the EMI; under 15 days a month, don't buy; and the first year's saving is a buffer, not a profit.* Close on the brand principle: *machine kharidwana hamara kaam tha, machine se kamwana bhi hamara kaam hai.*
+The YouTube answer to "JCB se mahine ka kitna bachta hai" is always one number, and it is always wrong, because the same machine earns in November and loses in August. The video gives the owner the process instead of the number: draw the season calendar for your own district and count honest billed days month by month; fix the hire basis in writing, dry or wet, and know who pays the diesel; list the costs that never take leave and set the provisions aside; write the contract terms that decide whether cash arrives before the EMI leaves; keep the machine working with an hour-meter log, preventive service and a monsoon plan; and do the year-end hisaab that decides whether a second machine is a good idea. The rule: *business EMI se nahi, billed dinon se chalta hai; pandrah din se kam, machine mat lo; pehle saal ki bachat buffer hai.* Close on the brand principle: *machine kharidwana hamara kaam tha, machine se kamwana bhi hamara kaam hai.*
 
 ---
 
-## 1. Price and earnings truth (live from DesiMachines, read 13 Oct 2026)
+## 1. Numbers policy for this video
 
-| Fact | Value used | Source |
-|---|---|---|
-| Machine | JCB 3DX class ₹30–32 lakh ex-factory; ₹10 lakh down; ₹20 lakh loan at 12% over 5 years → EMI ≈ ₹44,500 | `/blog/jcb-business-profit/` (Aug 2026) |
-| Dry hire | ₹550–900/hr · ₹5,000–9,000 a day · ₹90,000–1,40,000 a month (hirer brings operator and diesel) | `/blog/equipment-rental-rate-card/` (Oct 2026 update) |
-| Wet hire | ₹900–1,300/hr (you supply operator, usually diesel) | same |
-| Maintenance provision, backhoe class | ₹5,000–10,000 a month (₹60,000–1.2 lakh a year routine + wear) | business-profit guide, maintenance guide |
-| Insurance | ~1–2% of insured value a year → ≈₹4,000 a month on a ₹32 lakh machine | insurance guide |
-| Permits, parking, admin | ≈₹0.45 lakh a year in the lender's project-report example → ≈₹3,000 a month | `/blog/project-report-for-machinery-loan/` |
-| Operator (wet hire only) | fresher ₹12,000–18,000 · 2–5 yrs ₹18,000–28,000 a month → ₹20,000 used | `/blog/jcb-operator-salary-india/` |
-| Diesel (wet hire only) | 4–8 L/hr backhoe class → 6 L/hr used | video #1 guide |
-| Utilisation threshold | own at 12–15+ busy days a month; "bill 20 days and the machine pays; bill eight and it loses" | buy-vs-rent and business-profit guides |
-| Idle day, backhoe | EMI share ≈₹1,500 + lost billing ≈₹6,000 + overheads ≈₹500 ≈ **₹8,000** (the ₹16,000–25,000 figure is for a 20-tonne excavator) | downtime guide, scaled |
-| Payment delay | contractors paying at 90 days instead of 30 decide whether the EMI gets paid | business-profit guide |
-| Depreciation | roughly half the price over five years | ownership guide |
-| Coverage lenders test | ≈1.25× | project-report guide |
+- **Off-screen:** rupee amounts, EMI, hire rates per hour or day, insurance and maintenance figures, the worked-ledger totals.
+- **On-screen, allowed:** days (billed days per month, the 15-day threshold, two months of buffer), the calendar shape of the Indian construction year, the structure of a ledger (headings), the idle-day cost *formula*, hours (service intervals on the hour meter), payment terms in days (30 vs 90).
+- Source basis for the audit desk (site guides): utilisation decides the business, not the rate; dry hire means the hirer brings operator and diesel, wet means the owner does; routine maintenance is a monthly provision set from the hour-meter service schedule; insurance is yearly; an idle day still carries the EMI share, the retained operator and overheads plus the lost billing; delayed payments at 90 days decide whether the EMI gets paid; the own-vs-rent threshold sits around 12–15 busy days a month; value roughly halves over five years.
 
-### The twelve-month ledger used on screen (dry hire, ₹750/hr × 8 h = ₹6,000 a day; indicative)
+## 2. Standards notes
 
-| Month | Billed days | Income | Fixed costs | Left |
-|---|---|---|---|---|
-| Oct | 22 | ₹1,32,000 | ₹59,000 | +₹73,000 |
-| Nov | 24 | ₹1,44,000 | ₹59,000 | +₹85,000 |
-| Dec | 22 | ₹1,32,000 | ₹59,000 | +₹73,000 |
-| Jan | 20 | ₹1,20,000 | ₹59,000 | +₹61,000 |
-| Feb | 22 | ₹1,32,000 | ₹59,000 | +₹73,000 |
-| Mar | 24 | ₹1,44,000 | ₹59,000 | +₹85,000 |
-| Apr | 22 | ₹1,32,000 | ₹59,000 | +₹73,000 |
-| May | 20 | ₹1,20,000 | ₹59,000 | +₹61,000 |
-| Jun | 14 | ₹84,000 | ₹59,000 | +₹25,000 |
-| Jul | 8 | ₹48,000 | ₹59,000 | **−₹11,000** |
-| Aug | 6 | ₹36,000 | ₹59,000 | **−₹23,000** |
-| Sep | 12 | ₹72,000 | ₹59,000 | +₹13,000 |
-| **Year** | **216** | **₹12,96,000** | **₹7,08,000** | **+₹5,88,000** |
-
-Fixed costs a month: EMI ₹44,500 + maintenance ₹7,500 + insurance ₹4,000 + admin ₹3,000 = ₹59,000. One unplanned repair of ≈₹60,000 (eleven days down, already inside the day counts) leaves **≈₹5.3 lakh for the year, ≈₹44,000 a month on average.** The ₹10 lakh down payment returns in about 23 months at this pace. Working capital: if clients pay at 60–90 days, Oct–Dec billing of ₹4.08 lakh arrives Dec–Mar while ₹1.77 lakh of fixed costs go out in Oct–Dec, so a buffer of about ₹2 lakh is needed before the first rupee arrives.
-
-**Wet-hire variant (one line in S13):** 216 days × 8 h × ₹1,100 = ₹19.0 lakh income; diesel 216 × 8 × 6 L × ₹100 = ₹10.4 lakh; operator ₹2.4 lakh; fixed ₹7.08 lakh; repair ₹0.6 lakh → **≈ −₹1.5 lakh**. At 5 L/hr it turns ≈ +₹0.3 lakh. An owner-operator who drives the machine himself keeps the ₹2.4 lakh operator line as his wage.
-
----
-
-## 2. Standards notes specific to this script
-
-- The ledger is the one table moment (#22) but it builds across four scenes, one quarter at a time; footage stays visible behind it (#5).
-- Word ⟺ image (#23): *site office calendar, tipper loading, plot footing, brick kiln, monsoon site under water, a cheque dated 90 days out, an idle machine under tarp, a repair bay.*
-- Cutaway (#24): one ≤8 s "fixed line vs income line" animation: a flat EMI bar across twelve months with the income bars rising and dipping over it.
-- Host action (#39): Ustaad ji ticks the calendar, taps the hour meter, counts a cash bundle for the operator, holds a dated cheque up to the light.
-- No teaser (#33); close on the principle. No dates spoken (#14): months are named, years are not.
-- 10/10 items: composite case (S11), hisaab on screen (S14), AAJ KA RULE (S15), screenshot card (S16), 3-second vignette (Dinesh ji's daughter sticking the calendar on the wall), sound logo.
+As v1 minus the money: word ⟺ image on *site-office calendar, tipper loading, plot footing, brick kiln, flooded site, dated cheque, tarp, repair bay*; cutaway of the straight fixed line vs the rising-and-dipping income line; de-badged tarp machine; host action (ticks the calendar, taps the hour meter, holds a dated cheque to the light); composite case; method-on-screen; AAJ KA RULE; screenshot card; vignette; sound logo. **No currency symbol on any chip.**
 
 ---
 
 ## 3. The script
 
 ### S01 · 0:00–0:14 · Opening lock
-**Shot:** Frame 1 locked: a site-office wall calendar, days ticked in green and crossed in red; a hand ticks today. Ambience: a backhoe idling outside. VO ≤0.3 s in.
-**VO:** इस calendar पर एक tick — छह हज़ार रुपये। एक cross — क़रीब आठ हज़ार का नुक़सान। साल के तीन सौ पैंसठ दिन में इस JCB ने दो सौ सोलह tick किए। आज उसका पूरा साल — महीने-महीने, रुपये में। और वो दो महीने भी, जिनमें machine ने पैसा खाया।
-**EN sub:** On this calendar one tick is six thousand rupees. One cross is about eight thousand lost. Out of 365 days this JCB got 216 ticks. Today, its whole year, month by month, in rupees. Including the two months the machine ate money.
+**Shot:** Frame 1 locked: a site-office wall calendar, green ticks and red crosses; a hand ticks today. A backhoe idles outside. VO ≤0.3 s in.
+**VO:** "JCB से महीने का कितना बचता है?" — हर video एक number बताता है। और हर number ग़लत है — क्योंकि वही machine November में कमाती है और August में खाती है। आज number नहीं — वो process जिससे आप अपना number निकालो — हर महीने, हर साल।
+**EN sub:** "How much does a JCB leave you a month?" Every video gives one number. And every number is wrong, because the same machine earns in November and eats in August. Today, not a number, but the process that gives you your own number, every month, every year.
 
 ### S02 · 0:14–0:20 · Sting
 **VO:** देसी मशीन्स — सुनो सबकी, चुनो अपनी! · **EN:** Desi Machines — hear everyone out, choose your own!
 
-### S03 · 0:20–0:42 · The five things
-**Shot:** Ustaad ji at the site-office desk, calendar behind, ledger open. Cut-ins: a hire-rate card, an EMI SMS, the twelve-bar chart, a 90-day cheque, a ledger total.
-**VO:** आज पाँच चीज़ें साफ़ हो जाएँगी। एक — कमाई का सच: rate नहीं, bill हुए दिन। दो — वो ख़र्चे जो कभी छुट्टी नहीं लेते। तीन — बारह महीने का ledger — barsaat समेत। चार — पैसे के चार leak, जो बचत खा जाते हैं। पाँच — साल का total, और एक line का rule।
-**EN sub:** Five things get clear today. One: the truth about income: not the rate, the days billed. Two: the costs that never take leave. Three: the twelve-month ledger, monsoon included. Four: the four leaks that eat the savings. Five: the year's total, and a one-line rule.
-**Chips:** `1 BILLED DAYS` · `2 FIXED COSTS` · `3 THE 12-MONTH LEDGER` · `4 FOUR LEAKS` · `5 THE RULE`
+### S03 · 0:20–0:42 · The six steps
+**Shot:** Ustaad ji at the site-office desk, calendar behind, ledger open. Cut-ins: a twelve-month strip, two hire quotes, a provisions envelope, a contract page, an hour-meter log, a year-end card.
+**VO:** छह step। एक — season का calendar — अपने ज़िले का। दो — किराये का basis: dry या wet, लिखकर। तीन — वो ख़र्चे जो छुट्टी नहीं लेते — list और provision। चार — contract की शर्तें — पैसा EMI से पहले आए। पाँच — machine को चलाते रखना — meter, service, barsaat का plan। छह — साल के अंत का हिसाब — और दूसरी machine का फ़ैसला।
+**EN sub:** Six steps. One: the season calendar, for your district. Two: the hire basis, dry or wet, in writing. Three: the costs that never take leave, listed and provided for. Four: contract terms, so cash arrives before the EMI leaves. Five: keeping the machine working: meter, service, the monsoon plan. Six: the year-end math, and the second-machine decision.
+**Chips:** `1 SEASON CALENDAR` · `2 HIRE BASIS` · `3 FIXED COSTS + PROVISIONS` · `4 CONTRACT TERMS` · `5 KEEP IT WORKING` · `6 YEAR-END HISAAB`
 
-### S04 · 0:42–1:10 · Income: rate × billed days (and dry vs wet)
-**Shot:** a rate card; two quotes side by side, dry and wet; a tipper being loaded (the hirer's operator in the cab); the host taps the hour meter (#39).
-**VO:** पहली बात। JCB का dry hire — सिर्फ़ machine — साढ़े पाँच सौ से नौ सौ रुपये घंटा। दिन का पाँच से नौ हज़ार। महीने का नब्बे हज़ार से एक लाख चालीस। wet hire — operator और अक्सर diesel आपका — नौ सौ से तेरह सौ। wet का तीन-चार सौ ज़्यादा दिखना profit नहीं है — वो diesel और तनख़्वाह है। और असली number rate नहीं — rate गुना bill हुए दिन। बीस दिन bill हुए तो machine कमाती है। आठ दिन — वही machine खाती है। क्योंकि EMI छुट्टी नहीं लेती।
-**EN sub:** First. A JCB's dry hire, machine only: 550 to 900 rupees an hour. Five to nine thousand a day. Ninety thousand to one lakh forty a month. Wet hire, with your operator and usually your diesel: 900 to 1,300. The three or four hundred extra on wet isn't profit; it's diesel and wages. And the real number isn't the rate. It's the rate times the days billed. Twenty billed days and the machine earns. Eight days and the same machine eats. Because the EMI never takes leave.
-**Chips:** `DRY ₹550–900 / HR* · ₹90K–1.4 L / MONTH` · `WET ₹900–1,300 / HR* (DIESEL + OPERATOR YOURS)` · `INCOME = RATE × BILLED DAYS`
+### S04 · 0:42–1:14 · Step 1: the season calendar and honest billed days
+**Shot:** a twelve-month strip builds; the host marks peak months green, lean amber, monsoon blue; billed-day boxes filled with counts (his own district's, presented as "example"); a line at fifteen.
+**VO:** पहला step — season का calendar। बारह महीने की एक पट्टी बनाओ। अपने ज़िले के हिसाब से रंग दो: peak — जब हर ठेकेदार machine ढूँढता है; lean — जब काम है, पर रोज़ नहीं; और barsaat — जब site पानी में है। हर महीने के नीचे ईमानदारी से लिखो: कितने दिन bill होंगे। "मिल जाएगा" मत लिखो — पिछले साल पड़ोसी की machine कितने दिन चली, वो लिखो। और एक line खींचो — पंद्रह दिन की। जिन महीनों में गिनती उससे नीचे है, वो महीने machine आपसे खाएगी। साल में ऐसे महीने कितने हैं — ये पहला step बताता है।
+**EN sub:** Step one: the season calendar. Draw a twelve-month strip. Colour it for your district: peak, when every contractor is looking for a machine; lean, when there's work but not daily; and monsoon, when the site is under water. Under each month write honestly how many days will be billed. Don't write "I'll get it"; write how many days the neighbour's machine ran last year. And draw one line, at fifteen days. In the months where the count sits below it, the machine will eat from you. How many such months in a year: that's what step one tells you.
+**Chips:** `12 MONTHS · PEAK / LEAN / MONSOON` · `HONEST BILLED DAYS PER MONTH` · `THE 15-DAY LINE`
 
-### S05 · 1:10–1:36 · The costs that never take leave (cutaway)
-**Shot (#24):** the ≤8 s animation: a flat ₹59,000 bar across twelve months; income bars rise and dip over it. Then the four lines named: EMI SMS, service bay, insurance paper, parking receipt.
-**VO:** दूसरी बात। एक 3DX — तीस-बत्तीस लाख। दस लाख down, बीस लाख का loan, बारह प्रतिशत, पाँच साल — EMI चौवालीस हज़ार पाँच सौ। maintenance का provision — साढ़े सात हज़ार महीना, क्योंकि service और wear parts साल के साठ हज़ार से एक लाख बीस। insurance — क़रीब चार हज़ार महीना। parking, permit, admin — तीन हज़ार। कुल — उनसठ हज़ार हर महीना। machine चले या खड़ी रहे। ये line सीधी है। कमाई की line ऊपर-नीचे। जहाँ कमाई इस line से नीचे गई — वो महीना minus।
-**EN sub:** Second. A 3DX at thirty to thirty-two lakh. Ten lakh down, a twenty-lakh loan at twelve percent over five years: EMI 44,500. A maintenance provision of 7,500 a month, because service and wear parts run sixty thousand to one lakh twenty a year. Insurance, about four thousand a month. Parking, permits, admin, three thousand. Total: fifty-nine thousand every month, whether the machine works or stands. This line is straight. The income line goes up and down. Wherever income falls below this line, that month is a minus.
-**Chips:** `EMI ₹44,500` · `MAINTENANCE ₹7,500` · `INSURANCE ₹4,000` · `ADMIN ₹3,000` · `= ₹59,000 EVERY MONTH*`
+### S05 · 1:14–1:42 · Step 2: the hire basis, in writing (and whose diesel)
+**Shot:** two quotes side by side, DRY and WET; the hirer's operator climbing into the cab on dry; the owner's operator and a diesel can on wet; a contract line "diesel: hirer".
+**VO:** दूसरा step — basis। dry hire: सिर्फ़ machine — operator और diesel hirer का। wet hire: operator आपका, और अक्सर diesel भी। wet का rate ज़्यादा दिखता है — वो profit नहीं, तनख़्वाह और diesel है। wet पर जाओ तो पहले अपना diesel नापो — पहले video का तरीका — और rate उस number को cover करे। नहीं तो हर घंटा घाटा। जो भी basis हो — contract में एक line: diesel किसका। यही सवाल crane और Poclain के video में था — यहाँ भी वही।
+**EN sub:** Step two: the basis. Dry hire: the machine only; operator and diesel are the hirer's. Wet hire: your operator, and usually your diesel. The wet rate looks higher; that's not profit, it's wages and diesel. If you go wet, measure your diesel first, the method from the first video, and the rate must cover that number. Otherwise every hour is a loss. Whichever the basis, one line in the contract: whose diesel. The same question as in the crane and Poclain videos. Here too.
+**Chips:** `DRY = MACHINE ONLY · HIRER'S OPERATOR + DIESEL` · `WET = YOUR OPERATOR (+ DIESEL)` · `WET RATE MUST COVER MEASURED DIESEL` · `CONTRACT LINE: DIESEL KISKA`
 
-### S06 · 1:36–2:06 · The ledger, quarter one: Oct–Dec
-**Shot:** the ledger builds three rows; tipper loading, plot footings, a road job in dry weather; the host ticks the calendar.
-**VO:** तीसरी बात — ledger। rate साढ़े सात सौ, आठ घंटे — छह हज़ार रोज़। season October से शुरू। October — बाईस दिन, एक लाख बत्तीस हज़ार कमाई, उनसठ हज़ार ख़र्च — बचा तिहत्तर हज़ार। November — चौबीस दिन — बचा पचासी हज़ार। December — बाईस दिन — तिहत्तर हज़ार। तीन महीने — दो लाख इकतीस हज़ार बचे। यहीं लोग सोचते हैं — business set हो गया।
-**EN sub:** Third: the ledger. Rate 750, eight hours, six thousand a day. The season starts in October. October: twenty-two days, one lakh thirty-two earned, fifty-nine thousand spent, seventy-three thousand left. November: twenty-four days, eighty-five thousand left. December: twenty-two days, seventy-three thousand. Three months: two lakh thirty-one thousand saved. This is where people think the business is set.
-**Chips (ledger rows):** `OCT 22 DAYS · +₹73,000` · `NOV 24 · +₹85,000` · `DEC 22 · +₹73,000` · `Q1 ≈ +₹2.31 L`
+### S06 · 1:42–2:12 · Step 3: the costs that never take leave (cutaway)
+**Shot (#24):** ≤8 s animation: a straight horizontal line across twelve months; income bars rise above it in winter and dip below it in the monsoon. Then four envelopes labelled EMI, INSURANCE, MAINTENANCE, PARKING/PERMITS; the host drops cash into the maintenance envelope.
+**VO:** तीसरा step — fixed ख़र्च। चार line हर महीने चलती हैं, machine चले या खड़ी रहे: EMI; insurance — साल का, बारह में बाँटो; maintenance का provision — service schedule hour meter से चलती है, उसका महीने का हिस्सा अलग रखो, और बड़े wear parts का भी; parking, permit, admin। इन चार का जोड़ एक सीधी line है। कमाई की line ऊपर-नीचे। जहाँ कमाई इस line से नीचे गई — वो महीना minus। provision की सबसे बड़ी ग़लती — उसे अच्छे महीने में ख़र्च कर देना। envelope अलग, खाता अलग।
+**EN sub:** Step three: fixed costs. Four lines run every month, whether the machine works or stands: the EMI; insurance, yearly, split into twelve; the maintenance provision, the service schedule runs on the hour meter, so set aside its monthly share, and the big wear parts too; parking, permits, admin. The sum of the four is a straight line. The income line goes up and down. Wherever income falls below that line, the month is a minus. The biggest provision mistake is spending it in a good month. Separate envelope, separate account.
+**Chips:** `EMI · INSURANCE ÷ 12 · MAINTENANCE PROVISION (HOUR METER) · PARKING / PERMITS` · `A STRAIGHT LINE vs A MOVING LINE` · `DON'T SPEND THE PROVISION`
 
-### S07 · 2:06–2:18 · Subscribe beat (icons)
-**VO:** एक second — subscribe। पूरे साल का हिसाब अभी बाक़ी है। · **EN:** One second: subscribe. The rest of the year's math is still to come.
+### S07 · 2:12–2:22 · Subscribe beat (icons)
+**VO:** एक second — subscribe। contract वाला step सबसे ज़्यादा पैसा बचाता है। · **EN:** One second: subscribe. The contract step saves the most money.
 
-### S08 · 2:18–2:50 · The ledger, Jan–Jun
-**Shot:** six rows build; a winter fog site, a spring highway, a May heat shot, the first clouds in June.
-**VO:** January — बीस दिन, इकसठ हज़ार। February — बाईस, तिहत्तर। March — चौबीस, पचासी — साल का सबसे अच्छा महीना। April — बाईस, तिहत्तर। May — बीस, इकसठ। June — बादल आ गए — चौदह दिन, बचा सिर्फ़ पच्चीस हज़ार। नौ महीने में — पाँच लाख चौरानवे हज़ार। अब आता है वो हिस्सा, जो किसी video में नहीं दिखता।
-**EN sub:** January: twenty days, sixty-one thousand. February: twenty-two, seventy-three. March: twenty-four, eighty-five, the best month of the year. April: twenty-two, seventy-three. May: twenty, sixty-one. June, the clouds arrive: fourteen days, only twenty-five thousand left. Nine months: five lakh ninety-four thousand. Now comes the part no video shows.
-**Chips:** `JAN 20 · +₹61K` · `FEB 22 · +₹73K` · `MAR 24 · +₹85K` · `APR 22 · +₹73K` · `MAY 20 · +₹61K` · `JUN 14 · +₹25K` · `9 MONTHS ≈ +₹5.94 L`
+### S08 · 2:22–2:56 · Step 4: contract terms that keep cash ahead of the EMI
+**Shot:** a contract page with lines highlighted as named: billing cycle, payment days, advance, waiting clause, diesel clause; a dated cheque held to the light (#39); a two-month buffer envelope.
+**VO:** चौथा step — contract। पाँच line लिखवाओ। bill कब बनेगा — हफ़्ते का या महीने का। payment कितने दिन में — तीस, या नब्बे; नब्बे दिन का मतलब तीन महीने आप EMI अपनी जेब से दोगे। advance या mobilisation — पहले दिन कुछ। idle या waiting — machine site पर खड़ी रही आपकी ग़लती के बिना, तो उसका पैसा। और diesel किसका। ऊपर से TDS — ठेकेदार bill से काटेगा, उसे bill में गिनो। पहला साल profit की कमी से नहीं टूटता — cash की कमी से। इसलिए दो महीने के fixed ख़र्च का buffer — पहले दिन से, loan वाले video का rule।
+**EN sub:** Step four: the contract. Get five lines written. When the bill is raised, weekly or monthly. Payment in how many days, thirty or ninety; ninety days means three months of paying the EMI from your own pocket. An advance or mobilisation, something on day one. Idle or waiting: if the machine stood on site through no fault of yours, that's paid. And whose diesel. On top, TDS: the contractor will deduct it from the bill, so count it in the bill. The first year doesn't break from a lack of profit; it breaks from a lack of cash. So a buffer of two months' fixed costs from day one, the rule from the loan video.
+**Chips:** `BILLING CYCLE · PAYMENT DAYS (30 vs 90) · ADVANCE · WAITING CLAUSE · DIESEL CLAUSE` · `TDS: COUNT IT IN THE BILL` · `BUFFER = 2 MONTHS OF FIXED COSTS`
 
-### S09 · 2:50–3:20 · The ledger, the monsoon: Jul–Sep
-**Shot (#23 "barsaat" lands on rain):** a site under water, the machine parked under a tarp (de-badged), the EMI SMS arriving on the 5th; September's half-dry site.
-**VO:** July — आठ दिन। अड़तालीस हज़ार कमाई, उनसठ हज़ार ख़र्च — minus ग्यारह हज़ार। August — छह दिन। minus तेईस हज़ार। machine खड़ी है, EMI पाँच तारीख़ को आई है। September — बारह दिन — plus तेरह हज़ार। साल पूरा: दो सौ सोलह दिन, बारह लाख छियानवे हज़ार कमाई, सात लाख आठ हज़ार ख़र्च — पाँच लाख अट्ठासी हज़ार। एक repair — साठ हज़ार — घटाओ। बचा क़रीब पाँच लाख तीस हज़ार। महीने का औसत — चौवालीस हज़ार। लेकिन दो महीने ऐसे, जब जेब से EMI गई।
-**EN sub:** July: eight days. Forty-eight thousand earned, fifty-nine spent, minus eleven thousand. August: six days. Minus twenty-three thousand. The machine stands; the EMI arrives on the fifth. September: twelve days, plus thirteen thousand. The full year: 216 days, twelve lakh ninety-six earned, seven lakh eight spent, five lakh eighty-eight thousand. Take off one repair of sixty thousand. About five lakh thirty left. A monthly average of forty-four thousand. But two months where the EMI came from your pocket.
-**Chips:** `JUL 8 · −₹11,000` · `AUG 6 · −₹23,000` · `SEP 12 · +₹13,000` · `YEAR · 216 DAYS · ₹12.96 L − ₹7.08 L − ₹0.6 L REPAIR ≈ ₹5.3 L` · `AVG ≈ ₹44,000 / MONTH`
+### S09 · 2:56–3:30 · Step 5: keep the machine working
+**Shot:** a weekly hour-meter log; a service sticker on the cab with the next hours written; a brick kiln under a shed in rain, the machine loading; an idle machine under a tarp with the idle-day formula beside it; a parts shelf with filters.
+**VO:** पाँचवाँ step — machine चलाते रखना। हर हफ़्ते hour meter notebook में — वही आपका business का सच है। service calendar से नहीं, meter से: cab में अगली service के घंटे लिखो। barsaat का plan पहले से: ईंट-भट्टे की loading, godown का काम, indoor site — जो भी आपके ज़िले में barsaat में चलता है, वो contract June से पहले। idle दिन का हिसाब समझो: EMI का हिस्सा, operator की तनख़्वाह, overhead — और वो bill जो उस दिन नहीं बना। filter और common parts हाथ में — एक part के इंतज़ार में हफ़्ता मत गँवाओ। और operator — अच्छा operator machine से सस्ता है, उसे रखो।
+**EN sub:** Step five: keep the machine working. The hour meter in the notebook every week; that's the truth of your business. Service by the meter, not the calendar: write the next service hours in the cab. The monsoon plan in advance: brick-kiln loading, godown work, indoor sites, whatever runs in your district in the rains, contract it before June. Understand the idle day's cost: the EMI's share, the operator's wage, overheads, and the bill that wasn't raised that day. Filters and common parts in hand; don't lose a week waiting for one part. And the operator: a good operator is cheaper than the machine, keep him.
+**Chips:** `WEEKLY HOUR-METER LOG` · `SERVICE BY HOURS, NOT CALENDAR` · `MONSOON CONTRACT BEFORE JUNE` · `IDLE DAY = EMI SHARE + OPERATOR + OVERHEADS + LOST BILLING` · `PARTS IN HAND · KEEP THE OPERATOR`
 
-### S10 · 3:20–3:50 · Leak one and two: the 90-day cheque and the idle day
-**Shot:** a cheque dated three months out held to the light (#39); the ledger's cash line dipping below zero in month three; an idle machine with a per-day cost chip.
-**VO:** चौथी बात — चार leak। पहला: देर से payment। October का bill contractor ने January में दिया। आपने तीन महीने bill किया — चार लाख — हाथ में कुछ नहीं। और उनसठ हज़ार हर महीने जा रहा है। पहला साल ज़्यादातर यहीं टूटता है — profit की कमी से नहीं, cash की कमी से। इसलिए पहले दिन से दो लाख का buffer। दूसरा leak: idle दिन। backhoe का एक खड़ा दिन — EMI का हिस्सा, overhead, और वो छह हज़ार जो bill नहीं हुआ — क़रीब आठ हज़ार। दस idle दिन — अस्सी हज़ार — आपके saal की बचत का पंद्रह प्रतिशत।
-**EN sub:** Fourth: four leaks. The first: late payment. October's bill was paid by the contractor in January. You billed three months, four lakh, and had nothing in hand, while fifty-nine thousand went out every month. The first year mostly breaks here, not from a lack of profit but from a lack of cash. So a two-lakh buffer from day one. The second leak: the idle day. One standing day for a backhoe, the EMI's share, overheads, and the six thousand that wasn't billed, about eight thousand. Ten idle days: eighty thousand, fifteen percent of your year's savings.
-**Chips:** `PAID AT 90 DAYS → ₹4 L BILLED, ₹0 IN HAND` · `BUFFER ₹2 L FROM DAY ONE` · `IDLE DAY ≈ ₹8,000*` · `10 IDLE DAYS = 15% OF THE YEAR`
+### S10 · 3:30–4:15 · The dramatised case (F1)
+**Shot:** "Dinesh ji" (composite) in Gorakhpur: a strong winter, cash counted; August, the machine under a tarp (de-badged), a phone call to a moneylender, a notebook; 3-second vignette: his daughter sticking the new calendar on the wall; the next monsoon, the machine loading bricks under a kiln shed in rain.
+**VO:** दिनेश जी, गोरखपुर। पहली 3DX October में। March तक हर महीना अच्छा — और हर महीने की बचत ख़र्च: trailer, घर का काम। June में बादल, August में machine खड़ी। EMI के लिए सूद पर उधार। September में ठेकेदार का payment नब्बे दिन लेट। साल profit में गया — पर दो महीने उधार पर। अगले साल उन्होंने तीन चीज़ें बदलीं — और सब process की थीं: दो महीने का buffer अलग खाते में; barsaat के लिए ईंट-भट्टे का loading contract, May में sign; और contract में तीस दिन का payment। कमाई वही। नींद — बेहतर।
+**EN sub:** Dinesh ji, Gorakhpur. His first 3DX in October. Every month good till March, and every month's saving spent: a trailer, work on the house. Clouds in June, the machine standing in August. Borrowing on interest to pay the EMI. In September the contractor's payment ninety days late. The year ended in profit, but two months ran on borrowed money. The next year he changed three things, all of them process: a two-month buffer in a separate account; a brick-kiln loading contract for the monsoon, signed in May; and thirty-day payment in the contract. The earnings were the same. The sleep was better.
+**Chips:** `WINTER SAVINGS SPENT · MONSOON EMI ON BORROWING · PAYMENT 90 DAYS LATE` · `YEAR 2: BUFFER · MONSOON CONTRACT BY MAY · 30-DAY TERM`
 
-### S11 · 3:50–4:35 · The dramatised case (F1)
-**Shot:** "Dinesh ji" (composite) in Gorakhpur: a strong winter, cash counted; then August, the machine under a tarp, a phone call to a moneylender, a notebook with 3% a month; the 3-second vignette: his daughter sticking the new year's calendar on the wall; then the next monsoon, the machine loading bricks at a kiln, dry under a shed.
-**VO:** दिनेश जी, गोरखपुर। पहली 3DX, October में। March तक सब अच्छा — हर महीने सत्तर-अस्सी हज़ार बचे। उन्होंने नया trailer ले लिया, घर में काम करवाया। August में machine खड़ी। EMI के लिए तीन प्रतिशत महीने पर उधार। September में contractor का payment नब्बे दिन लेट। एक साल में profit हुआ — पर दो महीने ऐसे कि उधार पर EMI। अगले साल उन्होंने तीन काम किए: दो लाख buffer, barsaat के लिए एक ईंट-भट्टे का loading contract, और contract में तीस दिन का payment। बचत वही पाँच लाख। नींद — बेहतर।
-**EN sub:** Dinesh ji, Gorakhpur. His first 3DX, in October. All good till March, seventy to eighty thousand saved every month. He bought a new trailer and did up the house. In August the machine stood idle. A loan at three percent a month to pay the EMI. In September the contractor's payment came ninety days late. He made a profit in the year, but two months where the EMI ran on borrowed money. The next year he did three things: a two-lakh buffer, a brick-kiln loading contract for the monsoon, and thirty-day payment written into the contract. The savings were the same five lakh. The sleep was better.
-**Chips:** `OCT–MAR · +₹70–85K / MONTH` · `AUG · EMI ON 3% / MONTH BORROWING` · `YEAR 2: BUFFER ₹2 L · MONSOON CONTRACT · 30-DAY PAYMENT TERM`
+### S11 · 4:15–4:45 · Step 6: the year-end hisaab and the second machine
+**Shot:** the year-end card builds: billed days, income per billed day, fixed per month, provision used, buffer status; a second machine greyed until two boxes tick.
+**VO:** छठा step — साल के अंत का हिसाब। पाँच number निकालो: साल के billed दिन; हर billed दिन की औसत कमाई; महीने का fixed ख़र्च; provision में से कितना असल में लगा; और buffer — साल के अंत में पूरा है या नहीं। अब दूसरी machine का सवाल — दो शर्तें: billed दिन महीने में पंद्रह से ऊपर रहे, और buffer छुआ नहीं गया। दोनों हाँ — तो सोचो। एक भी नहीं — तो दूसरी machine पहली की EMI खाएगी। और याद रखो: पहले साल की बचत बचत नहीं है — वो दूसरे साल का buffer है।
+**EN sub:** Step six: the year-end math. Work out five numbers: the year's billed days; the average earning per billed day; the monthly fixed cost; how much of the provision was actually used; and the buffer, whole or not at year-end. Now the second-machine question, two conditions: billed days stayed above fifteen a month, and the buffer was never touched. Both yes: think about it. Either no: the second machine will eat the first one's EMI. And remember: the first year's saving isn't a saving. It's the second year's buffer.
+**Chips (card):** `BILLED DAYS · EARNING PER BILLED DAY · FIXED PER MONTH · PROVISION USED · BUFFER STATUS` · `2ND MACHINE ONLY IF: >15 DAYS/MONTH AND BUFFER UNTOUCHED` · `YEAR-1 SAVING = YEAR-2 BUFFER`
 
-### S12 · 4:35–5:00 · Leak three and four: wet-hire diesel and the repair
-**Shot:** a wet-hire quote; a diesel bowser; the ledger's wet variant flipping to minus; a repair bay with a bill.
-**VO:** तीसरा leak — wet hire का diesel। वही दो सौ सोलह दिन, ग्यारह सौ रुपये घंटा — उन्नीस लाख कमाई। अच्छा लगा? अब diesel — छह litre घंटा — दस लाख चालीस हज़ार। operator — दो लाख चालीस। वही fixed ख़र्च। बचा — minus डेढ़ लाख। हाँ — wet hire में, अपने diesel के साथ, ये machine साल भर घाटे में चली। पाँच litre पर बस break-even। चौथा leak — repair। provision साढ़े सात हज़ार महीना है — पर एक बड़ा part साठ हज़ार का आया, और ग्यारह दिन machine खड़ी। provision alag रखो — ख़र्चो मत।
-**EN sub:** The third leak: wet-hire diesel. The same 216 days at 1,100 an hour: nineteen lakh earned. Sounds good? Now diesel at six litres an hour: ten lakh forty thousand. Operator: two lakh forty. The same fixed costs. Left: minus one and a half lakh. Yes, on wet hire with your own diesel this machine ran at a loss all year. At five litres it only breaks even. The fourth leak: the repair. The provision is 7,500 a month, but one big part cost sixty thousand and the machine stood eleven days. Keep the provision aside. Don't spend it.
-**Chips:** `WET · 216 DAYS × 8 × ₹1,100 = ₹19.0 L` · `− DIESEL 6 L/HR ₹10.4 L − OPERATOR ₹2.4 L − FIXED ₹7.08 L` · `≈ −₹1.5 L` · `REPAIR ₹60,000 · 11 DAYS DOWN`
+### S12 · 4:45–5:15 · The ledger card, performed on screen (headings only)
+**Shot:** a twelve-row ledger with headings only: month, billed days, income, fixed, left; the host writes "aapke number" down the income column; the monsoon rows shaded.
+**VO:** अब वो ledger जो आप ख़ुद भरोगे। बारह row — महीने। पाँच column: billed दिन; कमाई — दिन गुना rate; fixed — आपकी सीधी line; बचा — या गया; और एक column payment की तारीख़ के लिए — bill कब, पैसा कब। barsaat की row पहले से रंग दो — वहाँ minus आएगा, चौंकना नहीं। ये card हर साल काम करेगा — JCB हो या Poclain — क्योंकि इसमें मेरे number नहीं, आपके हैं।
+**EN sub:** Now the ledger you'll fill yourself. Twelve rows: the months. Five columns: billed days; income, days times rate; fixed, your straight line; left, or lost; and one column for payment dates, when billed, when paid. Shade the monsoon rows in advance; the minus will come there, don't be surprised. This card works every year, JCB or Poclain, because the numbers on it are yours, not mine.
+**Chips (card):** `MONTH · BILLED DAYS · INCOME (DAYS × RATE) · FIXED · LEFT · BILLED ON / PAID ON` · `SHADE THE MONSOON ROWS`
 
-### S13 · 5:00–5:20 · Where the ₹10 lakh down payment went
-**Shot:** a ₹10 lakh bundle shrinking into 23 monthly slices; a resale yard with a half-price tag.
-**VO:** और वो दस लाख down payment? साल की बचत पाँच लाख तीस — मतलब down payment वापस आने में क़रीब तेईस महीने। और पाँच साल में machine की क़ीमत आधी। business है — पर रातों-रात नहीं। पहले साल की बचत बचत नहीं है — वो अगले साल का buffer है।
-**EN sub:** And that ten-lakh down payment? With five lakh thirty saved a year, it comes back in about twenty-three months. And in five years the machine is worth half. It's a business, but not an overnight one. The first year's saving is not a saving. It's next year's buffer.
-**Chips:** `DOWN PAYMENT BACK IN ≈ 23 MONTHS` · `VALUE HALVES IN 5 YRS` · `YEAR-1 SAVING = YEAR-2 BUFFER`
-
-### S14 · 5:20–5:50 · The hisaab, performed on screen (the year in one card)
-**Shot:** the full-year card builds line by line; the host writes the final number.
-**VO:** अब पूरा हिसाब — एक card में। दो सौ सोलह दिन, छह हज़ार रोज़ — बारह लाख छियानवे हज़ार। EMI पाँच लाख चौंतीस हज़ार। maintenance नब्बे हज़ार। insurance अड़तालीस हज़ार। admin छत्तीस हज़ार। repair साठ हज़ार। बचा — पाँच लाख अट्ठाईस हज़ार। महीने का चौवालीस हज़ार। और इस number के लिए तीन शर्तें थीं: dry hire, दो सौ सोलह दिन, और तीस-साठ दिन में payment। एक भी हिले — number हिलता है।
-**EN sub:** Now the whole math, in one card. 216 days at six thousand a day: twelve lakh ninety-six. EMI five lakh thirty-four. Maintenance ninety thousand. Insurance forty-eight thousand. Admin thirty-six thousand. Repair sixty thousand. Left: five lakh twenty-eight thousand. Forty-four thousand a month. And this number had three conditions: dry hire, 216 days, and payment within thirty to sixty days. Move any one, and the number moves.
-**Chips (card):** `INCOME 216 × ₹6,000 = ₹12.96 L` · `EMI ₹5.34 L · MAINT ₹0.90 L · INS ₹0.48 L · ADMIN ₹0.36 L · REPAIR ₹0.60 L` · `LEFT ≈ ₹5.28 L ≈ ₹44,000 / MONTH*` · `CONDITIONS: DRY · 216 DAYS · PAID IN 30–60 DAYS`
-
-### S15 · 5:50–6:08 · AAJ KA RULE
+### S13 · 5:15–5:32 · AAJ KA RULE
 **Shot:** host at the calendar; rule card lower-third; sound logo.
-**VO:** आज का rule। business EMI से नहीं — bill हुए दिनों से चलता है। महीने में पंद्रह दिन से कम काम दिखे — machine मत लो। पंद्रह से ज़्यादा — लो, पर दो लाख buffer के साथ। और पहले साल की बचत को बचत मत समझो — buffer समझो।
-**EN sub:** Today's rule. The business runs on billed days, not on the EMI. If you see fewer than fifteen days of work a month, don't buy the machine. More than fifteen, buy, but with a two-lakh buffer. And don't treat the first year's saving as a saving. Treat it as the buffer.
-**Chip:** `TODAY'S RULE · <15 BILLED DAYS: DON'T BUY · >15: BUY WITH A ₹2 L BUFFER · YEAR-1 SAVING = BUFFER`
+**VO:** आज का rule। business EMI से नहीं — billed दिनों से चलता है। महीने में पंद्रह दिन से कम दिखे — machine मत लो। पंद्रह से ज़्यादा — लो, पर दो महीने के buffer के साथ। और पहले साल की बचत को बचत मत समझो — buffer समझो।
+**EN sub:** Today's rule. The business runs on billed days, not on the EMI. Fewer than fifteen days a month in sight: don't buy the machine. More than fifteen: buy, with a two-month buffer. And don't treat the first year's saving as a saving. Treat it as the buffer.
+**Chip:** `TODAY'S RULE · BILLED DAYS, NOT EMI · <15 DAYS: DON'T BUY · >15: BUY WITH A 2-MONTH BUFFER`
 
-### S16 · 6:08–6:22 · The screenshot card
-**VO:** ये card screenshot ले लो — बारह महीने, दिन और बचत, एक जगह। rate card और पूरा हिसाब site पर, link नीचे।
-**EN sub:** Screenshot this card: twelve months, days and savings, in one place. The rate card and the full math are on the site, link below.
-**Card:** the twelve-row ledger in two columns, footer `216 DAYS · ≈ ₹5.3 L · desimachines.com`
+### S14 · 5:32–5:48 · The screenshot card: the first year's seven habits
+**VO:** ये card screenshot ले लो — पहले साल की सात आदतें। season का calendar। basis लिखकर — diesel किसका। चार fixed line, provision अलग। contract की पाँच line। हफ़्ते का meter। barsaat का contract May तक। साल के अंत के पाँच number। पूरा worked example — आज के number के साथ — site पर, link नीचे।
+**EN sub:** Screenshot this card: the first year's seven habits. The season calendar. The basis in writing, whose diesel. Four fixed lines, provision set aside. The contract's five lines. The weekly meter. The monsoon contract by May. The five year-end numbers. The full worked example, with today's numbers, is on the site, link below.
+**Card:** `1 SEASON CALENDAR · 2 BASIS IN WRITING · 3 FOUR FIXED LINES · 4 FIVE CONTRACT LINES · 5 WEEKLY METER · 6 MONSOON CONTRACT BY MAY · 7 YEAR-END FIVE NUMBERS` · footer `desimachines.com/blog/jcb-business-profit`
 
-### S17 · 6:22–6:46 · Brand-principle close
-**Shot:** most energetic shot: the 3DX loading a tipper at a brick kiln in light rain, working through the monsoon; the host.
-**VO:** देसी मशीन्स — India's largest platform to discover, compare, enquire about machines & equipment। सुनो सबकी, चुनो अपनी! और याद रखो — machine ख़रीदवाना हमारा काम था। machine से कमवाना भी हमारा काम है। इसीलिए आज हमने वो दो महीने भी दिखाए, जो कोई नहीं दिखाता।
-**EN sub:** Desi Machines: India's largest platform to discover, compare and enquire about machines and equipment. Hear everyone out, choose your own! And remember: helping you buy the machine was our job. Helping you earn from it is our job too. That's why today we showed you the two months nobody shows.
+### S15 · 5:48–6:12 · Brand-principle close
+**Shot:** most energetic shot: the 3DX loading bricks at a kiln in light rain, working through the monsoon; the host.
+**VO:** देसी मशीन्स — India's largest platform to discover, compare, enquire about machines & equipment। सुनो सबकी, चुनो अपनी! और याद रखो — machine ख़रीदवाना हमारा काम था। machine से कमवाना भी हमारा काम है। इसीलिए आज number नहीं दिया — तरीका दिया। number आपके ज़िले का होगा।
+**EN sub:** Desi Machines: India's largest platform to discover, compare and enquire about machines and equipment. Hear everyone out, choose your own! And remember: helping you buy the machine was our job. Helping you earn from it is our job too. That's why today we gave you the method, not the number. The number will be your district's.
 
-### S18 · 6:46–6:54 · End card
+### S16 · 6:12–6:20 · End card
 
-**Running time ≈ 6:54. VO ≈ 1,000 Hindi words.**
+**Running time ≈ 6:20. VO ≈ 950 Hindi words. No rupee figure or rate is spoken; the figures are days, months and the ledger's structure.**
 
-**Completeness check (F2):** dry vs wet · rate × days · fixed costs · twelve months · monsoon · repair · late payment · buffer · idle-day cost · wet-hire diesel · owner-operator wage · down-payment recovery · depreciation · the 15-day threshold · monsoon contract idea. Deliberately excluded (Shorts): rent-vs-buy one-liners, TCO slogans, the ₹1,000/hr warning. Left to description: GST on hire income, TDS deducted by contractors, insurance claim practice.
-
-**Lexicon (#21):** `dry hire` · `wet hire` · `provision` · `buffer` · `billed days` · `tarpaulin` · months in English as spoken (October…September) · numbers: चौवालीस हज़ार पाँच सौ, उनसठ हज़ार, बारह लाख छियानवे हज़ार, पाँच लाख अट्ठाईस हज़ार.
+**Completeness check (F2):** season mapping · honest billed days · the 15-day line · dry vs wet · diesel question · fixed-cost list · provisions by hour meter · the straight line vs income line · billing cycle · payment days · advance · waiting clause · TDS · buffer · hour-meter log · service by hours · monsoon contract · idle-day formula · parts and operator · year-end five numbers · second-machine conditions · the owner's ledger. Deliberately excluded (Shorts): rent-vs-buy and TCO one-liners. Worked example with figures: the paired page.
 
 ---
 
 ## 4. Shot plan notes
-≈27 unique clips. New generations: calendar tick (S01 hero), fixed-vs-income animation (S05), season montage across S06/S08/S09 (dry winter site, highway, heat, clouds, flooded site, tarp), the 90-day cheque (S10), Dinesh sequence (S11, 6–7 clips; moneylender beat without faces), repair bay (S12), kiln in rain (S17). Host lip-sync: S03, S07, S10 (cheque), S15, S17; action beats S01/S06 (ticks), S04 (hour meter). De-badge the tarp machine. Tier B.
+≈25 unique clips. New generations: calendar tick (S01), season strip (S04), dry/wet split (S05), straight-line animation and envelopes (S06), contract page and cheque (S08), meter log, kiln in rain, idle tarp, parts shelf (S09), Dinesh sequence (S10, 6 clips; de-badged tarp machine), year-end card (S11), ledger card (S12), kiln in rain (S15). Host lip-sync: S03, S07, S08 (cheque), S12, S13, S15; action S01/S04 (ticks), S06 (envelope). Tier B.
 
 ---
 
 ## 5. Publish kit
 
 ### Title (≤60)
-1. **Recommended:** `JCB se Mahine ka Kitna Bachta Hai? Pehle Saal ka Hisaab` (55)
-2. `JCB Business Profit: 216 Din, ₹5 Lakh — Saal ka Poora Ledger` (56)
-3. `JCB Rent per Hour ₹750 — Par Saal Mein Bachta Kitna?` (50)
+1. **Recommended:** `JCB Business Kaise Chalayein: Pehle Saal ka Poora Process` (55)
+2. `JCB Rental Business: Season, Contract, Buffer — Pehle Saal ke 6 Step` (60)
+3. `JCB se Kamai ka Sahi Tareeka: Billed Din, Dry vs Wet, Buffer` (58)
 
 ### Description
 ```
-JCB business se mahine ka kitna bachta hai? Ek saal ka poora ledger: 3DX ₹30–32 lakh, ₹10 lakh down, ₹20 lakh loan (EMI ₹44,500), dry hire ₹750/ghanta = ₹6,000/din, 216 billed din. Kamai ₹12.96 lakh, fixed kharcha ₹7.08 lakh (EMI + maintenance + insurance + admin = ₹59,000/mahina), ek repair ₹60,000 — bacha ≈ ₹5.3 lakh, yaani ≈ ₹44,000/mahina average; par July −₹11,000 aur August −₹23,000. Wet hire (diesel aapka, 6 L/ghanta) mein wahi machine saal bhar ghaate mein. Is video mein: rate × billed din, kharche jo chhutti nahi lete, 12 mahine ka ledger, 4 leak (late payment, idle din, diesel, repair), down payment wapsi, aur Aaj ka Rule: 15 din se kam — machine mat lo.
+JCB business pehle saal kaise chalayein — number nahi, process. 6 step: (1) apne zile ka season calendar — peak/lean/barsaat, har mahine ke imaandaar billed din, 15 din ki line; (2) hire ka basis likhit mein — dry (hirer ka operator + diesel) ya wet (aapka operator, diesel naap ke rate tay karo) — diesel kiska?; (3) char fixed line — EMI, insurance ÷ 12, maintenance provision (hour meter se), parking/permit — provision kharcho mat; (4) contract ki 5 line — billing cycle, payment din (30 vs 90), advance, waiting clause, diesel clause; TDS bill mein gino; 2 mahine ka buffer; (5) machine chalate rakhna — weekly hour-meter log, service ghanton se, barsaat ka contract May tak, idle din ka hisaab, parts aur operator; (6) saal ke end ke 5 number aur doosri machine ki 2 shartein. Aaj ke number ke saath poora worked example niche ke page par.
 
 ⏱ Chapters
-0:00 Calendar ka ek tick = ₹6,000
+0:00 Ek number kyun galat hai
 0:14 Suno Sabki, Chuno Apni
-0:20 Aaj ki 5 baatein
-0:42 Kamai = rate × billed din (dry vs wet)
-1:10 Kharche jo chhutti nahi lete
-1:36 Ledger: Oct–Dec
-2:18 Ledger: Jan–Jun
-2:50 Ledger: barsaat (Jul–Sep) + saal ka total
-3:20 Leak 1–2: 90 din ka payment, idle din
-3:50 Dinesh ji ki kahani
-4:35 Leak 3–4: wet hire ka diesel, repair
-5:00 ₹10 lakh down payment kab wapas
-5:20 Poora hisaab ek card mein
-5:50 Aaj ka Rule
-6:08 Screenshot card + Desi Machines ka vaada
+0:20 Aaj ke 6 step
+0:42 Step 1: Season ka calendar, billed din, 15 din ki line
+1:14 Step 2: Dry ya wet — diesel kiska
+1:42 Step 3: Char fixed line aur provision
+2:22 Step 4: Contract ki 5 line + buffer
+2:56 Step 5: Machine chalate rakhna
+3:30 Dinesh ji ki kahani
+4:15 Step 6: Saal ke end ka hisaab, doosri machine
+4:45 Aapka ledger — 12 row, 5 column
+5:15 Aaj ka Rule
+5:32 7 aadatein + Desi Machines ka vaada
 
 🔗 Links
-JCB business profit (the owner's numbers): https://desimachines.com/blog/jcb-business-profit/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-Kiraya rate card: https://desimachines.com/blog/equipment-rental-rate-card/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-JCB operator salary: https://desimachines.com/blog/jcb-operator-salary-india/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-Buy vs rent: https://desimachines.com/blog/buy-vs-rent-construction-equipment/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-Idle machine cost: https://desimachines.com/blog/equipment-downtime-cost/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-Project report & 1.25× coverage: https://desimachines.com/blog/project-report-for-machinery-loan/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-JCB 3DX price & EMI: https://desimachines.com/backhoe-loader/jcb-3dx/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
-Finance desk: https://desimachines.com/finance/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-pnl
+JCB business profit — worked example, aaj ke number: https://desimachines.com/blog/jcb-business-profit/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+Kiraya rate card: https://desimachines.com/blog/equipment-rental-rate-card/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+Idle machine cost: https://desimachines.com/blog/equipment-downtime-cost/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+Buy vs rent: https://desimachines.com/blog/buy-vs-rent-construction-equipment/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+JCB operator salary: https://desimachines.com/blog/jcb-operator-salary-india/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+Project report & coverage: https://desimachines.com/blog/project-report-for-machinery-loan/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+GST/TDS on works contract: https://desimachines.com/blog/gst-tds-on-works-contract/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
+Finance desk: https://desimachines.com/finance/?utm_source=youtube&utm_medium=description&utm_campaign=yt-jcb-year-one
 WhatsApp channel: <channel link> · Instagram: https://www.instagram.com/desimachinesofficial
 
-ℹ️ All figures are indicative (Jul–Oct 2026) from DesiMachines' guides and model pages: hire rates, EMI (₹20 lakh at 12% over 5 years), maintenance, insurance and operator bands move with district, season, lender and machine. The 216-day calendar and the month-by-month split are a worked example, not a forecast; your own billed days decide your number. Dinesh ji is a dramatised composite. Visuals and voice are AI-produced.
+ℹ️ Is video mein koi rupaye ka number nahi — kiraya, EMI aur kharche zile aur saal se badalte hain; process nahi. Season calendar aur billed din ek example hain; aapke zile ke apne honge. Dinesh ji ek dramatised composite hain. Visuals aur voice AI-produced hain.
 
-JCB is a trademark of its owner. DesiMachines is an independent platform.
+JCB apne maalik ka trademark hai. DesiMachines ek independent platform hai.
 
-#JCBBusiness #JCBProfit #DesiMachines
+#JCBBusiness #PehliMachine #DesiMachines
 ```
 
 ### Tags (15)
-`jcb business` · `jcb business profit` · `jcb se kamai` · `jcb rent per hour` · `jcb per hour rate` · `jcb rent per day` · `jcb income per month` · `jcb monthly income` · `jcb per day income` · `jcb hiring charges` · `jcb business kaise kare` · `jcb rental business` · `backhoe loader business` · `desi machines` · `machine ka hisaab`
+`jcb business` · `jcb business kaise kare` · `jcb rental business` · `jcb se kamai` · `jcb business profit` · `jcb rent per hour` · `dry hire vs wet hire` · `machine business first year` · `jcb income per month` · `backhoe loader business` · `construction equipment rental business india` · `pehli machine` · `jcb owner tips` · `desi machines` · `machine ka hisaab`
 
 ### Pinned comment
 ```
-Aapki JCB pichhle mahine kitne din chali — aur kitna bacha? 👇 Zila aur din comment karo.
-Poora hisaab aur rate card: https://desimachines.com/blog/jcb-business-profit/?utm_source=youtube&utm_medium=pinned&utm_campaign=yt-jcb-pnl
+Aapke zile mein barsaat ke mahine kaun se hain — aur tab machine kya karti hai? 👇 Comment karo, monsoon plan ki list banegi.
+Poora worked example aaj ke number ke saath: https://desimachines.com/blog/jcb-business-profit/?utm_source=youtube&utm_medium=pinned&utm_campaign=yt-jcb-year-one
 ```
 
-### Thumbnails (A/B/C)
-- **A · number shock:** the calendar with `216 DIN` and `₹5.3 LAKH`, strap `SAAL KA SACH`.
-- **B · host + Devanagari:** Ustaad ji holding the ledger, `महीने का कितना बचता है?` and smaller `₹44,000… या −₹23,000`.
-- **C · split:** November site in sun `+₹85,000` | August tarp `−₹23,000`.
-No logo on the tarp machine.
+### Thumbnails (A/B/C), no currency
+- **A · calendar:** the season strip with green, amber and blue, `PEHLE SAAL KA PROCESS` and `6 STEP`.
+- **B · host + Devanagari:** Ustaad ji with the ledger, `JCB का बिज़नेस` large, `पहला साल कैसे चलाएँ` smaller.
+- **C · split:** November site in sun | August tarp in rain, strap `SAME MACHINE`.
 
 ### Studio settings
-Playlists: *Machine Ka Hisaab*, *Pehli Machine*, *Backhoe Loader 101* · End screen: subscribe + Pehli Machine · Cards: 0:42 → rate card, 3:20 → downtime guide, 5:20 → business-profit guide · HI + EN `.srt` · disclosure · watermark · ledger row.
+As v1: playlists *Machine Ka Hisaab*, *Pehli Machine*, *Backhoe Loader 101* · end screen subscribe + Pehli Machine · cards 1:14 → rate card, 2:22 → project-report guide, 4:45 → business-profit page · HI + EN `.srt` · disclosure · watermark · ledger row.
 
 ---
 
 ## 6. Site embed plan
-**Primary:** `/blog/jcb-business-profit/` (rewrite the page around the twelve-month ledger; embed at the top) and `/blog/equipment-rental-rate-card/`. VideoObject per doc `21` §6, clips: `S04 Rate × din (42–70 s)` · `S05 Fixed costs (70–96 s)` · `S06–S09 Ledger (96–200 s)` · `S12 Wet hire (275–300 s)` · `S14 Saal ka card (320–350 s)`.
-**Secondary:** `/blog/jcb-operator-salary-india/` (fixes the "jcb income per month" intent mismatch with a link to the ledger), `/blog/buy-vs-rent-construction-equipment/`, `/blog/equipment-downtime-cost/`. Admin-user embed; verify stored content.
+Unchanged pages: `/blog/jcb-business-profit/` (the page keeps the worked example with current figures the video points to) and `/blog/equipment-rental-rate-card/`; secondary the operator-salary, buy-vs-rent and downtime guides. VideoObject per doc `21` v1 template; clips: `S04 Season calendar (42–74 s)` · `S06 Fixed costs (102–132 s)` · `S08 Contract (142–176 s)` · `S09 Keep it working (176–210 s)` · `S11 Year-end (255–285 s)`.
 
-## 7. SEO targets and day-30 scorecard
-| Query | Impressions (90 d) | Position now | CTR now | Day-30 target |
-|---|---|---|---|---|
-| jcb rent per hour | 989 | 6.3 | 0.8% | position ≤4; thumbnail live |
-| jcb per hour rate | 880 | 5.8 | 0.3% | position ≤4 (SERP already shows `video_th`) |
-| jcb rent per day | 585 | 6.7 | 0.7% | position ≤5 |
-| jcb income per month | 206 | 3.9 | 0% | business-profit page replaces the salary page; CTR >2% |
-| jcb monthly income | 178 | 3.9 | 0.6% | same |
-| jcb business | 151 | 6.0 | 0% | video in the `jcb business` carousel |
-| jcb per day income | 154 | 4.3 | 1.3% | position ≤3 |
-Also watch `jcb business` on YouTube search share (target ≥35%: this topic's demand is YouTube-native). Rest per doc `21` §7.
+## 7. SEO targets
+Unchanged (doc `20` §3.5): the business-profit page and rate card carry the embed for `jcb rent per hour`, `jcb per hour rate`, `jcb income per month`, `jcb business`. Add `jcb business kaise kare`, `jcb rental business`, `dry hire vs wet hire`.
 
 ## 8. Needs Saurav
-1. Go / no-go on showing two negative months and a loss-making wet-hire year on screen (it is the video's honesty, and it will draw dealer pushback in comments).
-2. Confirm the 216-day calendar shape for your core districts (UP/Bihar monsoon pattern assumed) or supply a real owner's hour-meter year to replace it.
-3. Go / no-go on Dinesh ji (composite) and the 3%-a-month borrowing beat.
+1. Confirm the numbers policy as applied: days, months and structure only; the worked example stays on the page.
+2. Confirm the season shape used in S04's example strip (UP/Bihar pattern) or supply your core districts' calendars.
+3. Go / no-go on Dinesh ji (composite) and the borrowing beat.
 4. Title choice (A recommended).
-5. Real-viewer gate: ideally two owners who have completed a first year.
+5. Real-viewer gate: two owners past their first year.
