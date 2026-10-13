@@ -1,280 +1,205 @@
-# 23 — Video #6 · "Poclain ka Poora Hisaab: 20-ton ka asli daam, diesel aur kamai" · Script + Publish Kit (v1)
+# 23 — Video #6 · "Poclain Kharidne se Pehle: 20-ton Excavator ka Poora Process" · Script + Publish Kit (v2, process-first)
 
-**Channel:** @desimachinesofficial · **Series:** Machine Ka Hisaab · **Playlist:** Excavator 101 · **Target length:** 7:00
-**Status:** SCRIPT v1 from the strategy desk, for the audit desk's read and Saurav's go. Nothing generated yet.
-**Topic source:** doc `20`, pick #4. Batch position: video #6.
+**Channel:** @desimachinesofficial · **Series:** Machine Ka Hisaab · **Playlist:** Excavator 101 · **Target length:** 6:45
+**Status:** SCRIPT v2 from the strategy desk, for the audit desk's read and Saurav's go. Nothing generated yet.
+**What changed from v1 (Saurav, 13 Oct 2026):** no prices, GST rate, EMI, hire rates or diesel-rupee figures in the video. The video teaches the five-step *process* of deciding on, specifying, costing and running a 20-tonne excavator. Current prices stay on `/excavator/` and the model pages, linked from the description. v1's price and running-cost tables remain in git history (commit `ae25a60`).
 
 ---
 
 ## 0. The video in one breath
 
-Everyone asks "Poclain kitne ki hai". The site already answers that at position 1 or 2 for the whole cluster. What nobody tells the buyer is that the sticker is the smallest of the machine's three numbers. On DesiMachines' listings a standard 20-tonner is ₹51–75 lakh ex-factory; add 18% GST, first-year insurance and the trailer and it lands near ₹74 lakh, though a GST-registered contractor gets the ₹10.8 lakh of GST back as input credit. Then the real owner of the machine: diesel at 13–16 litres an hour, ₹2.6–3.2 lakh a month, more than the EMI. Then the number that decides whether the business exists: the machine costs about ₹1,950 an hour to run at 2,000 hours a year, and the market pays ₹1,400–2,200 an hour on wet hire. Whether that is a profit or a loss turns on one question the buyer never asks: *diesel kiska?* The rule: a Poclain earns by the hour, not by the tonne. Close on the brand principle: *hum bechte nahi, aapko kharidne mein help karte hain*, which is why the video also says when not to buy one.
+Everyone asks what a Poclain costs. The video says the sticker is the smallest of the machine's three numbers and then teaches how to find the other two yourself: the landed cost, built from parts the dealer's quote leaves out, and the hourly cost, built from your own diesel, maintenance, operator, insurance and finance divided by the hours the machine actually works. Along the way: how to count the hours you really have, how to choose the spec from the work rather than the brand, why a GST registration should come before the machine, and the one question that decides whether hiring it out makes or loses money: *diesel kiska?* The rule: *Poclain ghante se kamati hai, ton se nahi; 2,000 ghante, hirer's diesel, apna contract, teen mein se do ya kiraye par lo.* Close on the brand principle.
 
 ---
 
-## 1. Price truth (live from DesiMachines, read 13 Oct 2026)
+## 1. Numbers policy for this video
 
-| Model | Class | Operating weight | Engine | Dig depth | Bucket | Ex-factory band | EMI from | Page updated |
-|---|---|---|---|---|---|---|---|---|
-| SANY SY210C-9 | 21 T | 20,900 kg | Cummins 140 HP | 6,037 mm | 1.0 m³ | ₹51–57 lakh | ₹83,707 | Sep 2026 |
-| JCB NXT 205 | 20.5 T | 20,500 kg | Cummins 140 HP | 6,140 mm | 0.9 m³ | ₹52–56 lakh | — | hub listing |
-| JCB NXT 215 LC Fuel Master | 21.5 T | 21,500 kg | Cummins 140 HP | 6,140 mm | 0.8–1.02 m³ | ₹57–59 lakh | — | hub listing |
-| Tata Hitachi EX 210LC Prime | 20.6 T | 20,600–20,800 kg | Cummins 131 HP | 5,910 mm | 0.9–1.17 m³ | ₹60–65 lakh | ₹98,479 | Oct 2026 |
-| Tata Hitachi EX 210 Infra Super+ | 20.3 T | 20,300 kg | Cummins 131 HP | 6,600 mm | 0.86–1.5 m³ | ₹60–65 lakh | ₹98,479 | Oct 2026 |
-| Hyundai R210 SMART X Plus | 21.2 T | 21,200 kg | Cummins 140 HP | 6,224 mm | 0.87–1.5 m³ | ₹63–65 lakh | — | hub listing |
-| Hyundai R215 SMART Plus | 21.7 T | — | 140 HP | — | — | ₹64–66 lakh | — | hub listing |
-| Hyundai R215L SMART X Plus | 22.2 T | 22,200 kg | Cummins 148 HP | 6,220 mm | 0.87–1.7 m³ | ₹65–70 lakh | ₹1.07 lakh | Oct 2026 |
-| Volvo EC210 | 20.7 T | 20,700 kg | VECV 137 HP | 6,380 mm | 0.92–1.1 m³ | ₹62–72 lakh | ₹1.02 lakh | Oct 2026 |
-| Komatsu PC210-10M0 | 20 T | — | 165 HP | — | — | ₹65–75 lakh | — | hub listing |
-| Volvo EC220 | 22.3 T | 22,338 kg | Volvo 167 HP | 6,360 mm | 1.0–1.22 m³ | ₹65–75 lakh | — | hub listing |
-| CAT 322 | 20.7 T | 20,700 kg | Cat 134 HP | 6,310 mm | 1.1 m³ | ₹75–85 lakh | — | hub listing |
+- **Off-screen:** every rupee figure, the GST percentage, EMIs, hire rates, per-hour cost amounts, diesel price.
+- **On-screen, allowed:** machine-class physics (20–22 tonnes, dig depth around six metres, bucket roughly one cubic metre, "seven buckets fill a tipper" as a counting method), hours (2,000 a year as full use; 4,000–5,000 hours as the undercarriage life marker), litres per hour as something the owner *measures* (the top-up method), the structure of the cost-per-hour formula, the two-of-three rule.
+- Source basis for the audit desk (site guides): a standard 20-tonner sits around 20–22 tonnes, 131–148 HP, digs about six metres with a 0.9–1.5 m³ bucket; landed cost adds GST, first-year insurance and trailer transport, and tracked machines are not RTO-registered; GST input credit is usually recoverable for a GST-registered business; diesel is the biggest running cost and idling burns a meaningful share; the cost per hour falls as hours rise; wet hire often includes diesel and is the biggest reason two quotes differ; routine service runs on the hour meter and the undercarriage is a separate large wear item; own at 12–15+ busy days a month or roughly above 800–1,000 hours a year.
 
-Hub framing (`/excavator/`): 294 models, 211 priced, ₹20 lakh to ₹5 crore; most searched are the Tata Hitachi EX 210 Infra Super+, Hyundai R210 and R215. Poclain guide: a standard 20-tonner is ₹52–65 lakh ex-showroom; the ownership guide uses ₹55–90 lakh for the class.
+## 2. Standards notes
 
-### Running-cost truth (all indicative, site guides Jul–Oct 2026)
-
-| Line | Value used | Source |
-|---|---|---|
-| Diesel burn, 20-T steady digging | 13–16 L/hr; idling 3–5 L/hr | `/blog/excavator-fuel-consumption-per-hour/` |
-| Diesel money | ₹100/L round → ₹1,300–1,600/hr; ₹2.6–3.2 lakh a month at 200 hrs; ₹24–32 lakh a year at 2,000 hrs; idling ₹60,000–1 lakh a month | same, and `/blog/excavator-cost-of-ownership/` |
-| Cost per hour at 2,000 hrs/yr | fuel ₹25.2 L + maintenance & wear ₹6 L + operator ₹3.6 L + insurance ₹1.2 L + finance interest ₹3 L = ₹39 L → **≈₹1,950/hr**; at 1,200 hrs ≈₹2,210/hr | `/blog/excavator-cost-per-hour/` |
-| Hire rate, 20-T | ₹1,400–2,200/hr wet (machine + operator, often diesel); monthly on long deployments | `/blog/equipment-rental-rate-card/` |
-| Idle day | ₹16,000–25,000 all-in (EMI share ₹5,000–8,300, operator ₹700–1,200, overheads ₹500–1,500, lost billing ₹10,000–14,000) | `/blog/equipment-downtime-cost/` |
-| Maintenance | routine ₹80,000–1.8 lakh/yr (₹60–120/hr) excluding undercarriage; undercarriage set ₹3–6 lakh at ~4,000–5,000 hrs | `/blog/excavator-maintenance-cost/`, ownership guide |
-| Operator | skilled excavator operator ₹20,000–35,000/month | ownership guide, operator salary guide |
-| Insurance | ~1–2% of insured value a year; towards 3% in mining | `/blog/construction-equipment-insurance-guide/` |
-| Depreciation | roughly half the price over five years | ownership guide |
-| Buy vs rent threshold | own at 12–15+ busy days a month, or above ~800–1,000 hours a year | buy-vs-rent and rental guides |
-| Landed-cost logic | listed ex-factory + 18% GST (HSN 8429) + first-year insurance + trailer transport; crawler machines are not RTO-registered; GST is usually recoverable as input credit by a GST-registered business | site on-road tool assumptions, `/heavy-equipment-guide/gst-on-construction-equipment/` |
-
-### Derived for the on-screen hisaab (₹60 lakh machine, indicative)
-
-Landed: ₹60 L + GST ₹10.8 L + insurance ≈₹1.3 L + trailer ≈₹0.8 L ≈ **₹73 lakh**; a GST-registered contractor claims the ₹10.8 L back.
-
-Monthly, 200 hours, EMI ₹98,479 (site figure for the EX 210 band):
-
-| Line | A · wet hire, diesel yours, ₹2,000/hr | B · diesel hirer's, ₹1,400/hr |
-|---|---|---|
-| Income | ₹4,00,000 | ₹2,80,000 |
-| Diesel 14 L × 200 × ₹100 | − ₹2,80,000 | 0 |
-| Operator | − ₹30,000 | − ₹30,000 |
-| Maintenance + wear (₹6 L/yr) | − ₹50,000 | − ₹50,000 |
-| Insurance (₹1.2 L/yr) | − ₹10,000 | − ₹10,000 |
-| EMI | − ₹98,479 | − ₹98,479 |
-| **Left** | **≈ − ₹69,000** | **≈ + ₹91,000** |
-
-At ₹2,200/hr wet, scenario A is ≈ −₹29,000; at 12 L/hr it turns ≈ +₹11,000. The business is the diesel line.
-
----
-
-## 2. Standards notes specific to this script
-
-- Brand face-offs are Shorts territory: machines appear as *class examples* (infra spec vs mining spec), never as a verdict. Logos only in neutral or positive contexts (#31); the "sold at a loss" machine in the case is de-badged.
-- Word ⟺ image (#23): *highway, nahar (canal), khadaan (quarry), mining bench, trailer, GST invoice, hour meter, diesel bowser, idle machine with engine running*.
-- Cutaways (#24): bucket-to-tipper volume (one 1.0 m³ bucket ≈ one-seventh of a 7 m³ tipper, shown as fills); the three-number card (sticker → landed → per-hour).
-- No L/hr figure is attached to a named model (house rule from the fuel guide): the burn is always "20-ton class".
-- Host action (#39): Ustaad ji reads the hour meter, lifts the diesel cap, walks the length of the tipper, points at the GST line on an invoice.
-- 10/10: composite case (S12), hisaab on screen (S14), AAJ KA RULE (S15), screenshot card (S16), 3-second vignette (the cousin's silent nod at the sale), sound logo.
+As v1: brands appear only as class examples, no verdicts (#31 and Shorts rule); no L/hr figure attached to a model name (house rule); word ⟺ image on *highway, nahar, khadaan, mining bench, trailer, GST invoice, hour meter, bowser, idling machine*; bucket-to-tipper counting cutaway; de-badged machine in the loss beat; host action (reads meter, lifts cap, paces the tipper, points at the invoice); composite case; method-on-screen; AAJ KA RULE; screenshot card; vignette; sound logo. **No currency symbol on any chip.**
 
 ---
 
 ## 3. The script
 
 ### S01 · 0:00–0:14 · Opening lock
-**Shot:** Frame 1 locked: a 20-ton excavator's 1 m³ bucket poised above a cut face, then it bites. Ambience: engine under load. VO ≤0.3 s in.
-**VO:** ये bucket एक बार में एक cubic metre मिट्टी उठाता है। और जिस एक घंटे में ये machine चलती है — उतने में ये क़रीब पंद्रह सौ रुपये का diesel पी जाती है। ज़्यादातर मालिकों को ये number पता नहीं। आज Poclain के तीन number समझेंगे — sticker, landed, और घंटे का।
-**EN sub:** This bucket lifts one cubic metre of earth at a time. And in the one hour this machine runs, it drinks about fifteen hundred rupees of diesel. Most owners don't know that number. Today we learn a Poclain's three numbers: the sticker, the landed cost, and the hour.
+**Shot:** Frame 1 locked: a 20-tonner's bucket poised above a cut face, then it bites. Engine under load. VO ≤0.3 s in.
+**VO:** सब पूछते हैं — Poclain कितने की है। लेकिन sticker इस machine के तीन number में सबसे छोटा है। दूसरा number — landed, जो quote में नहीं होता। तीसरा — घंटे का, जो आपके site पर बनता है। आज वो process सीखेंगे जिससे ये तीन number आप ख़ुद निकालो — किसी भी साल, किसी भी brand के लिए।
+**EN sub:** Everyone asks what a Poclain costs. But the sticker is the smallest of this machine's three numbers. The second is the landed cost, which isn't in the quote. The third is the hour, which is built on your site. Today we learn the process to work out all three yourself, for any year, any brand.
 
 ### S02 · 0:14–0:20 · Sting
 **VO:** देसी मशीन्स — सुनो सबकी, चुनो अपनी! · **EN:** Desi Machines — hear everyone out, choose your own!
 
-### S03 · 0:20–0:42 · The five things
-**Shot:** Ustaad ji on a quarry bench beside a parked 20-tonner, hour meter visible. Cut-ins: the class on a highway, a price card, a diesel bowser, a hire-rate card, a ledger.
-**VO:** आज पाँच चीज़ें साफ़ हो जाएँगी। एक — Poclain का मतलब, और बीस-ton की machine क्या करती है, कौन-सी spec किस काम की। दो — पूरी price list, और landed कीमत का हिसाब। तीन — diesel: इस machine का असली मालिक। चार — किराया बनाम घंटे का ख़र्च — और एक सवाल जो सब कुछ बदल देता है। पाँच — हिसाब, और एक line का rule।
-**EN sub:** Five things get clear today. One: what "Poclain" means, what a twenty-tonne machine does, and which spec suits which work. Two: the full price list, and the landed-cost math. Three: diesel, the machine's real owner. Four: hire rate versus hourly cost, and one question that changes everything. Five: the math, and a one-line rule.
-**Chips:** `1 THE CLASS` · `2 PRICE + LANDED` · `3 DIESEL` · `4 HIRE vs COST` · `5 THE RULE`
+### S03 · 0:20–0:40 · The five steps
+**Shot:** Ustaad ji on a quarry bench beside a parked 20-tonner, hour meter visible. Cut-ins: a contract file, two spec machines, a quote with blank lines, a bowser, a hire contract.
+**VO:** पाँच step। एक — घंटे गिनो: machine कितना चलेगी, ये contract से निकलता है, उम्मीद से नहीं। दो — spec काम से चुनो, brand बाद में। तीन — landed cost के हिस्से — जो quote छोड़ देता है। चार — घंटे का ख़र्च निकालने का तरीका — अपने number से। पाँच — ख़रीदो या किराये पर लो — तीन शर्तों का rule।
+**EN sub:** Five steps. One: count the hours. How much the machine will run comes from contracts, not from hope. Two: choose the spec from the work, the brand later. Three: the parts of landed cost, the ones the quote leaves out. Four: the method for the cost of an hour, with your own numbers. Five: buy or hire: a rule of three conditions.
+**Chips:** `1 COUNT THE HOURS` · `2 SPEC FROM THE WORK` · `3 LANDED COST PARTS` · `4 THE HOUR METHOD` · `5 BUY OR HIRE`
 
-### S04 · 0:42–1:08 · What a Poclain is, and what 20 tonnes does (decomposition)
-**Shot (#24):** tracks → house → boom-stick-bucket isolated, then the composed machine; the 1 m³ bucket filling a 7 m³ tipper in seven passes (counted on screen).
-**VO:** पहली बात। Poclain कोई brand नहीं है — ये नाम उस French company का है जिसने hydraulic excavator बनाया। हिंदुस्तान में हर excavator Poclain है, जैसे हर backhoe JCB। बीस-ton class — बीस से बाईस हज़ार किलो की machine, एक सौ इकतीस से एक सौ अड़तालीस horsepower। गहराई छह मीटर के आस-पास। bucket — शून्य दशमलव नौ से डेढ़ cubic metre। सात bucket में एक tipper भर जाता है। यही class देश की सड़कें, नहरें और खदानें चलाती है।
-**EN sub:** First. Poclain isn't a brand. It's the French company that built the hydraulic excavator. In India every excavator is a Poclain, the way every backhoe is a JCB. The twenty-tonne class: machines of twenty to twenty-two thousand kilos, 131 to 148 horsepower. Dig depth around six metres. Bucket: 0.9 to 1.5 cubic metres. Seven buckets fill a tipper. This is the class that builds the country's roads, canals and quarries.
-**Chips:** `20–22 T · 131–148 HP` · `DIG ≈ 6 M` · `BUCKET 0.9–1.5 M³` · `7 BUCKETS = 1 TIPPER`
+### S04 · 0:40–1:08 · Step 1: count the hours
+**Shot:** a contract file opened; a calendar; hours tallied per contract; an hour meter reading 2,000 at year-end; a machine under a tarp with the meter showing far less.
+**VO:** पहला step — घंटे। हाथ में जो contract हैं, उनसे गिनो: कितने महीने, दिन के कितने घंटे, barsaat में कितना रुकेगा। पूरे साल भर चलने वाली machine क़रीब दो हज़ार घंटे करती है — यही full use है। अगर आपकी गिनती इसके आधे से नीचे है — आठ सौ, हज़ार घंटे — तो आगे का हर step किराये की तरफ़ ले जाएगा। और एक ईमानदारी: "काम मिल जाएगा" घंटे नहीं हैं। signed contract घंटे हैं।
+**EN sub:** Step one: hours. Count from the contracts in hand: how many months, how many hours a day, how long the monsoon stops you. A machine that works through the year does about two thousand hours. That's full use. If your count is below half of that, eight hundred or a thousand hours, every step after this leads towards hiring. And one honesty: "I'll get work" isn't hours. A signed contract is hours.
+**Chips:** `HOURS = CONTRACTS × DAYS × HOURS/DAY − MONSOON` · `FULL USE ≈ 2,000 HRS / YEAR` · `BELOW ~1,000 HRS → THINK HIRE`
 
-### S05 · 1:08–1:32 · Which spec for which work (word ⟺ image montage)
-**Shot:** highway cutting → canal profile → quarry bench → mining overburden → a breaker on rock. The infra-spec machine on the first three, a reinforced mining-spec machine on the last two.
-**VO:** बीस-ton में दो तरह की spec आती हैं। infra spec — highway, नहर, नींव, सड़क की cutting: एक सौ इकतीस-एक सौ चालीस HP, हल्की, diesel में किफ़ायती। mining spec — खदान, पत्थर, breaker: बाईस ton, एक सौ अड़तालीस HP से ऊपर, मोटा boom, भारी undercarriage, दस-पंद्रह लाख ज़्यादा। सड़क के काम पर mining spec ख़रीदना — हर घंटे ज़्यादा diesel जलाना है, बिना वजह।
-**EN sub:** Twenty-tonners come in two specs. Infra spec, for highways, canals, foundations and road cuttings: 131 to 140 horsepower, lighter, thriftier on diesel. Mining spec, for quarries, rock and breakers: twenty-two tonnes, 148 horsepower and up, a thicker boom, a heavier undercarriage, ten to fifteen lakh more. Buying a mining spec for road work means burning more diesel every hour, for nothing.
-**Chips:** `INFRA SPEC · 131–140 HP · ROADS · CANALS` · `MINING SPEC · 22 T · 148+ HP · ROCK` · `+₹10–15 L* FOR THE HEAVY SPEC`
+### S05 · 1:08–1:40 · Step 2: spec from the work (decomposition and counting)
+**Shot (#24):** tracks → house → boom-stick-bucket → composed machine; the bucket filling a tipper, counted to seven; infra spec on a highway and canal; heavy spec on a mining bench with a breaker.
+**VO:** दूसरा step — spec। Poclain brand नहीं है — hydraulic excavator का देसी नाम है। बीस-ton class: बीस-बाईस हज़ार किलो, गहराई छह मीटर के आस-पास, bucket क़रीब एक cubic metre — सात bucket में एक tipper। आपका tipper कितने में भरता है, ये गिनो — यही आपका cycle time है। दो spec: infra — highway, नहर, नींव, सड़क की cutting — हल्की, diesel में किफ़ायती। heavy या mining — खदान, पत्थर, breaker — भारी boom, मोटा undercarriage, ज़्यादा HP, ज़्यादा diesel। सड़क के काम पर mining spec लेना — हर घंटे बिना वजह ज़्यादा जलाना है। brand इस step में नहीं आता। brand तब, जब spec तय हो — और dealer की service आपके site से कितनी दूर है।
+**EN sub:** Step two: spec. Poclain isn't a brand; it's the desi name for a hydraulic excavator. The twenty-tonne class: twenty to twenty-two thousand kilos, dig depth around six metres, a bucket of roughly one cubic metre, seven buckets to a tipper. Count how many fill your tipper: that's your cycle time. Two specs: infra, for highways, canals, foundations and road cuttings, lighter and thriftier on diesel. Heavy or mining, for quarries, rock and breakers, a heavier boom, thicker undercarriage, more horsepower, more diesel. A mining spec on road work burns more every hour for nothing. The brand doesn't enter at this step. The brand comes once the spec is fixed, and with it, how far the dealer's service is from your site.
+**Chips:** `20–22 T · DIG ≈ 6 M · BUCKET ≈ 1 M³` · `COUNT: BUCKETS PER TIPPER` · `INFRA SPEC vs HEAVY SPEC · WORK DECIDES` · `BRAND AFTER SPEC · SERVICE RADIUS`
 
-### S06 · 1:32–2:00 · The price list
-**Shot:** each machine on screen as named, ≥1.5 s, with its name chip; the table builds behind.
-**VO:** दूसरी बात — दाम। हमारी site पर बीस-ton class: SANY SY210 इक्यावन से सत्तावन लाख। JCB NXT 205 बावन से छप्पन, NXT 215 सत्तावन से उनसठ। Tata Hitachi EX 210 — Prime और Infra — साठ से पैंसठ। Hyundai R210 तिरसठ से पैंसठ, R215 पैंसठ से सत्तर। Volvo EC210 बासठ से बहत्तर। Komatsu PC210 पैंसठ से पचहत्तर। CAT 322 पचहत्तर से पचासी। हर दाम ex-factory, indicative।
-**EN sub:** Second: the price. On our site, the twenty-tonne class: SANY SY210, 51 to 57 lakh. JCB NXT 205, 52 to 56; NXT 215, 57 to 59. Tata Hitachi EX 210, Prime and Infra, 60 to 65. Hyundai R210, 63 to 65; R215, 65 to 70. Volvo EC210, 62 to 72. Komatsu PC210, 65 to 75. CAT 322, 75 to 85. Every figure ex-factory and indicative.
-**Chips (table):** `SY210C-9 ₹51–57 L*` · `NXT 205 ₹52–56 L*` · `NXT 215 ₹57–59 L*` · `EX 210 ₹60–65 L*` · `R210 ₹63–65 L*` · `R215L ₹65–70 L*` · `EC210 ₹62–72 L*` · `PC210 ₹65–75 L*` · `CAT 322 ₹75–85 L*`
+### S06 · 1:40–2:12 · Step 3: the parts of landed cost (host action)
+**Shot (#39):** a dealer quote with the sticker line only; the host adds lines by hand: GST, insurance, trailer, attachments; crosses out RTO; a GST certificate; an invoice's tax line highlighted.
+**VO:** तीसरा step — landed cost के हिस्से। quote में एक line होती है — ex-factory। उसके नीचे ख़ुद लिखो: GST — जो दाम के ऊपर लगता है; पहले साल का insurance; trailer से site तक transport; और attachments — bucket, breaker — अलग। RTO? नहीं — tracks वाली machine register नहीं होती। अब सबसे बड़ी बात: GST वापस मिलता है — input credit में — अगर आप GST-registered हो। individual को नहीं। इसलिए Poclain से पहले GST number — ये order मत बदलो। और dealer से landed quote लिखकर लो — हर line के साथ। जो quote में नहीं, वो आपकी जेब से।
+**EN sub:** Step three: the parts of landed cost. A quote has one line: ex-factory. Write the rest yourself underneath: GST, which sits on top of the price; first-year insurance; trailer transport to site; and attachments, bucket, breaker, separately. RTO? No, a tracked machine isn't registered. Now the biggest point: GST comes back as input credit if you're GST-registered. Not to an individual. So the GST number before the Poclain; don't change that order. And get the landed quote from the dealer in writing, every line. Whatever isn't in the quote comes from your pocket.
+**Chips:** `LANDED = EX-FACTORY + GST + INSURANCE + TRAILER + ATTACHMENTS` · `NO RTO (TRACKED)` · `GST BACK AS INPUT CREDIT IF REGISTERED → REGISTER FIRST` · `GET IT IN WRITING`
 
-### S07 · 2:00–2:30 · The landed-cost hisaab (sticker → landed)
-**Shot:** a ₹60 lakh sticker; stacked lines: GST, insurance, trailer; a crossed-out RTO line; a GST invoice with the input-credit line highlighted; the host points at it (#39).
-**VO:** अब landed। साठ लाख की machine साठ लाख में नहीं आती। GST अट्ठारह प्रतिशत — दस लाख अस्सी हज़ार। पहले साल का insurance — क़रीब सवा लाख। trailer से site तक — पचास हज़ार से डेढ़ लाख, दूरी के हिसाब से। RTO? नहीं — tracks वाली machine register नहीं होती। कुल — क़रीब तिहत्तर लाख। लेकिन एक राहत: अगर आप GST-registered contractor हो, तो वो दस लाख अस्सी हज़ार input credit में वापस आते हैं। individual के लिए नहीं। इसलिए Poclain लेने से पहले GST number लेना — दस लाख का फ़ैसला है।
-**EN sub:** Now landed. A sixty-lakh machine doesn't arrive at sixty lakh. GST at eighteen percent: ten lakh eighty thousand. First-year insurance: about one and a quarter lakh. Trailer to site: fifty thousand to one and a half lakh, by distance. RTO? No, a tracked machine isn't registered. Total: about seventy-three lakh. But one relief: if you're a GST-registered contractor, that ten lakh eighty comes back as input credit. Not for an individual. So getting a GST number before buying a Poclain is a ten-lakh decision.
-**Chips:** `STICKER ₹60 L*` · `+ GST 18% ₹10.8 L` · `+ INSURANCE ≈₹1.3 L` · `+ TRAILER ₹0.5–1.5 L` · `NO RTO (TRACKED)` · `LANDED ≈ ₹73 L*` · `GST BACK AS INPUT CREDIT IF REGISTERED`
+### S07 · 2:12–2:22 · Subscribe beat (icons)
+**VO:** एक second — subscribe। घंटे का हिसाब अभी बाक़ी है। · **EN:** One second: subscribe. The hour's math is still to come.
 
-### S08 · 2:30–2:40 · Subscribe beat (icons)
-**VO:** एक second — subscribe। हर machine का हिसाब यहीं। · **EN:** One second: subscribe. Every machine's hisaab, right here.
+### S08 · 2:22–2:56 · Step 4a: measure the diesel (method)
+**Shot:** bowser fill with a seated nozzle; hour meter noted on a notebook; two days of work in time-lapse; refill; the division written; an idling machine with the operator on his phone (de-badged).
+**VO:** चौथा step — घंटे का ख़र्च। सबसे बड़ी line diesel है, और उसका number brochure में नहीं, आपके meter में है। तरीका: tank full, hour meter note, दो-तीन दिन normal काम, फिर full — जितने litre पड़े, भाग जितने घंटे चले। यही आपका litre प्रति घंटा। इसे हर महीने दोहराओ — trend number से ज़्यादा बताता है। और idling: engine चलती, bucket रुका — वो भी litre पीती है, बिना एक cubic metre उठाए। truck देर से आया तो engine बंद — ये आदत साल में बड़ी रकम बचाती है।
+**EN sub:** Step four: the cost of an hour. The biggest line is diesel, and its number isn't in the brochure, it's in your meter. The method: fill the tank, note the hour meter, two or three days of normal work, fill again. Litres taken divided by hours run. That's your litres per hour. Repeat it every month; the trend tells you more than the number. And idling: engine on, bucket still, drinks litres too, without lifting a cubic metre. If the truck is late, switch off. That habit saves a big sum every year.
+**Chips:** `LITRES PER HOUR = LITRES REFILLED ÷ HOURS RUN` · `REPEAT MONTHLY · WATCH THE TREND` · `IDLING BURNS · TRUCK LATE → ENGINE OFF`
 
-### S09 · 2:40–3:12 · Diesel, the real owner
-**Shot:** diesel bowser filling, nozzle seated, no spill (#18, #26); hour meter macro; a machine idling with the operator on his phone (de-badged); a ledger chip growing month by month.
-**VO:** तीसरी बात — diesel। बीस-ton class, steady digging — तेरह से सोलह litre घंटा। सौ रुपये litre — तेरह से सोलह सौ रुपये हर घंटे। महीने के दो सौ घंटे — दो लाख साठ हज़ार से तीन लाख बीस हज़ार। साल के दो हज़ार घंटे — चौबीस से बत्तीस लाख। पाँच साल में सवा करोड़ से डेढ़ करोड़ — machine की कीमत से ज़्यादा। और idle? engine चलती, bucket रुका — तीन से पाँच litre घंटा। महीने का साठ हज़ार से एक लाख — बिना एक cubic metre उठाए। इसलिए पहले video का तरीका यहाँ भी: tank full, meter note, काम, फिर full — litre भाग घंटे। आपका असली number।
-**EN sub:** Third: diesel. Twenty-tonne class, steady digging: thirteen to sixteen litres an hour. At ₹100 a litre, that's thirteen to sixteen hundred rupees every hour. Two hundred hours a month: 2.6 to 3.2 lakh. Two thousand hours a year: 24 to 32 lakh. Five years: one and a quarter to one and a half crore, more than the machine cost. And idling? Engine on, bucket still: three to five litres an hour. Sixty thousand to a lakh a month without lifting a cubic metre. So the method from the first video applies here too: fill the tank, note the meter, work, fill again. Litres divided by hours. Your real number.
-**Chips:** `20-T CLASS · 13–16 L/HR*` · `₹1,300–1,600 / HR` · `200 HRS → ₹2.6–3.2 L / MONTH` · `5 YRS → ₹1.2–1.5 CRORE` · `IDLING 3–5 L/HR → ₹60K–1 L / MONTH`
+### S09 · 2:56–3:30 · Step 4b: the cost-per-hour formula (method on screen)
+**Shot:** the formula card builds: five lines over a divider "hours worked"; then the hours slider drops and the result rises (no amounts, arrows only).
+**VO:** अब formula — card पर। ऊपर पाँच line: साल का diesel — आपके litre प्रति घंटा से; maintenance और wear parts का provision — service schedule से, और undercarriage अलग, जो चार-पाँच हज़ार घंटे पर बदलता है; operator की साल की तनख़्वाह; insurance; और loan का byaaj। नीचे एक line: साल में काम के घंटे। ऊपर भाग नीचे — आपका घंटा। अब देखो क्या होता है जब घंटे कम होते हैं — ऊपर की लाइनें वही रहती हैं, नीचे का number छोटा — घंटा महँगा। machine जितना कम चलती है, उतनी महँगी होती है। यही step एक की वजह है।
+**EN sub:** Now the formula, on the card. Five lines on top: the year's diesel, from your litres per hour; the maintenance and wear-parts provision, from the service schedule, with the undercarriage separate, replaced around four to five thousand hours; the operator's yearly wage; insurance; and the loan's interest. One line below: the hours worked in the year. Top divided by bottom: your hour. Now watch what happens when the hours fall: the top lines stay the same, the bottom number shrinks, the hour gets dearer. The less a machine runs, the more it costs. That's why step one.
+**Chips (card):** `COST PER HOUR = (DIESEL + MAINTENANCE & WEAR + OPERATOR + INSURANCE + INTEREST) ÷ HOURS WORKED` · `UNDERCARRIAGE ≈ 4,000–5,000 HRS, SEPARATE` · `FEWER HOURS → DEARER HOUR`
 
-### S10 · 3:12–3:40 · The hour: what the machine costs to run
-**Shot:** the per-hour card builds: fuel, maintenance, operator, insurance, interest → ₹39 lakh → ÷ 2,000 → ₹1,950; then the hours slider drops to 1,200 and the figure rises to ₹2,210.
-**VO:** चौथी बात — घंटे का ख़र्च। साल के दो हज़ार घंटे चलने वाली बीस-ton machine: diesel पच्चीस लाख। maintenance और wear parts छह लाख। operator तीन लाख साठ हज़ार। insurance एक लाख बीस। loan का byaaj तीन लाख। कुल — उनतालीस लाख। दो हज़ार घंटे से भाग दो — उन्नीस सौ पचास रुपये का एक घंटा। और इसमें loan का principal नहीं है। अब machine बारह सौ घंटे ही चली? वही machine — बाईस सौ दस का घंटा। जितना कम चलेगी, उतनी महँगी होगी।
-**EN sub:** Fourth: the cost of an hour. A twenty-tonner running two thousand hours a year: diesel 25 lakh. Maintenance and wear parts 6 lakh. Operator 3.6 lakh. Insurance 1.2 lakh. Loan interest 3 lakh. Total: 39 lakh. Divide by two thousand hours: ₹1,950 an hour. And that excludes the loan principal. Now the machine ran only twelve hundred hours? Same machine: ₹2,210 an hour. The less it runs, the more it costs.
-**Chips (card):** `FUEL ₹25.2 L` · `MAINTENANCE ₹6 L` · `OPERATOR ₹3.6 L` · `INSURANCE ₹1.2 L` · `INTEREST ₹3 L` · `= ₹39 L ÷ 2,000 HRS = ₹1,950 / HR*` · `1,200 HRS → ₹2,210 / HR`
+### S10 · 3:30–3:58 · Step 4c: the hire quote and the one question
+**Shot:** two hire quotes side by side, "diesel included" circled on one; the host holds up two fingers; a hire contract's diesel clause.
+**VO:** अब अगर machine किराये पर देनी है — अपना घंटा निकालो, फिर quote देखो। बाज़ार दो तरह से quote करता है: machine और operator के साथ diesel भी — या diesel party का। दो quotes में बड़ा फ़र्क दिखे — तो एक में diesel है, एक में नहीं। ये सवाल सबसे पहले: diesel किसका? क्योंकि आपके घंटे की सबसे बड़ी line diesel है — वो किराये में है या नहीं, इसी पर business बनता या बिगड़ता है। contract में लिखो — और अपने घंटे से नीचे का rate कभी sign मत करो।
+**EN sub:** Now if the machine is to be hired out: work out your hour, then look at the quote. The market quotes two ways: machine and operator with diesel, or the hirer's diesel. If two quotes differ a lot, one includes diesel and one doesn't. This question first: whose diesel? Because diesel is the biggest line in your hour; whether it's in the hire rate or not is what makes or breaks the business. Write it in the contract, and never sign a rate below your own hour.
+**Chips:** `THE QUESTION: DIESEL KISKA?` · `WRITE IT IN THE CONTRACT` · `NEVER SIGN BELOW YOUR OWN HOUR`
 
-### S11 · 3:40–4:05 · Hire rate, and the one question
-**Shot:** a hire-rate card ₹1,400–2,200; two quotes side by side, one with "diesel included" circled; the host holds up two fingers.
-**VO:** और बाज़ार क्या देता है? बीस-ton का wet hire — machine और operator के साथ — चौदह सौ से बाईस सौ रुपये घंटा। ख़र्च उन्नीस सौ पचास। मतलब कई quotes पर आप हर घंटे पैसा हार रहे हो — और पता भी नहीं चलता। फ़र्क एक सवाल में है: diesel किसका? दो quotes में तीन-चार सौ रुपये का फ़र्क दिखे — तो एक में diesel है, एक में नहीं। यही सवाल सबसे पहले पूछो।
-**EN sub:** And what does the market pay? Twenty-tonne wet hire, with the machine and operator: fourteen hundred to twenty-two hundred an hour. Your cost: ₹1,950. So on many quotes you're losing money every hour without noticing. The difference lives in one question: whose diesel? If two quotes differ by three or four hundred an hour, one includes diesel and one doesn't. Ask that question first.
-**Chips:** `WET HIRE ₹1,400–2,200 / HR*` · `COST ₹1,950 / HR` · `THE QUESTION: DIESEL KISKA?`
+### S11 · 3:58–4:45 · The dramatised case (F1)
+**Shot:** "Suresh ji" (composite) on a PWD road job, his 20-tonner loading tippers at dawn (real badge, positive); the meter at 2,200 at year-end; his cousin "Mahesh" at a rental yard, the same class machine under a tarp (de-badged), a phone with a quote "diesel included"; a sale handshake; 3-second vignette: Mahesh's silent nod.
+**VO:** सुरेश जी, नागपुर। PWD की सड़क का ठेका — contract पहले, machine बाद में। साल भर अपने ही काम पर — दो हज़ार दो सौ घंटे। diesel उनका, पर contract का rate भी उनका — हर घंटा उनकी जेब में। भाई महेश ने वही machine किराये के लिए ली — "diesel समेत" rate पर, बिना अपना घंटा निकाले। साल में ग्यारह सौ घंटे चली — बाक़ी tarpaulin के नीचे। घंटा महँगा, किराया सस्ता। दो साल में machine बेची — घाटे में। एक ही machine, एक ही शहर। फ़र्क — घंटे, और diesel का सवाल।
+**EN sub:** Suresh ji, Nagpur. A PWD road contract: the contract first, the machine after. All year on his own work, 2,200 hours. The diesel was his, but so was the contract rate; every hour went into his pocket. His cousin Mahesh bought the same machine to hire out, at a "diesel included" rate, without working out his own hour. It ran eleven hundred hours in the year; the rest under a tarpaulin. A dear hour, a cheap rate. In two years he sold the machine at a loss. Same machine, same city. The difference: hours, and the diesel question.
+**Chips:** `CONTRACT FIRST · 2,200 HRS` · `1,100 HRS · "DIESEL INCLUDED" · NO OWN HOUR` · `SOLD AT A LOSS`
 
-### S12 · 4:05–4:50 · The dramatised case (F1)
-**Shot:** "Suresh ji" (composite) on a PWD road job, his SY210-class machine (real badge, positive context) loading tippers at dawn; the hour meter at 2,200; his cousin "Mahesh" at a rental yard, the same class machine standing under a tarp (de-badged), a phone with a hire quote "₹1,800/hr incl. diesel"; a sale handshake, the 3-second vignette: Mahesh's silent nod. Chips carry the numbers.
-**VO:** सुरेश जी, नागपुर। PWD की सड़क का ठेका। बीस-ton machine ली — पचपन लाख। अपने ही contract पर दिन-रात: साल के बाईस सौ घंटे। diesel उनका, पर contract का rate भी उनका — हर घंटा उनकी जेब में। उनके भाई महेश ने वही machine किराये के लिए ली। अट्ठारह सौ रुपये घंटा, diesel समेत। साल में ग्यारह सौ घंटे चली — बाक़ी समय tarpaulin के नीचे। ख़र्च का घंटा बाईस सौ, कमाई अट्ठारह सौ। EMI जेब से। दो साल में machine बेची — चालीस प्रतिशत कम पर। एक ही machine, एक ही शहर। फ़र्क — घंटे, और diesel।
-**EN sub:** Suresh ji, Nagpur. A PWD road contract. He bought a twenty-tonner for 55 lakh. Day and night on his own contract: 2,200 hours a year. The diesel was his, but so was the contract rate; every hour went into his pocket. His cousin Mahesh bought the same machine to hire out. Eighteen hundred an hour, diesel included. It ran eleven hundred hours in the year; the rest under a tarpaulin. Cost per hour 2,200, income 1,800. The EMI came from his pocket. In two years he sold the machine, forty percent down. Same machine, same city. The difference: hours, and diesel.
-**Chips:** `2,200 HRS · OWN CONTRACT` · `1,100 HRS · ₹1,800 INCL. DIESEL` · `COST ₹2,200 > INCOME ₹1,800` · `SOLD AT −40%`
+### S12 · 4:45–5:12 · Step 5: buy or hire, the two-of-three rule
+**Shot:** three boxes tick on and off: hours, hirer's diesel, own contract; a demo machine on the buyer's site; a parts counter; a used-machine yard with popular models selling.
+**VO:** पाँचवाँ step — ख़रीदो या किराये पर लो। तीन शर्तें: साल के दो हज़ार घंटे हाथ में; किराये पर दो तो diesel party का; और अपना contract। तीन में से दो हैं — ख़रीदो। एक या शून्य — किराये पर लो, और अगले साल फिर गिनो। ख़रीदने से पहले: demo अपनी मिट्टी पर; parts कितने दिन में; और ऐसा model जो आपके इलाक़े में आम है — वही बाद में बिकता भी है।
+**EN sub:** Step five: buy or hire. Three conditions: two thousand hours a year in hand; if hiring out, the hirer's diesel; and your own contract. Two of three: buy. One or none: hire, and count again next year. Before buying: a demo on your own soil; how many days for parts; and a model that's common in your area, because that's the one that sells later too.
+**Chips:** `2,000 HRS · HIRER'S DIESEL · OWN CONTRACT` · `TWO OF THREE → BUY · ELSE → HIRE` · `DEMO · PARTS DAYS · COMMON MODEL = RESALE`
 
-### S13 · 4:50–5:15 · The costs that never take leave
-**Shot:** idle machine under a tarp with an EMI SMS; undercarriage macro (worn rollers); an insurance paper; a depreciation curve halving over five years.
-**VO:** और वो ख़र्चे जो कभी छुट्टी नहीं लेते। एक idle दिन — EMI का हिस्सा, operator की तनख़्वाह, insurance, और वो दस-चौदह हज़ार जो उस दिन bill होना था — सोलह से पच्चीस हज़ार, repair के bill से पहले। undercarriage — chain, roller, sprocket — चार-पाँच हज़ार घंटे पर तीन से छह लाख का set। और depreciation — पाँच साल में machine की क़ीमत आधी। ये चुपचाप कटती है, resale के दिन दिखती है।
-**EN sub:** And the costs that never take leave. One idle day: the EMI's share, the operator's wage, insurance, and the ten to fourteen thousand that should have been billed that day. Sixteen to twenty-five thousand, before any repair bill. The undercarriage: chains, rollers, sprockets, a three to six lakh set at four to five thousand hours. And depreciation: the machine's value halves in five years. It's deducted silently and shows up on resale day.
-**Chips:** `IDLE DAY ₹16,000–25,000*` · `UNDERCARRIAGE SET ₹3–6 L @ 4–5K HRS` · `VALUE HALVES IN 5 YRS`
+### S13 · 5:12–5:40 · The three-number card, performed on screen (headings only)
+**Shot:** the card builds: STICKER (from the site) → LANDED (your five lines) → THE HOUR (your formula); the host writes "aapke number" in each.
+**VO:** अब तीनों number एक card पर — आपके। sticker — site से, आज का। landed — sticker plus GST, insurance, trailer, attachments; minus input credit अगर registered हो। घंटा — formula से, अपने meter के diesel के साथ। और नीचे एक line: बाज़ार का किराया, diesel के सवाल के साथ। घंटा किराये से नीचे, और तीन में से दो शर्तें — machine आपकी। ये card पाँच साल बाद भी वही रहेगा — number बदलेंगे, तरीका नहीं।
+**EN sub:** Now the three numbers on one card, yours. The sticker, from the site, today's. The landed cost: sticker plus GST, insurance, trailer, attachments, minus input credit if registered. The hour, from the formula, with the diesel from your meter. And one line below: the market's hire rate, with the diesel question. Hour below the hire rate, and two of three conditions: the machine is yours. This card will be the same five years from now; the numbers change, the method doesn't.
+**Chips (card):** `STICKER (SITE) → LANDED (+GST +INSURANCE +TRAILER +ATTACHMENTS −ITC) → THE HOUR (FORMULA)` · `vs HIRE RATE · DIESEL KISKA?`
 
-### S14 · 5:15–5:50 · The hisaab, performed on screen
-**Shot:** a two-column ledger builds, A and B, line by line; the host's hand writes the two results.
-**VO:** अब हिसाब — screen पर, दो तरह से। साठ लाख की machine, EMI अट्ठानवे हज़ार। महीने के दो सौ घंटे। तरीका A — wet hire, diesel आपका, दो हज़ार रुपये घंटा: कमाई चार लाख। diesel चौदह litre — दो लाख अस्सी हज़ार। operator तीस हज़ार। maintenance पचास हज़ार। insurance दस हज़ार। EMI अट्ठानवे हज़ार। बचा — minus उनहत्तर हज़ार। हाँ — minus। तरीका B — diesel party का, चौदह सौ रुपये घंटा: कमाई दो लाख अस्सी हज़ार। operator, maintenance, insurance, EMI — वही। बचा — plus इक्यानवे हज़ार। एक सवाल — डेढ़ लाख का फ़र्क।
-**EN sub:** Now the math, on screen, two ways. A sixty-lakh machine, EMI 98,000. Two hundred hours a month. Way A: wet hire, your diesel, two thousand an hour. Income four lakh. Diesel at fourteen litres: 2.8 lakh. Operator 30,000. Maintenance 50,000. Insurance 10,000. EMI 98,000. Left: minus 69,000. Yes, minus. Way B: the hirer's diesel, fourteen hundred an hour. Income 2.8 lakh. Operator, maintenance, insurance, EMI the same. Left: plus 91,000. One question, a one-and-a-half-lakh difference.
-**Chips (ledger):** `A · ₹2,000/HR WET · DIESEL YOURS → −₹69,000` · `B · ₹1,400/HR · DIESEL HIRER'S → +₹91,000` · `EMI ₹98,479* · DIESEL ₹2.8 L · OPERATOR ₹30K · MAINT ₹50K · INS ₹10K`
-
-### S15 · 5:50–6:08 · AAJ KA RULE
+### S14 · 5:40–5:56 · AAJ KA RULE
 **Shot:** host at the hour meter; rule card lower-third; sound logo.
-**VO:** आज का rule। Poclain ton से नहीं — घंटे से कमाती है। तीन शर्तें: साल के दो हज़ार घंटे, diesel party का, और अपना contract। तीन में से दो भी नहीं हैं — तो Poclain ख़रीदो मत, किराये पर लो।
-**EN sub:** Today's rule. A Poclain earns by the hour, not by the tonne. Three conditions: two thousand hours a year, the hirer's diesel, and your own contract. If you don't have even two of the three, don't buy a Poclain. Hire one.
+**VO:** आज का rule। Poclain ton से नहीं — घंटे से कमाती है। दो हज़ार घंटे, diesel party का, अपना contract — तीन में से दो नहीं हैं, तो ख़रीदो मत। किराये पर लो।
+**EN sub:** Today's rule. A Poclain earns by the hour, not by the tonne. Two thousand hours, the hirer's diesel, your own contract. If you don't have two of the three, don't buy. Hire.
 **Chip:** `TODAY'S RULE · 2,000 HRS · HIRER'S DIESEL · OWN CONTRACT · TWO OF THREE, OR HIRE`
 
-### S16 · 6:08–6:22 · The screenshot card
-**Shot:** the three-number card, footage behind.
-**VO:** ये card screenshot ले लो — Poclain के तीन number: sticker, landed, और घंटे का। पूरी list — दो सौ ग्यारह priced excavators — site पर, link नीचे।
-**EN sub:** Screenshot this card: a Poclain's three numbers, sticker, landed and hourly. The full list, 211 priced excavators, is on the site, link below.
-**Card:** `STICKER ₹51–85 L* (20-T CLASS)` · `LANDED ≈ STICKER + 18% GST + INSURANCE + TRAILER · NO RTO` · `THE HOUR ≈ ₹1,950 @ 2,000 HRS/YR` · `WET HIRE ₹1,400–2,200 → DIESEL KISKA?` · footer `desimachines.com/excavator`
+### S15 · 5:56–6:12 · The screenshot card
+**VO:** ये card screenshot ले लो — Poclain ख़रीदने से पहले सात check। contract में घंटे। spec काम से। GST registration। landed quote लिखकर। अपना litre प्रति घंटा। किराये का diesel clause। service की दूरी। सब models और आज के band site पर — link नीचे।
+**EN sub:** Screenshot this card: seven checks before buying a Poclain. Hours in contracts. Spec from the work. GST registration. Landed quote in writing. Your own litres per hour. The hire contract's diesel clause. Service distance. All models and today's bands on the site, link below.
+**Card:** `1 HOURS IN CONTRACTS · 2 SPEC FROM WORK · 3 GST REGISTRATION · 4 LANDED QUOTE IN WRITING · 5 OWN LITRES/HOUR · 6 DIESEL CLAUSE · 7 SERVICE DISTANCE` · footer `desimachines.com/excavator`
 
-### S17 · 6:22–6:46 · Brand-principle close
-**Shot:** most energetic shot: the 20-tonner swinging a full bucket into a tipper against the sunrise; the host.
-**VO:** देसी मशीन्स — India's largest platform to discover, compare, enquire about machines & equipment। सुनो सबकी, चुनो अपनी! और याद रखो — हम बेचते नहीं, आपको ख़रीदने में help करते हैं। इसीलिए आज हमने ये भी बताया — Poclain कब नहीं लेनी चाहिए।
-**EN sub:** Desi Machines: India's largest platform to discover, compare and enquire about machines and equipment. Hear everyone out, choose your own! And remember: we don't sell, we help you buy. That's why today we also told you when not to buy a Poclain.
+### S16 · 6:12–6:36 · Brand-principle close
+**Shot:** the most energetic shot: the 20-tonner swinging a full bucket into a tipper at sunrise; the host.
+**VO:** देसी मशीन्स — India's largest platform to discover, compare, enquire about machines & equipment। सुनो सबकी, चुनो अपनी! और याद रखो — हम बेचते नहीं, आपको ख़रीदने में help करते हैं। इसीलिए आज हमने दाम नहीं बताया — तरीका बताया। और ये भी, कि Poclain कब नहीं लेनी चाहिए।
+**EN sub:** Desi Machines: India's largest platform to discover, compare and enquire about machines and equipment. Hear everyone out, choose your own! And remember: we don't sell, we help you buy. That's why today we didn't quote a price; we gave you the method. And also when not to buy a Poclain.
 
-### S18 · 6:46–6:54 · End card
+### S17 · 6:36–6:44 · End card
 
-**Running time ≈ 6:54. VO ≈ 970 Hindi words.**
+**Running time ≈ 6:44. VO ≈ 980 Hindi words. No currency, tax rate or hire rate is spoken; the only figures are hours, tonnes, metres and the counting methods.**
 
-**Completeness check (F2):** what Poclain means · class specs · infra vs mining spec · price list · GST, insurance, trailer, RTO · input credit · diesel per hour and per month · idling · top-up method · cost per hour · utilisation effect · hire rates · diesel-included vs not · idle-day cost · undercarriage · depreciation · two-way ledger · when to hire instead. Left to description and paired pages: used 20-tonner pricing, tyre/track choice, long-reach variants, telematics.
-
-**Lexicon (#21):** `Poclain` पोकलेन · `SY210` एस-वाय टू-टेन · `NXT 205 / 215` · `EX 210` ई-एक्स टू-टेन · `R215L` · `EC210` ई-सी टू-टेन · `PC210` · `undercarriage` · `input credit` · `cubic metre` · `tipper` · `wet hire` · numbers: उन्नीस सौ पचास, बाईस सौ दस, दस लाख अस्सी हज़ार.
+**Completeness check (F2):** hours from contracts · full-use benchmark · class physics · bucket-to-tipper counting · infra vs heavy spec · brand after spec · service radius · landed-cost parts · RTO · input credit and registration order · written quote · top-up method · idling · cost-per-hour formula · undercarriage · utilisation effect · hire-quote structure · diesel question · two-of-three rule · demo · parts · resale liquidity. Current prices, GST rate, hire bands and worked examples: on the paired pages.
 
 ---
 
 ## 4. Shot plan notes
-≈27 unique clips. New generations: the bucket bite (S01 hero), bucket-to-tipper count (S04), two-spec montage (S05), landed-cost stack with GST invoice (S07), bowser fill and idling machine (S09), Suresh/Mahesh sequence (S12, 7 clips; de-badge Mahesh's machine), undercarriage macro (S13), sunrise swing (S17). Host lip-sync: S03, S08, S11, S15, S17; action beats S07 (points at invoice) and S09 (reads meter, lifts cap). No fuel-fountain family. Tier B.
+≈26 unique clips. New generations: bucket bite (S01), contract tally and tarp meter (S04), decomposition and tipper count (S05), hand-annotated quote and GST certificate (S06), bowser and idling beat (S08), formula card (S09), two quotes (S10), Suresh/Mahesh sequence (S11, 7 clips; de-badge Mahesh's machine), three-box rule (S12), sunrise swing (S16). Host lip-sync: S03, S06, S07, S10, S13, S14, S16. Tier B.
 
 ---
 
 ## 5. Publish kit
 
 ### Title (≤60)
-1. **Recommended:** `Poclain Price ₹51–85 Lakh: Asli Daam, Diesel aur Kamai ka Hisaab` (60)
-2. `Poclain Machine Price 2026: Landed Cost, Diesel, Kiraya — Poora Sach` (59; year allowed in metadata)
-3. `20-Ton Excavator ka Hisaab: ₹1,950 ka Ghanta, Kiraya ₹1,400–2,200` (58)
+1. **Recommended:** `Poclain Kharidne se Pehle: 20-Ton Excavator ka Poora Process` (57)
+2. `Excavator Kaise Chune: Ghante, Spec, Landed Cost, Ghante ka Kharcha` (60)
+3. `Poclain Lene ka Sahi Tareeka: 5 Step, Brand Baad Mein` (51)
 
 ### Description
 ```
-Poclain machine (20-ton hydraulic excavator) ki price India mein ₹51–85 lakh ex-factory hai (indicative): SANY SY210C-9 ₹51–57 L, JCB NXT 205 ₹52–56 L, JCB NXT 215 ₹57–59 L, Tata Hitachi EX 210 ₹60–65 L, Hyundai R210/R215 ₹63–70 L, Volvo EC210 ₹62–72 L, Komatsu PC210 ₹65–75 L, CAT 322 ₹75–85 L. Landed cost = sticker + 18% GST + insurance + trailer (tracked machine ka RTO nahi; GST-registered contractor ko ITC wapas). Diesel 13–16 L/ghanta = ₹2.6–3.2 lakh/mahina. Running cost ≈ ₹1,950/ghanta (2,000 ghante/saal); wet hire ₹1,400–2,200/ghanta. Is video mein: class aur spec, poori price list, landed hisaab, diesel, ghante ka kharcha, kiraya, do tarah ka ledger (−₹69K vs +₹91K), aur Aaj ka Rule.
+Poclain (20-ton hydraulic excavator) kharidne ka process — daam nahi, tareeka. 5 step: (1) ghante gino contracts se (full use ≈ 2,000 ghante/saal; ~1,000 se neeche → kiraya), (2) spec kaam se — infra spec vs heavy/mining spec, bucket-to-tipper count, brand baad mein + service radius, (3) landed cost ke hisse — ex-factory + GST + insurance + trailer + attachments; tracked machine ka RTO nahi; GST input credit registered business ko → pehle GST number, (4) ghante ka kharcha nikalne ka formula — (diesel + maintenance/wear + operator + insurance + interest) ÷ ghante; diesel top-up method se naapo; idling band karo; kiraye par do to pehla sawaal: diesel kiska?, (5) kharido ya kiraye par — 2,000 ghante, hirer's diesel, apna contract: teen mein se do. Aaj ke price bands aur sab models (294) niche ke page par.
 
 ⏱ Chapters
-0:00 Ek bucket, ₹1,500 ka ghanta
+0:00 Poclain ke teen number
 0:14 Suno Sabki, Chuno Apni
-0:20 Aaj ki 5 baatein
-0:42 Poclain ka matlab, 20-ton class
-1:08 Infra spec vs mining spec
-1:32 Poori price list
-2:00 Landed cost: GST, insurance, trailer, ITC
-2:40 Diesel: asli maalik
-3:12 ₹1,950 ka ghanta
-3:40 Kiraya aur ek sawaal: diesel kiska?
-4:05 Suresh ji aur Mahesh ki kahani
-4:50 Kharche jo chhutti nahi lete
-5:15 Hisaab screen pe: A vs B
-5:50 Aaj ka Rule
-6:08 Screenshot card + Desi Machines ka vaada
+0:20 Aaj ke 5 step
+0:40 Step 1: Ghante gino — contract se
+1:08 Step 2: Spec kaam se, brand baad mein
+1:40 Step 3: Landed cost ke hisse + GST input credit
+2:22 Step 4: Diesel naapne ka tareeka
+2:56 Step 4: Ghante ka formula
+3:30 Step 4: Kiraye ka quote — diesel kiska?
+3:58 Suresh ji aur Mahesh ki kahani
+4:45 Step 5: Kharido ya kiraye par — 2 of 3
+5:12 Teen number ka card — aapke number
+5:40 Aaj ka Rule
+5:56 7-point checklist + Desi Machines ka vaada
 
 🔗 Links
-Excavator price list (211 priced models): https://desimachines.com/excavator/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-Poclain guide: https://desimachines.com/blog/poclain-machines-in-india-the-ultimate-guide/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-Excavator cost per hour: https://desimachines.com/blog/excavator-cost-per-hour/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-Fuel consumption per hour: https://desimachines.com/blog/excavator-fuel-consumption-per-hour/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-5-year cost of ownership: https://desimachines.com/blog/excavator-cost-of-ownership/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-Kiraya rate card: https://desimachines.com/blog/equipment-rental-rate-card/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-GST on construction equipment: https://desimachines.com/heavy-equipment-guide/gst-on-construction-equipment/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-Tata Hitachi EX 210 Infra Super+: https://desimachines.com/excavator/tata-hitachi-ex-210-infra/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
-SANY SY210C-9: https://desimachines.com/excavator/sany-sy210c-9/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-hisaab
+Excavator price list — sab models, aaj ke bands: https://desimachines.com/excavator/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+Poclain guide: https://desimachines.com/blog/poclain-machines-in-india-the-ultimate-guide/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+Excavator cost per hour (method + aaj ka example): https://desimachines.com/blog/excavator-cost-per-hour/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+Fuel consumption per hour (top-up method): https://desimachines.com/blog/excavator-fuel-consumption-per-hour/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+5-year cost of ownership: https://desimachines.com/blog/excavator-cost-of-ownership/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+Maintenance schedule: https://desimachines.com/blog/excavator-maintenance-cost/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+GST on construction equipment: https://desimachines.com/heavy-equipment-guide/gst-on-construction-equipment/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+Kiraya rate card: https://desimachines.com/blog/equipment-rental-rate-card/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
+Excavator rental vs purchase: https://desimachines.com/blog/excavator-rental-vs-purchase-guide/?utm_source=youtube&utm_medium=description&utm_campaign=yt-poclain-process
 WhatsApp channel: <channel link> · Instagram: https://www.instagram.com/desimachinesofficial
 
-ℹ️ Prices are indicative ex-factory bands from DesiMachines model pages (Sep–Oct 2026). Diesel burn, hourly cost, hire rates, idle-day and maintenance figures are indicative class figures from our guides (Jul–Oct 2026), not specifications for any model; your own hour meter is the truth. GST input credit depends on your registration and the use of the machine; confirm with your CA. Suresh ji and Mahesh are a dramatised composite. Visuals and voice are AI-produced.
+ℹ️ Is video mein koi daam, GST rate ya kiraya nahi bola gaya — woh badalte hain, process nahi. Machine class ke physical figures DesiMachines ke guides se (indicative). GST input credit aapke registration aur machine ke use par nirbhar hai — CA se confirm karein. Suresh ji aur Mahesh ek dramatised composite hain. Visuals aur voice AI-produced hain.
 
-SANY, JCB, Tata Hitachi, Hyundai, Volvo, Komatsu and Caterpillar are trademarks of their owners. DesiMachines is an independent platform.
+SANY, JCB, Tata Hitachi, Hyundai, Volvo, Komatsu aur Caterpillar apne maalikon ke trademarks hain. DesiMachines ek independent platform hai.
 
-#Poclain #ExcavatorPrice #DesiMachines
+#Poclain #Excavator #DesiMachines
 ```
 
 ### Tags (15)
-`poclain machine price` · `poclain machine` · `poclain price` · `excavator price in india` · `20 ton excavator price` · `tata hitachi 210 price` · `tata hitachi 210 on road price` · `sany 210 excavator price` · `hyundai 210 excavator price` · `excavator fuel consumption per hour` · `excavator rent per hour` · `pokland machine price` · `excavator cost per hour` · `desi machines` · `machine ka hisaab`
+`poclain machine` · `poclain kaise kharide` · `excavator kaise chune` · `20 ton excavator` · `poclain machine price` · `excavator price in india` · `excavator cost per hour` · `excavator fuel consumption per hour` · `excavator rent per hour` · `excavator buying guide india` · `pokland machine` · `excavator 101` · `tata hitachi 210` · `desi machines` · `machine ka hisaab`
 
 ### Pinned comment
 ```
-Aapki Poclain kitne ghante chalti hai saal mein — aur diesel kiska hota hai? 👇
-211 excavators ki price list: https://desimachines.com/excavator/?utm_source=youtube&utm_medium=pinned&utm_campaign=yt-poclain-hisaab
+Aapki Poclain saal mein kitne ghante chalti hai — aur kiraye mein diesel kiska hota hai? 👇
+Sab excavators aur aaj ke price bands: https://desimachines.com/excavator/?utm_source=youtube&utm_medium=pinned&utm_campaign=yt-poclain-process
 ```
 
-### Thumbnails (A/B/C)
-- **A · price shock:** the 20-tonner with `₹60 LAKH` struck through and `₹73 LAKH` beside it, strap `LANDED`.
-- **B · host + Devanagari:** Ustaad ji at the hour meter, `पोकलेन का असली दाम` and smaller `₹1,950 का घंटा`.
-- **C · machine hero:** bucket bite at the cut face, `DIESEL KISKA?` in the series palette.
-Real badges allowed on working machines; none on the tarp-covered machine.
+### Thumbnails (A/B/C), no currency
+- **A · machine hero:** the bucket bite, `POCLAIN KE 3 NUMBER` and `STICKER · LANDED · GHANTA`.
+- **B · host + Devanagari:** Ustaad ji at the hour meter, `पोकलेन लेने से पहले` and `5 स्टेप`.
+- **C · question:** two hire quotes blurred with `DIESEL KISKA?` large.
 
 ### Studio settings
-Playlists: *Machine Ka Hisaab*, *Excavator 101* · End screen: subscribe + Excavator 101 · Cards: 1:32 → excavator hub, 3:12 → cost-per-hour guide, 5:15 → rate card · HI + EN `.srt` · disclosure · watermark · ledger row.
+As v1: playlists *Machine Ka Hisaab*, *Excavator 101* · end screen subscribe + Excavator 101 · cards 1:40 → GST guide, 2:56 → cost-per-hour guide, 4:45 → rental-vs-purchase guide · HI + EN `.srt` · disclosure · watermark · ledger row.
 
 ---
 
 ## 6. Site embed plan
-**Primary:** `/excavator/` hub (above the model grid, "Watch: the three numbers of a Poclain") and `/blog/poclain-machines-in-india-the-ultimate-guide/`. VideoObject per doc `21` §6 with clips: `S06 Price list (92–120 s)` · `S07 Landed cost (120–150 s)` · `S09 Diesel (160–192 s)` · `S10 ₹1,950 ka ghanta (192–220 s)` · `S14 Hisaab (315–350 s)`.
-**Secondary:** `/excavator/tata-hitachi-ex-210-infra/`, `/excavator/sany-sy210c-9/`, `/blog/excavator-cost-per-hour/`, `/blog/excavator-fuel-consumption-per-hour/`. Admin-user embed, verify stored content.
+Unchanged pages: primary `/excavator/` hub and the Poclain guide; secondary the EX 210 and SY210 model pages, the cost-per-hour and fuel guides. VideoObject per doc `21` v1 template; clips: `S04 Ghante (40–68 s)` · `S06 Landed cost (100–132 s)` · `S09 Formula (176–210 s)` · `S10 Diesel kiska (210–238 s)` · `S12 2 of 3 (285–312 s)`.
 
-## 7. SEO targets and day-30 scorecard
-| Query | Impressions (90 d) | Position now | CTR now | Day-30 target |
-|---|---|---|---|---|
-| poclain machine | 23,697 | 1.2 | 1.1% | video thumbnail live for `/excavator/`; CTR ≥2% |
-| poclain price | 12,190 | 1.6 | 8.0% | hold #1; thumbnail live |
-| excavator price | 11,556 | 7.9 | 1.1% | position ≤5 |
-| poclain machine price | 7,641 | 1.7 | 6.6% | hold; thumbnail live (already `video_th` SERP) |
-| tata hitachi 210 price | 6,152 | 2.8 | 1.5% | position ≤2; CTR ≥2.5% |
-| tata hitachi 210 on road price | 5,476 | 2.9 | 2.2% | position ≤2 |
-| excavator price in india | 5,638 | 4.9 | 3.1% | position ≤3 |
-Rest of the scorecard per doc `21` §7.
+## 7. SEO targets
+Unchanged (doc `20` §3.4): the hub ranks for the `poclain` price cluster and carries the embed; add `poclain kaise kharide`, `excavator kaise chune`, `excavator cost per hour` to the watch-list.
 
 ## 8. Needs Saurav
-1. Go / no-go on the "when not to buy" spine and the Suresh/Mahesh composite.
-2. Confirm with the CA: the input-credit line as phrased in S07 ("usually recoverable for a GST-registered contractor").
-3. Confirm the hire-rate basis in S11 and S14: the rate card lists wet hire as "machine + operator (+ often diesel)"; the script treats ₹1,400 as diesel-excluded and ₹2,000 as diesel-included.
+1. Confirm the numbers policy as applied: hours, tonnes, metres and the counting methods stay; everything priced leaves.
+2. CA check on the input-credit line in S06 and S13.
+3. Go / no-go on Suresh/Mahesh without amounts.
 4. Title choice (A recommended).
-5. Real-viewer gate names (ideally one excavator owner who hires out).
+5. Real-viewer gate names.
