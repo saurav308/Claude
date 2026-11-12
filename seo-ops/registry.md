@@ -119,6 +119,17 @@ The 11-09 sheet pull's Data Guide tab reads "Ahrefs (plan down as of 3 Nov 2026:
 
 The full 34-tab xlsx export pulled 2026-11-09/10 contains no tab literally named "Missing Prices" (full tab list checked). This was previously a named source this registry and SCORECARD cited directly (169/201 unpriced products). The closest available proxy going forward is Site Inventory's own "Price shown" column (read as "Price Available Soon" for unpriced rows) — as of 11-09, 185/783 product rows (23.6%). This isn't a confirmed apples-to-apples replacement (different column, no independent cross-check against whatever the old tab tracked), just the best available substitute. Worth confirming with Saurav whether the tab was renamed, folded into Site Inventory, or genuinely retired.
 
+## Live noindex anomalies — running list (Site Inventory reads)
+
+Tracked here so each Mon/Thu Site Inventory read can re-check specific known URLs rather than rediscover them from scratch. All confirmed still noindex as of the 2026-11-12 full-coverage read:
+
+- `/skid-steer-loader/vertical-lift/` (page:brand-category) — noindexed, in sitemap. First flagged ~2026-10-25, unfixed ~18 days.
+- `/skid-steer-loader/radial-lift/` (page:brand-category) — noindexed, in sitemap. Same age/status as above.
+- `/blog/excavator-attachments-guide-types-benefits/` (blog post) — noindexed, in sitemap, modified 2026-09-07. Found outside the Mon/Thu scope on 2026-11-09, confirmed real 2026-11-10.
+- `/komatsu/` (archive:brand) — noindexed, in sitemap, **new finding 2026-11-12**: the only noindexed page among 52 brand-archive pages. Komatsu's actual ranking page is `/excavator/komatsu-pc500lc-10r/`, not `/komatsu/`, so this could be an intentional thin-archive dedup rather than a bug — flagged for a human read rather than assumed either way, since it's the sole outlier in its peer set.
+
+None of these four have been confirmed fixed or confirmed intentional by Saurav as of 2026-11-12. Each Site Inventory pass should re-check this list directly by URL (cheap) in addition to whatever broader row-scan it has budget for.
+
 ## Retired / out of scope
 
 - PR#2 `claude/search-console-errors-9frpb9` (GSC triage) — one-shot runbook; merge into canonical branch, retire session.
