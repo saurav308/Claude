@@ -127,8 +127,9 @@ Tracked here so each Mon/Thu Site Inventory read can re-check specific known URL
 - `/skid-steer-loader/radial-lift/` (page:brand-category) — noindexed, in sitemap. Same age/status as above.
 - `/blog/excavator-attachments-guide-types-benefits/` (blog post) — noindexed, in sitemap, modified 2026-09-07. Found outside the Mon/Thu scope on 2026-11-09, confirmed real 2026-11-10.
 - `/komatsu/` (archive:brand) — noindexed, in sitemap, **new finding 2026-11-12**: the only noindexed page among 52 brand-archive pages. Komatsu's actual ranking page is `/excavator/komatsu-pc500lc-10r/`, not `/komatsu/`, so this could be an intentional thin-archive dedup rather than a bug — flagged for a human read rather than assumed either way, since it's the sole outlier in its peer set.
+- `/bull-2/` — **new finding 2026-11-15**, surfaced via the Alerts tab (3 simultaneous indexability flags), not a Mon/Thu Site Inventory scan: noindex, no canonical tag, and zero H1 tags all at once. This combination is different in kind from the other three entries above (which are single-flag noindex-only cases plausibly intentional) — noindex + no canonical + no H1 together usually indicates a broken or misconfigured page (e.g. a template failure or an incomplete build), not a deliberate dedup choice. Worth checking sooner than the next scheduled Site Inventory pass.
 
-None of these four have been confirmed fixed or confirmed intentional by Saurav as of 2026-11-12. Each Site Inventory pass should re-check this list directly by URL (cheap) in addition to whatever broader row-scan it has budget for.
+None of these five have been confirmed fixed or confirmed intentional by Saurav as of 2026-11-15. Each Site Inventory pass should re-check this list directly by URL (cheap) in addition to whatever broader row-scan it has budget for.
 
 ## Retired / out of scope
 
