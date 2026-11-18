@@ -1,6 +1,6 @@
 # 27 — OEM Part Numbers & Machine Fitment Tables (all machines listed on DesiMachines.com)
 
-**Prepared:** 4 Nov 2026 · **Scope:** every brand × category × model page on DesiMachines.com (inventory below) · **Purpose:** the data layer for a per-model "Parts & fitment" block (and the spare-parts RFQ funnel in `04`/`11`), publishable only after the dealer-verification step in §6.
+**Prepared:** 4–7 Nov 2026 · **Scope:** every brand × category × model page on DesiMachines.com (inventory below) · **Purpose:** the data layer for a per-model "Parts & fitment" block (and the spare-parts RFQ funnel in `04`/`11`), publishable only after the dealer-verification step in §6.
 
 > **How to read the tables.** Each row is a machine as DesiMachines names it. Part numbers are the OEM's own numbers as printed by the cited source (machine OEM, or the engine OEM where the number belongs to the engine). Marks: no mark = **High** confidence (OEM manual/catalogue, or two agreeing reputable sources) · **†** = Medium (one reputable aftermarket cross-reference or dealer listing) · **‡** = Low (single marketplace/forum listing, or inferred from a sibling model — treat as **[VERIFY]**). The full dataset with one source URL per number is `data/parts-fitment/oem_parts_fitment.csv`; the machine census is `data/parts-fitment/machine_inventory.csv`.
 
@@ -11,10 +11,10 @@
 | Metric | Value |
 |---|---|
 | Machines in the DesiMachines inventory (categorised) | 735 |
-| Machines with at least one mapped row (part number, capacity or size) | 695 (94%) |
-| Machines with at least one **OEM part number** | 479 (65%) |
-| Part/fitment rows in the dataset | 7210 |
-| Rows by confidence | High 670 · Medium 4649 · Low 1891 |
+| Machines with at least one mapped row (part number, capacity or size) | 734 (99%) |
+| Machines with at least one **OEM part number** | 516 (70%) |
+| Part/fitment rows in the dataset | 7828 |
+| Rows by confidence | High 748 · Medium 5065 · Low 2015 |
 
 
 ### 1.1 Coverage by category and brand
@@ -39,7 +39,7 @@
 | Excavator | Hyundai | 22 | 22 | 20 |
 | Excavator | JCB | 24 | 24 | 24 |
 | Excavator | Kobelco | 11 | 11 | 11 |
-| Excavator | L&T Komatsu | 14 | 0 | 0 |
+| Excavator | L&T Komatsu | 14 | 14 | 14 |
 | Excavator | Leeboy | 3 | 3 | 3 |
 | Excavator | Liebherr | 27 | 27 | 20 |
 | Excavator | LiuGong | 24 | 24 | 17 |
@@ -47,7 +47,7 @@
 | Excavator | SDLG | 3 | 3 | 3 |
 | Excavator | Tata Hitachi | 35 | 35 | 26 |
 | Excavator | Volvo | 17 | 17 | 14 |
-| Excavator | XCMG | 21 | 20 | 20 |
+| Excavator | XCMG | 21 | 21 | 21 |
 | Excavator | Yanmar | 5 | 5 | 5 |
 | Wheel Loader | ACE | 3 | 3 | 2 |
 | Wheel Loader | Caterpillar | 11 | 11 | 8 |
@@ -66,7 +66,7 @@
 | Motor Grader | Fine Equipments | 4 | 4 | 4 |
 | Motor Grader | L&T Komatsu | 6 | 6 | 6 |
 | Motor Grader | LiuGong | 1 | 0 | 0 |
-| Motor Grader | Mahindra CE | 6 | 3 | 0 |
+| Motor Grader | Mahindra CE | 6 | 6 | 3 |
 | Motor Grader | SANY | 3 | 3 | 2 |
 | Motor Grader | SDLG | 3 | 3 | 3 |
 | Compactor | ACE | 2 | 2 | 0 |
@@ -76,23 +76,23 @@
 | Compactor | Escorts Kubota | 4 | 4 | 2 |
 | Compactor | HAMM | 5 | 5 | 2 |
 | Compactor | JCB | 2 | 2 | 2 |
-| Compactor | L&T Komatsu | 4 | 0 | 0 |
+| Compactor | L&T Komatsu | 4 | 4 | 0 |
 | Compactor | LiuGong | 2 | 2 | 2 |
 | Compactor | SANY | 3 | 3 | 2 |
-| Compactor | Volvo | 3 | 3 | 0 |
+| Compactor | Volvo | 3 | 3 | 3 |
 | Compactor | XCMG | 1 | 1 | 1 |
 | Dozer | BEML | 7 | 7 | 7 |
 | Dozer | CASE | 3 | 3 | 0 |
-| Dozer | Caterpillar | 8 | 0 | 0 |
-| Dozer | L&T Komatsu | 8 | 1 | 1 |
+| Dozer | Caterpillar | 8 | 8 | 8 |
+| Dozer | L&T Komatsu | 8 | 8 | 8 |
 | Dozer | LiuGong | 2 | 2 | 2 |
 | Dozer | SEM | 3 | 3 | 3 |
 | Dozer | Shantui | 8 | 8 | 8 |
 | Skid Steer Loader | ACE | 1 | 1 | 0 |
 | Skid Steer Loader | Bobcat | 4 | 4 | 4 |
-| Skid Steer Loader | Caterpillar | 1 | 0 | 0 |
+| Skid Steer Loader | Caterpillar | 1 | 1 | 1 |
 | Skid Steer Loader | JCB | 2 | 2 | 2 |
-| Skid Steer Loader | L&T Komatsu | 1 | 0 | 0 |
+| Skid Steer Loader | L&T Komatsu | 1 | 1 | 0 |
 | Skid Steer Loader | Manitou | 1 | 1 | 1 |
 | Telehandler | ACE | 1 | 1 | 0 |
 | Telehandler | JCB | 3 | 3 | 3 |
@@ -136,13 +136,13 @@
 
 | Source type | Rows |
 |---|---|
-| OEM brochure/spec sheet | 3587 |
-| Dealer/parts-seller listing | 1286 |
-| OEM parts catalogue | 823 |
-| Aftermarket cross-reference catalogue | 775 |
-| Forum/other | 465 |
-| OEM operator/service manual | 144 |
-| Marketplace listing | 130 |
+| OEM brochure/spec sheet | 3863 |
+| Dealer/parts-seller listing | 1350 |
+| OEM parts catalogue | 966 |
+| Aftermarket cross-reference catalogue | 831 |
+| Forum/other | 474 |
+| OEM operator/service manual | 205 |
+| Marketplace listing | 139 |
 
 ---
 
@@ -153,12 +153,12 @@ One table per category, one line per machine: engine, then the service parts mos
 | Category | Machines | Mapped | Table |
 |---|---|---|---|
 | Backhoe Loader | 50 | 50 | [`data/parts-fitment/tables/backhoe-loader.md`](data/parts-fitment/tables/backhoe-loader.md) |
-| Excavator | 279 | 264 | [`data/parts-fitment/tables/excavator.md`](data/parts-fitment/tables/excavator.md) |
+| Excavator | 279 | 279 | [`data/parts-fitment/tables/excavator.md`](data/parts-fitment/tables/excavator.md) |
 | Wheel Loader | 55 | 55 | [`data/parts-fitment/tables/wheel-loader.md`](data/parts-fitment/tables/wheel-loader.md) |
-| Motor Grader | 36 | 32 | [`data/parts-fitment/tables/motor-grader.md`](data/parts-fitment/tables/motor-grader.md) |
-| Compactor | 43 | 39 | [`data/parts-fitment/tables/compactor.md`](data/parts-fitment/tables/compactor.md) |
-| Dozer | 39 | 24 | [`data/parts-fitment/tables/dozer.md`](data/parts-fitment/tables/dozer.md) |
-| Skid Steer Loader | 10 | 8 | [`data/parts-fitment/tables/skid-steer-loader.md`](data/parts-fitment/tables/skid-steer-loader.md) |
+| Motor Grader | 36 | 35 | [`data/parts-fitment/tables/motor-grader.md`](data/parts-fitment/tables/motor-grader.md) |
+| Compactor | 43 | 43 | [`data/parts-fitment/tables/compactor.md`](data/parts-fitment/tables/compactor.md) |
+| Dozer | 39 | 39 | [`data/parts-fitment/tables/dozer.md`](data/parts-fitment/tables/dozer.md) |
+| Skid Steer Loader | 10 | 10 | [`data/parts-fitment/tables/skid-steer-loader.md`](data/parts-fitment/tables/skid-steer-loader.md) |
 | Telehandler | 13 | 13 | [`data/parts-fitment/tables/telehandler.md`](data/parts-fitment/tables/telehandler.md) |
 | Crane | 68 | 68 | [`data/parts-fitment/tables/crane.md`](data/parts-fitment/tables/crane.md) |
 | Concrete Mixer | 83 | 83 | [`data/parts-fitment/tables/concrete-mixer.md`](data/parts-fitment/tables/concrete-mixer.md) |
@@ -172,7 +172,7 @@ These are the "fitment tables" a parts page should carry: the number first, then
 
 | Part number | Numbering owner | Part | Fits (DesiMachines models) | Aftermarket cross-refs | Confidence |
 |---|---|---|---|---|---|
-| 06.436.01.0.00 | Kirloskar | Engine oil filter (spin-on) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; AJAX ARGO 3000; AJAX ARGO 4500; AJAX ARGO 4800; Apollo Carmix 23 FX; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD; CONMAT CSLM 2500; CONMAT CSLM 2800; CONMAT CSLM 4200L; CONMAT CSLM 4800; JOHN SLCM 2.2; JOHN SLCM 4.3; MACONS MST 2; MACONS MST 4; MACONS MST 4.5; Schwing Stetter SLM 2100; Schwing Stetter SLM 2600; Schwing Stetter SLM 4300; Schwing Stetter SLM 4600; Schwing Stetter SLM BEE 2.1; Tarle SLM 2200; Tarle SLM 4300; VENUS ULTRA 2.0; VENUS ULTRA 2600; VENUS ULTRA 3.0; VENUS ULTRA 3200; VENUS ULTRA 3800; VENUS ULTRA 4.0; VENUS ULTRA 4500; VENUS ULTRA 4800 | Bosch (OEM supplier) / Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 / Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 (Elofic lists these for JCB 3DX KOEL 4R1040, JCB no. 550/40575) | Medium |
+| 06.436.01.0.00 | Kirloskar | Engine oil filter (spin-on) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; AJAX ARGO 3000; AJAX ARGO 4500; AJAX ARGO 4800; Apollo Carmix 23 FX; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD; CONMAT CSLM 2500; CONMAT CSLM 2800; CONMAT CSLM 4200L; CONMAT CSLM 4800; JOHN SLCM 2.2; JOHN SLCM 4.3; L&T Komatsu Komatsu PC71; L&T Komatsu Komatsu PC81; MACONS MST 2; MACONS MST 4; MACONS MST 4.5; Schwing Stetter SLM 2100; Schwing Stetter SLM 2600; Schwing Stetter SLM 4300; Schwing Stetter SLM 4600; Schwing Stetter SLM BEE 2.1; Tarle SLM 2200; Tarle SLM 4300; VENUS ULTRA 2.0; VENUS ULTRA 2600; VENUS ULTRA 3.0; VENUS ULTRA 3200; VENUS ULTRA 3800; VENUS ULTRA 4.0; VENUS ULTRA 4500; VENUS ULTRA 4800 | Bosch (OEM supplier) / Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 / Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 (Elofic lists these for JCB 3DX KOEL 4R1040, JCB no. 550/40575) / F | Medium |
 | FF5052 | Cummins (Fleetguard) | Fuel filter (secondary) | Liugong 914E; Liugong 915E; Liugong 922E Amphibious; Liugong 922E XD; Liugong 922Ea (Alpha); Liugong 925E XLR; SANY SY120C-9; SANY SY140C-9/9S Quarry; SANY SY140C-9/9S Tunnel; SANY SY140C-9S SALT; SANY SY150C PRO; SANY SY210C-9; SANY SY215C-9LC SPARC; SANY SY220C-9XL Sparc+; SANY SY245C-9LR; Tata Hitachi EX 200 Infra; Tata Hitachi EX 200LC Prime; Tata Hitachi EX 215 LCQ Prime; Tata Hitachi EX 215LC Prime; Tata Hitachi EX 215LC-SLR; XCMG XE140i HD; XCMG XE140i K HD; XCMG XE210i; XCMG XE215i; XCMG XE215i-KLC; XCMG XE245i LR | Fleetguard FF5052 | Medium |
 | FS1280 | Cummins (Fleetguard) | Fuel filter (primary/water separator) | Liugong 914E; Liugong 915E; Liugong 922E Amphibious; Liugong 922E XD; Liugong 922Ea (Alpha); Liugong 925E XLR; SANY SY120C-9; SANY SY140C-9/9S Quarry; SANY SY140C-9/9S Tunnel; SANY SY140C-9S SALT; SANY SY150C PRO; SANY SY210C-9; SANY SY215C-9LC SPARC; SANY SY220C-9XL Sparc+; SANY SY245C-9LR; Tata Hitachi EX 200 Infra; Tata Hitachi EX 200LC Prime; Tata Hitachi EX 215 LCQ Prime; Tata Hitachi EX 215LC Prime; Tata Hitachi EX 215LC-SLR; XCMG XE140i HD; XCMG XE140i K HD; XCMG XE210i; XCMG XE215i; XCMG XE215i-KLC; XCMG XE245i LR | Fleetguard FS1212 (alt) / Fleetguard FS1280 | Medium |
 | 1-13240232-0 | Isuzu | Engine oil filter (element) | SANY SY140C-9/9S Quarry; SANY SY155W; SANY SY240C-9HD GraMa; SANY SY240C-9HD SPARC; SANY SY240C-9LCHD; SANY SY285C-9LR; SANY SY350C-9LCHD; SANY SY365C-9LA; SANY SY380C-10HD; SANY SY390C-10HD GraMa; SANY SY500C-10HD; SANY SY545C-10LR; SANY SY580C-10HD; SANY SY60C; SANY SY680C-10HD; SANY SY80C-9 SALT; SANY SY870C-10HD; XCMG XE140C; XCMG XE145GM; XCMG XE250C GM; XCMG XE250LC-K; XCMG XE380C GM |  | Medium |
@@ -193,9 +193,11 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 04.999.38.0.00 | Kirloskar | Service kit (C-check, with air filter) | Conmat MR 60C; Conmat MR 70C; Conmat MR 70XL; Macons M6TM; Putzmeister BSA 1404 HD eSmart; Putzmeister BSA 1405 D Classic; Schwing Stetter SP 1015 HD; Schwing Stetter SP 1200 D; Schwing Stetter SP 1400 D; Schwing Stetter SP 1420 D; Venus 6.0; Venus 7.0; Venus VCP 1050; Venus VCP 1450 |  | Medium |
 | 48.145.02.0.00 | Kirloskar | Air filter (outer/primary) | Conmat MR 60C; Conmat MR 70C; Conmat MR 70XL; Macons M6TM; Putzmeister BSA 1404 HD eSmart; Putzmeister BSA 1405 D Classic; Schwing Stetter SP 1015 HD; Schwing Stetter SP 1200 D; Schwing Stetter SP 1400 D; Schwing Stetter SP 1420 D; Venus 6.0; Venus 7.0; Venus VCP 1050; Venus VCP 1450 |  | Low |
 | 48.145.03.0.00 | Kirloskar | Air filter (inner/safety) | Conmat MR 60C; Conmat MR 70C; Conmat MR 70XL; Macons M6TM; Putzmeister BSA 1404 HD eSmart; Putzmeister BSA 1405 D Classic; Schwing Stetter SP 1015 HD; Schwing Stetter SP 1200 D; Schwing Stetter SP 1400 D; Schwing Stetter SP 1420 D; Venus 6.0; Venus 7.0; Venus VCP 1050; Venus VCP 1450 |  | Medium |
+| 1R-1808 | Cat | Engine oil filter | Caterpillar 824K; Caterpillar 834K; Caterpillar Cat 14M3; Caterpillar Cat 16M3; Caterpillar Cat 24M; Caterpillar Cat 966H; Caterpillar Cat 972L; Caterpillar Cat 980L; Caterpillar Cat 988K; Caterpillar Cat 990K; Caterpillar Cat 992K; Caterpillar Cat 993K; Caterpillar Cat D11 | Baldwin B7299; Donaldson P551808; Fleetguard LF691A; MANN WD 13 145/18; Sakura C-5507 (SAPAC cross-ref) / Baldwin B7299; Donaldson P551808; Fleetguard LF691A; WIX 57792; Luber-finer LFP4005RN / Donald | High |
 | FF5052 | Fleetguard | Fuel filter (secondary) | Hyundai R210 SMART Plus; Hyundai R210 SMART X Plus; Hyundai R215 SMART Plus; Hyundai R215 SMART X Plus; Hyundai R215L SMART X Plus; Hyundai R220LS SMART Plus; Hyundai R220LS SMART X Plus; Hyundai R230LM SMART Plus; Hyundai R230LM SMART X Plus; Hyundai R245LR SMART X Plus; Hyundai R245LR Smart Plus; Leeboy 523; Leeboy 525M | Cummins 3931063; Fleetguard FF5052 | Medium |
 | FS1280 | Fleetguard | Fuel filter (primary/water separator) | Hyundai R210 SMART Plus; Hyundai R210 SMART X Plus; Hyundai R215 SMART Plus; Hyundai R215 SMART X Plus; Hyundai R215L SMART X Plus; Hyundai R220LS SMART Plus; Hyundai R220LS SMART X Plus; Hyundai R230LM SMART Plus; Hyundai R230LM SMART X Plus; Hyundai R245LR SMART X Plus; Hyundai R245LR Smart Plus; Leeboy 523; Leeboy 525M | Cummins 3930942; Cummins 3903410; Fleetguard FS1280 | Medium |
 | LF3349 | Fleetguard | Engine oil filter | Hyundai R210 SMART Plus; Hyundai R210 SMART X Plus; Hyundai R215 SMART Plus; Hyundai R215 SMART X Plus; Hyundai R215L SMART X Plus; Hyundai R220LS SMART Plus; Hyundai R220LS SMART X Plus; Hyundai R230LM SMART Plus; Hyundai R230LM SMART X Plus; Hyundai R245LR SMART X Plus; Hyundai R245LR Smart Plus; Leeboy 523; Leeboy 525M | Cummins 3932217; Fleetguard LF3349 | Medium |
+| 600-211-1340 | Komatsu | Engine oil filter | Kobelco SK850LC; L&T Komatsu D155A-6; L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu D375A-6; L&T Komatsu Komatsu D475A-5E0; L&T Komatsu Komatsu GD755-5R; L&T Komatsu Komatsu GD955-7; L&T Komatsu Komatsu PC2000-8; L&T Komatsu Komatsu PC450LC-7; L&T Komatsu Komatsu PC600-8R1; L&T Komatsu Komatsu PC800-8R; L&T Komatsu Komatsu WA470-6A; L&T Komatsu Komatsu WD600-6R | Fleetguard LF9070 / LF9018; Baldwin BD7154 / Fleetguard LF9070 / LF9018; Donaldson P559000; Baldwin BD7154 / Fleetguard LF9070 / LF9018; Donaldson P559000; Baldwin BD7154; Hifi SO10020 / Fleetguard LF | High |
 | E131-0214 | Hyundai | Hydraulic suction strainer | Hyundai HX520L; Hyundai R210 SMART Plus; Hyundai R210 SMART X Plus; Hyundai R215 SMART Plus; Hyundai R215 SMART X Plus; Hyundai R215L SMART X Plus; Hyundai R220LS SMART Plus; Hyundai R220LS SMART X Plus; Hyundai R230LM SMART Plus; Hyundai R230LM SMART X Plus; Hyundai R245LR SMART X Plus; Hyundai R245LR Smart Plus | HIFI SH60515 | Low |
 | 5H.085.51.0.SP | Kirloskar | DEF/AdBlue supply-module filter service set | AJAX ARGO 4500; AJAX ARGO 4800; CONMAT CSLM 4800; JOHN SLCM 4.3; MACONS MST 4; MACONS MST 4.5; Schwing Stetter SLM 4300; Schwing Stetter SLM 4600; Tarle SLM 4300; VENUS ULTRA 4.0; VENUS ULTRA 4500; VENUS ULTRA 4800 |  | Medium |
 | 129150-35153 | Yanmar | Engine oil filter | Liugong 9035E; MANITOU 1340R; SANY SY33C PRO; SANY SY35U; SANY SY35U Pro; SANY SY38U PRO; XCMG XE38U; XCMG XE40U; XCMG XE40U PRO; Yanmar Vi035-6B; Yanmar Vi050-6B; Yanmar ViO30-6B | Fleetguard LF3657; Baldwin B7487; MANN W 811/80 | High |
@@ -211,7 +213,6 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | E131-0212 | Hyundai | Hydraulic return filter | Hyundai R210 SMART Plus; Hyundai R210 SMART X Plus; Hyundai R215 SMART Plus; Hyundai R215 SMART X Plus; Hyundai R215L SMART X Plus; Hyundai R220LS SMART Plus; Hyundai R220LS SMART X Plus; Hyundai R230LM SMART Plus; Hyundai R230LM SMART X Plus; Hyundai R245LR SMART X Plus; Hyundai R245LR Smart Plus | Fleetguard HF35363; Donaldson P502446; Sakura H-2801; STAL ST30849 | Medium |
 | 60201220 | SANY | Fuel filter (primary/water separator, cartridge) | SANY SY215C-9LCS; SANY SY220C-9HD; SANY SY240C-9HD GraMa; SANY SY240C-9HD SPARC; SANY SY240C-9LCHD; SANY SY260C-10HD GENe; SANY SY285C-9LR; SANY SY350C-9LCHD; SANY SY365C-9LA; SANY SY380C-10HD; SANY SY390C-10HD GraMa | Donaldson P502424 | Medium |
 | 10161781 | Schwing | Pumping piston DN180 | Schwing Stetter SP 1000; Schwing Stetter SP 1200 D; Schwing Stetter SP 1200 E; Schwing Stetter SP 1400 D; Schwing Stetter SP 1400 E; Schwing Stetter SP 1600; Schwing Stetter SP 2509 D; Schwing Stetter SP 3000; Schwing Stetter SP 3500; Schwing Stetter SP 4800 Electric; Schwing Stetter SP 8800 Electric |  | Low |
-| 1R-1808 | Cat | Engine oil filter | Caterpillar Cat 14M3; Caterpillar Cat 16M3; Caterpillar Cat 24M; Caterpillar Cat 966H; Caterpillar Cat 972L; Caterpillar Cat 980L; Caterpillar Cat 988K; Caterpillar Cat 990K; Caterpillar Cat 992K; Caterpillar Cat 993K | Baldwin B7299; Donaldson P551808; Fleetguard LF691A; MANN WD 13 145/18; Sakura C-5507 (SAPAC cross-ref) / Baldwin B7299; Donaldson P551808; Fleetguard LF691A; WIX 57792; Luber-finer LFP4005RN | High |
 | FF5052 | Fleetguard (Cummins) | Fuel filter (secondary) | JCB NXT 140; JCB NXT 145 Quarry Master; JCB NXT 150; JCB NXT 205; JCB NXT 205LC; JCB NXT 210LC Fuel Master; JCB NXT 215 LC Fuel Master; JCB NXT 215LC; JCB NXT 225LC M; JCB NXT 245HD LR | Cummins 3931063 / 3903640; Donaldson P502905; Elofic EK-6360 / Donaldson P502905; Elofic EK-6360 | Medium |
 | FS1275 | Fleetguard (Cummins) | Fuel filter (primary/water separator) | JCB NXT 140; JCB NXT 145 Quarry Master; JCB NXT 150; JCB NXT 205; JCB NXT 205LC; JCB NXT 210LC Fuel Master; JCB NXT 215 LC Fuel Master; JCB NXT 215LC; JCB NXT 225LC M; JCB NXT 245HD LR | Cummins 4093733; Donaldson P502913; Elofic EK-6363; FS1280 alternate (AG International) / Donaldson P502913; Elofic EK-6363 | Medium |
 | LF3959 | Fleetguard (Cummins) | Engine oil filter | JCB NXT 140; JCB NXT 145 Quarry Master; JCB NXT 150; JCB NXT 205; JCB NXT 205LC; JCB NXT 210LC Fuel Master; JCB NXT 215 LC Fuel Master; JCB NXT 215LC; JCB NXT 225LC M; JCB NXT 245HD LR | Cummins 3937695 / 3937743; Donaldson P502907; Elofic EK-6377; Fleetguard LF3349 also listed for JS205/JS215 / Donaldson P502907; Elofic EK-6377 | Medium |
@@ -231,8 +232,17 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | VOE14622355 | Volvo | Fuel pre-filter / water separator element | Volvo EC200D; Volvo EC210D; Volvo EC220D; Volvo EC250D; Volvo EC300D; Volvo EC350D; Volvo EC380D; Volvo EC480D; Volvo EC750D; Volvo EC950E |  | Medium |
 | 40/303603 | JCB | Bucket tooth (twin-strap) | JCB 2DX; JCB 3DX; JCB 3DX Plus; JCB 3DX Super; JCB 3DX Xtra; JCB 4DX; JCB 530-110; JCB 530-70; JCB 540-70 | also JCB 332/34388 | Medium |
 | 06.436.01.0.00 | Kirloskar | Engine oil filter | Hyundai R130 SMART; Hyundai R140L Smart Plus; Hyundai R150L SMART Plus; Hyundai R85A SMART Plus; LiuGong 611; LiuGong 6210E; Liugong 818N; SANY SSR110C-10 PRO; XCMG XE140i INFRA |  | Low |
+| 3H.132.01.0.00 | Kirloskar | Fuel filter element (primary) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD; L&T Komatsu Komatsu PC71; L&T Komatsu Komatsu PC81 |  | Medium |
 | 3H.132.01.0.00 | Kirloskar | Fuel filter (primary element) | Apollo Carmix 23 FX; CONMAT CSLM 2500; JOHN SLCM 2.2; MACONS MST 2; Schwing Stetter SLM 2100; Schwing Stetter SLM BEE 2.1; Tarle SLM 2200; VENUS ULTRA 2.0; VENUS ULTRA 2600 |  | Low |
+| 3H.132.02.0.00 | Kirloskar | Fuel filter element (secondary) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD; L&T Komatsu Komatsu PC71; L&T Komatsu Komatsu PC81 |  | Medium |
 | 3H.132.02.0.00 | Kirloskar | Fuel filter (secondary element) | Apollo Carmix 23 FX; CONMAT CSLM 2500; JOHN SLCM 2.2; MACONS MST 2; Schwing Stetter SLM 2100; Schwing Stetter SLM BEE 2.1; Tarle SLM 2200; VENUS ULTRA 2.0; VENUS ULTRA 2600 |  | Low |
+| 3H.132.10.0.00 | Kirloskar | Fuel filter (spin-on twin bowl, primary+secondary) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD; L&T Komatsu Komatsu PC71; L&T Komatsu Komatsu PC81 | Elofic EK-4293 (mesh/primary, Fleetguard FF5525) & EK-4294 (paper/secondary, Fleetguard FF5526) listed for KOEL 4R1040 on JCB 3DX / Elofic EK-4293 (primary, Fleetguard FF5525) / EK-4294 (secondary, Fl | Medium |
+| 4H.069.01.0.00 | Kirloskar | Fan/alternator V-belt | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD; L&T Komatsu Komatsu PC71; L&T Komatsu Komatsu PC81 |  | Low |
+| 006022696H1 | Mahindra | Fuel filter (primary/water separator) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra Roadmaster G100; Mahindra Roadmaster G80; Mahindra Roadmaster G90; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-6423 | Low |
+| 0303BAC01031N | Mahindra | Engine oil filter (spin-on) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra Roadmaster G100; Mahindra Roadmaster G80; Mahindra Roadmaster G90; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-6424 | Low |
+| 0313AAA04072N | Mahindra | Air filter (inner/safety) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra Roadmaster G100; Mahindra Roadmaster G80; Mahindra Roadmaster G90; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-4679 | Low |
+| 0313AAC04712N | Mahindra | Air filter (outer/primary) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra Roadmaster G100; Mahindra Roadmaster G80; Mahindra Roadmaster G90; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-4708 | Low |
+| 0703BAN00041N | Mahindra | Transmission filter (spin-on, Carraro) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra Roadmaster G100; Mahindra Roadmaster G80; Mahindra Roadmaster G90; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | CASE BU4430033; Terex/L&T 6190810M1; Donaldson P554408 / CASE BU4430033; Terex/L&T 6190810M1; Donaldson P554408 (per Elofic EK-6440) | Medium |
 | 019004000 | Putzmeister | Delivery piston Ø200 (standard) | Putzmeister BSA 1405 D Classic; Putzmeister BSA 1406 E eSmart; Putzmeister BSA 1407 D Classic; Putzmeister BSA 1407 D eSmart; Putzmeister BSA 1407 HD eSmart; Putzmeister BSA 1408 HD; Putzmeister BSA 1410 D; Putzmeister BSA 2109 HD; Putzmeister Ultima BSA 1407 D | Long-life piston assembly 086236005 | High |
 | 080372004 | Putzmeister | Delivery piston seal Ø200 (long-life piston) | Putzmeister BSA 1405 D Classic; Putzmeister BSA 1406 E eSmart; Putzmeister BSA 1407 D Classic; Putzmeister BSA 1407 D eSmart; Putzmeister BSA 1407 HD eSmart; Putzmeister BSA 1408 HD; Putzmeister BSA 1410 D; Putzmeister BSA 2109 HD; Putzmeister Ultima BSA 1407 D |  | High |
 | 229488005 | Putzmeister | Spectacle wear plate (DURO 22) | Putzmeister BSA 1405 D Classic; Putzmeister BSA 1406 E eSmart; Putzmeister BSA 1407 D Classic; Putzmeister BSA 1407 D eSmart; Putzmeister BSA 1407 HD eSmart; Putzmeister BSA 1408 HD; Putzmeister BSA 1410 D; Putzmeister BSA 2109 HD; Putzmeister Ultima BSA 1407 D | Carbide version 571451; carbide with insert ring 275608004 + insert ring 485385 | High |
@@ -243,6 +253,7 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 14532687 | Volvo | Hydraulic filter (spin-on line filter) | Volvo EC120D; Volvo EC140D; Volvo EC200D; Volvo EC210D; Volvo EC220; Volvo EC220D; Volvo EC250D; Volvo EC300D; Volvo EC750D | CVA 14532687 | Medium |
 | 30Z7181024 | BEML | Fuel water separator | BEML BD50; BEML BD65-1; BEML BD80; BEML BD85; BEML BE200; BEML BE220G; BEML BE300LC; BEML BG605A |  | Medium |
 | 581/18063 | JCB | Transmission filter | JCB 3DX; JCB 3DX Plus; JCB 3DX Super; JCB 3DX Xtra; JCB 4DX; JCB 530-110; JCB 530-70; JCB 540-70 | Fleetguard HF35139; Donaldson P551204 | High |
+| 6736-51-5142 | Komatsu | Engine oil filter | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22; L&T Komatsu Komatsu GD535-6; L&T Komatsu Komatsu GD555; L&T Komatsu Komatsu PC205-10M0; L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0; L&T Komatsu Komatsu WA380Z-6 | Fleetguard LF16006; Baldwin B7181; Donaldson P550909 (per cn-machinery cross-ref) / MANN W 9133; Donaldson P550909 / MANN W 9133; Donaldson P550909; Fleetguard LF16352 (per MANN / dktrade listings) | High |
 | HH1C0-32430 | Kubota | Engine oil filter | SANY SY80C-9; SANY SY80C-9 PRO; SANY SY80C-9 SALT; Tata Hitachi Shinrai Power; Tata Hitachi Shinrai Power 4; Tata Hitachi Shinrai Prime; XCMG XE80C; XCMG XE80C Pro | Kubota HH164-32430 (alt) / replaces Kubota 1C020-32430 / 1C020-32434 | Medium |
 | 12886224 | Liebherr | Engine crankcase breather filter | Liebherr R 926 Litronic; Liebherr R 928 Litronic; Liebherr R 930 Litronic; Liebherr R 934 Litronic; Liebherr R 938 Litronic; Liebherr R 945 Litronic; Liebherr R 956 Litronic; Liebherr R 960 SME Litronic |  | Low |
 | 40C2707 | LiuGong | Air filter kit (outer+inner) | Liugong 922E Amphibious; Liugong 922E XD; Liugong 922Ea (Alpha); Liugong 924E XD; Liugong 925E XLR; Liugong 926E XD; Liugong 930E XLR; Liugong 935E HD | 40C1033 / 40C1032 / Donaldson X012252 kit; elements 40C1033 (outer) / 40C1032 (inner) | Medium |
@@ -276,10 +287,9 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 335/18924 | JCB | Hydraulic filter | JCB NXT 205; JCB NXT 205LC; JCB NXT 210LC Fuel Master; JCB NXT 215 LC Fuel Master; JCB NXT 215LC; JCB NXT 225LC M; JCB NXT 245HD LR |  | Low |
 | 40/303603 | JCB | Bucket tooth | JCB NXT 205; JCB NXT 205LC; JCB NXT 210LC Fuel Master; JCB NXT 215 LC Fuel Master; JCB NXT 215LC; JCB NXT 225LC M; JCB NXT 245HD LR |  | Low |
 | KRJ3836 | JCB | Fuel filter (primary) | JCB NXT 205; JCB NXT 205LC; JCB NXT 210LC Fuel Master; JCB NXT 215 LC Fuel Master; JCB NXT 215LC; JCB NXT 225LC M; JCB NXT 245HD LR |  | Medium |
-| 3H.132.01.0.00 | Kirloskar | Fuel filter element (primary) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD |  | Medium |
-| 3H.132.02.0.00 | Kirloskar | Fuel filter element (secondary) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD |  | Medium |
-| 3H.132.10.0.00 | Kirloskar | Fuel filter (spin-on twin bowl, primary+secondary) | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD | Elofic EK-4293 (mesh/primary, Fleetguard FF5525) & EK-4294 (paper/secondary, Fleetguard FF5526) listed for KOEL 4R1040 on JCB 3DX / Elofic EK-4293 (primary, Fleetguard FF5525); EK-4294 (secondary, Fle | Medium |
-| 4H.069.01.0.00 | Kirloskar | Fan/alternator V-belt | ACE AX 130; ACE Phantom 2WD; ACE Phantom 4WD; ACE Phantom 4WD N; Bull HD76 2WD; Bull HD76 4WD; Bull HD96 4WD |  | Low |
+| 600-185-6100 | Komatsu | Air filter (element assembly outer+inner) | Kobelco SK850LC; L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu PC2000-8; L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0; L&T Komatsu Komatsu PC600-8R1; L&T Komatsu Komatsu PC800-8R |  | Medium |
+| 600-319-3550 | Komatsu | Fuel filter (secondary/main) | L&T Komatsu D155A-6; L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu D375A-6; L&T Komatsu Komatsu D475A-5E0; L&T Komatsu Komatsu PC450LC-7; L&T Komatsu Komatsu PC600-8R1; L&T Komatsu Komatsu WD600-6R | Donaldson P553500 | Medium |
+| 600-319-3610 | Komatsu | Fuel filter (primary/water separator) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22; L&T Komatsu Komatsu PC205-10M0; L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0; L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 | MANN WK 9104 Z; Donaldson P551864 / MANN WK 9104 Z; Donaldson P551864; Hifi SN25120 | High |
 | 240112004 | Putzmeister | Delivery cylinder Ø200 x 1400 mm | Putzmeister BSA 1406 E eSmart; Putzmeister BSA 1407 D Classic; Putzmeister BSA 1407 D eSmart; Putzmeister BSA 1407 HD eSmart; Putzmeister BSA 1408 HD; Putzmeister BSA 1410 D; Putzmeister Ultima BSA 1407 D |  | Medium |
 | 60207264 | SANY | Air filter (inner/safety) | SANY SY215C-9LCS; SANY SY220C-9HD; SANY SY240C-9HD GraMa; SANY SY240C-9HD SPARC; SANY SY240C-9LCHD; SANY SY260C-10HD GENe; SANY SY285C-9LR | Donaldson P537877 | Medium |
 | 60207265 | SANY | Air filter (outer/primary) | SANY SY215C-9LCS; SANY SY220C-9HD; SANY SY240C-9HD GraMa; SANY SY240C-9HD SPARC; SANY SY240C-9LCHD; SANY SY260C-10HD GENe; SANY SY285C-9LR | Donaldson P537876 | Medium |
@@ -310,14 +320,10 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 320/A7250 | JCB | Fuel filter (primary/water separator element) | JCB 130; JCB 3DX; JCB 3DX Plus; JCB 3DX Super; JCB 3DX Xtra; JCB 4DX | Fleetguard FS20076; Baldwin BF9828-D / Hifi SN 70575; Fleetguard FS20076; Baldwin BF9828-D; Donaldson P551424 | High |
 | 320/A7351 | JCB | Fuel filter (secondary) | JCB 225LC Eco Plus; JCB 433-5; JCB 440-5; JCB 530-110; JCB 530-70; JCB 540-70 | also 320/07382 / also JCB 320/07382 | Medium |
 | 320/B4420 | JCB | Engine oil filter | JCB 225LC Eco Plus; JCB 433-5; JCB 440-5; JCB 530-110; JCB 530-70; JCB 540-70 | MANN W 950/38; Fleetguard LF17556; Donaldson P502465 / MANN W 950/38; Fleetguard LF17556; Donaldson P502465 (crossrefs listed against 320/04133) / MANN W 950/38; Fleetguard LF17556; Donaldson P502465  | Medium |
+| 207-60-71182 | Komatsu | Hydraulic return filter | L&T Komatsu D155A-6; L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0; L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0; L&T Komatsu Komatsu WA470-6A | Donaldson P550787; Fleetguard HF35360 / Donaldson P550787; Fleetguard HF35360; Baldwin PT9351-MPG (aftermarket catalogues merge 71180/81/82/83 - 71182 is the glass-fibre Eco-White element) / Fleetguar | High |
 | 53C0210 | LiuGong | Hydraulic return filter | Liugong 924E XD; Liugong 926E XD; Liugong 930E XLR; Liugong 935E HD; Liugong 939E; Liugong 939E HD | Donaldson P566999 | Medium |
 | 53C0436 | LiuGong | Fuel filter (primary/water separator) | Liugong 914E; Liugong 915E; Liugong 924E XD; Liugong 926E XD; Liugong 930E XLR; Liugong 935E HD |  | Low |
 | 53C0658 | LiuGong | Hydraulic suction filter | Liugong 924E XD; Liugong 926E XD; Liugong 930E XLR; Liugong 935E HD; Liugong 939E; Liugong 939E HD |  | Medium |
-| 006022696H1 | Mahindra | Fuel filter (primary/water separator) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-6423 | Low |
-| 0303BAC01031N | Mahindra | Engine oil filter (spin-on) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-6424 | Low |
-| 0313AAA04072N | Mahindra | Air filter (inner/safety) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-4679 | Low |
-| 0313AAC04712N | Mahindra | Air filter (outer/primary) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-4708 | Low |
-| 0703BAN00041N | Mahindra | Transmission filter (spin-on, Carraro) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | CASE BU4430033; Terex/L&T 6190810M1; Donaldson P554408 (per Elofic EK-6440) | Medium |
 | 2106AAA00070N | Mahindra | Hydraulic suction strainer | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Elofic EK-4388 (suction filter) | Low |
 | 2106SAA00040N | Mahindra | Hydraulic return filter (main) | Mahindra Earthmaster SX; Mahindra Earthmaster SXE; Mahindra Earthmaster VX; Mahindra SX IV; Mahindra SX Smart 50; Mahindra VX IV | Donaldson P550251; alt. no. 0180MA010BN | Low |
 | 130306380 | Perkins | Fuel filter assembly (with element) | JCB 30 PLUS; JCB 35Z HD; JCB 37C HD; JCB 50Z; JCB 51R; JCB 55Z |  | Medium |
@@ -397,8 +403,12 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 3H.132.01.0.00 | Kirloskar | Fuel filter (primary) | LiuGong 611; LiuGong 6210E; Liugong 818N; SANY SSR110C-10 PRO; XCMG XE140i INFRA |  | Low |
 | 3H.132.02.0.00 | Kirloskar | Fuel filter (secondary) | LiuGong 611; LiuGong 6210E; Liugong 818N; SANY SSR110C-10 PRO; XCMG XE140i INFRA |  | Low |
 | 5H.999.23.0.SP | Kirloskar | Engine service filter kit (KOEL consumables kit) | Bull HD76 BS4 Heavy Duty; Bull SD76 BS4 Champion; Escorts Digmax II; Manitou MBL 745 Ranger; Manitou MBL 745 S |  | Low |
-| 600-211-1340 | Komatsu | Engine oil filter | Kobelco SK850LC; L&T Komatsu D155A-6; L&T Komatsu Komatsu GD755-5R; L&T Komatsu Komatsu GD955-7; L&T Komatsu Komatsu WA470-6A | Fleetguard LF9070 / LF9018; Baldwin BD7154 | High |
+| 17M-911-3530 | Komatsu | Cab air filter (fresh air) | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0; L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0; L&T Komatsu Komatsu PC800-8R |  | High |
+| 20Y-60-21470 | Komatsu | Hydraulic tank breather | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0; L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0; L&T Komatsu Komatsu PC800-8R |  | High |
 | 600-319-3550 | Komatsu | Fuel filter (main) | L&T Komatsu D155A-6; L&T Komatsu Komatsu WA470-6A; L&T Komatsu Komatsu WA480-6A; L&T Komatsu Komatsu WA500-6R; L&T Komatsu Komatsu WA600-6R |  | Medium |
+| 600-319-3750 | Komatsu | Fuel filter (secondary) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22; L&T Komatsu Komatsu PC205-10M0; L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 | Donaldson P550774 / Donaldson P550774; Hifi SN40604 | High |
+| 600-411-1151 | Komatsu | Corrosion resistor (coolant filter) | L&T Komatsu Komatsu D475A-5E0; L&T Komatsu Komatsu D85ESS-2A; L&T Komatsu Komatsu GD825A-2; L&T Komatsu Komatsu PC450LC-7; L&T Komatsu Komatsu WA470-6A | Donaldson P554073/P554074; Baldwin BW5137 / Fleetguard WF2144 / Fleetguard WF2144; Hifi WE 2067; Donaldson P554074; Elofic EK-6382 | Medium |
+| 600-411-1171 | Komatsu | Corrosion resistor (coolant filter) | Kobelco SK850LC; L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu D375A-6; L&T Komatsu Komatsu PC2000-8; L&T Komatsu Komatsu PC800-8R |  | Medium |
 | 1J770-05810 | Kubota | Fuel filter (primary/water separator) | SANY SY80C-9; SANY SY80C-9 PRO; SANY SY80C-9 SALT; XCMG XE80C; XCMG XE80C Pro |  | Low |
 | HH166-43560 | Kubota | Fuel filter (secondary) | SANY SY80C-9; SANY SY80C-9 PRO; SANY SY80C-9 SALT; XCMG XE80C; XCMG XE80C Pro |  | Medium |
 | 60249072 | SANY | Fuel filter (water separator cartridge) | SANY SY500C-10HD; SANY SY545C-10LR; SANY SY580C-10HD; SANY SY680C-10HD; SANY SY870C-10HD | Donaldson P502593 | Low |
@@ -407,9 +417,12 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 6672467 | Bobcat | Air filter (outer/primary) | Bobcat E27; Bobcat E37 Ultra HD; Bobcat E37 Xtra HD; Bobcat S70 |  | High |
 | 6672468 | Bobcat | Air filter (inner/safety) | Bobcat E27; Bobcat E37 Ultra HD; Bobcat E37 Xtra HD; Bobcat S70 |  | High |
 | 7222791 | Bobcat | Cabin air filter (recirculation) | Bobcat E27; Bobcat E37 Ultra HD; Bobcat E37 Xtra HD; Bobcat E50z |  | High |
+| 231-0167 | Cat | Cab air filter element | Caterpillar 814K; Caterpillar 824K; Caterpillar 834K; Caterpillar Cat D11 |  | Low |
 | 462-1171 | Cat | Engine oil filter | Caterpillar CAT 950GC; Caterpillar Cat 120; Caterpillar Cat 120 GC; Caterpillar Cat 140 GC | MANN W 9071; WIX 57791 (per filterverified.com) | High |
 | AF55005 | Cummins (Fleetguard) | Air filter (outer/primary) | Liebherr R 920 Litronic; Liebherr R 922 Litronic; Liebherr R 924 Litronic; Liebherr R 925 Litronic | Fleetguard AF55005; AF55014; AF55015 | Low |
 | CV52001 | Cummins (Fleetguard) | Engine crankcase ventilation filter | Liebherr R 920 Litronic; Liebherr R 922 Litronic; Liebherr R 924 Litronic; Liebherr R 925 Litronic | Fleetguard CV52001 | Low |
+| 9183-462 | Delphi-TVS | Fuel filter (pre-filter/water separator) | ACE FX 230; ACE NX 360 20T; Terex Franna FR20; Volvo DD90 |  | Medium |
+| 9188-545 | Delphi-TVS | Fuel filter (main) | ACE FX 230; ACE NX 360 20T; Terex Franna FR20; Volvo DD90 |  | Medium |
 | P550185 | Donaldson | Engine oil filter (insert, Donaldson cross) | ACE 14XW; ACE 15XW; ACE 15XWE; ACE HXP 150 | Donaldson P550185 (alt 146790) | Low |
 | P551167 | Donaldson | Fuel filter (insert, Donaldson cross) | ACE 14XW; ACE 15XW; ACE 15XWE; ACE HXP 150 |  | Low |
 | 4812103576 | Dynapac | Engine oil filter | Dynapac CA305 CEV-V; Dynapac CA305D CEV-V; Dynapac CC425 CEV-V; Dynapac CC425 T3 ROPS |  | Medium |
@@ -433,6 +446,8 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | XPA 1250 (KOEL 4H.069.01.0.00) | Kirloskar | Fan belt | Hyundai R130 SMART; Hyundai R140L Smart Plus; Hyundai R150L SMART Plus; Hyundai R85A SMART Plus |  | Low |
 | YN21P01157R100 | Kobelco | Fuel filter (primary/water separator) | Kobelco SK220; Kobelco SK220XD; Kobelco SK220XDLC; Kobelco SK380XDLC |  | Medium |
 | 285-62-17320 | Komatsu | Hydraulic tank breather | L&T Komatsu Komatsu WA380Z-6; L&T Komatsu Komatsu WA500-6R; L&T Komatsu Komatsu WA600-6R; L&T Komatsu Komatsu WA900-8R |  | Medium |
+| 421-60-35170 | Komatsu | Hydraulic tank breather | L&T Komatsu D155A-6; L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22; L&T Komatsu Komatsu GD555 |  | Medium |
+| 600-185-3100 | Komatsu | Air filter (element assembly outer+inner) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22; L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 | Donaldson P781039 (outer) / P777639 (inner) per dktrade PC210-10 listing | High |
 | 600-319-3750 | Komatsu | Fuel filter (main) | L&T Komatsu Komatsu GD535-6; L&T Komatsu Komatsu GD555; L&T Komatsu Komatsu GD705-5; L&T Komatsu Komatsu WA380Z-6 |  | Medium |
 | 714-07-28713 | Komatsu | Transmission filter | L&T Komatsu Komatsu GD555; L&T Komatsu Komatsu GD705-5; L&T Komatsu Komatsu WA380Z-6; L&T Komatsu Komatsu WA470-6A |  | Medium |
 | 10123751 | Liebherr | Engine crankcase breather filter | Liebherr R 972 Litronic; Liebherr R 978 SME Litronic; Liebherr R 992 Litronic; Liebherr R 998 SME Litronic |  | Low |
@@ -486,6 +501,7 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 10308231 | Schwing | Wearing insert RL (Rock valve) | Schwing Stetter SP 1400 D; Schwing Stetter SP 1400 E; Schwing Stetter SP 1800 D; Schwing Stetter SP 1800 E |  | Medium |
 | 10308236 | Schwing | Cutting ring DN190 (RL Rock valve) | Schwing Stetter SP 1400 D; Schwing Stetter SP 1400 E; Schwing Stetter SP 1800 D; Schwing Stetter SP 1800 E |  | Medium |
 | 16Y-60-13000 | Shantui | Hydraulic filter | Shantui DH16B3; Shantui DH17B3; Shantui SD13; Shantui SD16E |  | Medium |
+| IB999850 | VECV (Eicher) | Engine filter set (E483) | ACE FX 230; ACE NX 360 20T; Terex Franna FR20; Volvo DD90 |  | Low |
 | 11703979 | Volvo | Cabin air filter (primary) | Volvo EC200D; Volvo EC210D; Volvo EC380D; Volvo EC480D |  | Medium |
 | 14500233 | Volvo | Hydraulic tank breather | Volvo EC200D; Volvo EC210D; Volvo EC220D; Volvo EC300D |  | Medium |
 | 15126069 | Volvo | Fuel filter (secondary) | Volvo EC380D; Volvo EC480D; Volvo EC750D; Volvo EC950E |  | High |
@@ -514,7 +530,10 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | F002H22025 | Bosch (via ACE catalogue) | Fuel filter (main cartridge, Bosch number) | ACE AX 124; ACE AX 130; ACE Phantom 4WD |  | Low |
 | 47484442 | CASE | Transmission filter | CASE 770 EX; CASE 770 EX Plus; CASE 770 NXe Series |  | High |
 | 183-3873 | Cat | Transmission filler tube breather | Caterpillar Cat 120; Caterpillar Cat 140 GC; Caterpillar Cat 14M3 |  | High |
+| 1R-0749 | Cat | Fuel filter (secondary, advanced efficiency) | Caterpillar 824K; Caterpillar 834K; Caterpillar Cat D8 | Fleetguard FF5319; Baldwin BF7587; Donaldson P551311 / Fleetguard FF5319; Baldwin BF7587; Donaldson P551311; WIX 33674 | Low |
 | 1R-0774 | Cat | Hydraulic oil filter | Caterpillar Cat 120; Caterpillar Cat 120 GC; Caterpillar Cat 140 GC |  | High |
+| 326-1644 | Cat | Fuel filter (primary/water separator) | Caterpillar 824K; Caterpillar 834K; Caterpillar Cat 966H | Baldwin BF1811-SP; Fleetguard FS20007; Donaldson P550900 (SAPAC cross-ref) / Fleetguard FS20007; Baldwin BF1399-SP; MANN WK 980/1 | High |
+| 439-5037 | Cat | Fuel filter (primary/water separator) | Caterpillar 814K; Caterpillar Cat 120; Caterpillar Cat D5R2 | MANN WK 1080/7 x | High |
 | 4H-6112 | Cat | Tandem breather | Caterpillar Cat 120; Caterpillar Cat 120 GC; Caterpillar Cat 14M3 |  | High |
 | 3930942 | Cummins | Fuel filter (primary/water separator) | ACE ALN 300; ACE ALN 500; Dynapac CP275 | Fleetguard FS1280 / Fleetguard FS1280; Donaldson P551329; Baldwin BF1280 / Fleetguard FS1280; MANN WK 9165 x; Donaldson P550899 (per cross-ref sites) | Medium |
 | 3931063 | Cummins | Fuel filter (secondary) | ACE ALN 300; ACE ALN 500; Dynapac CP275 | Fleetguard FF5052 / Fleetguard FF5052; Donaldson P550440; Baldwin BF788 | Medium |
@@ -524,8 +543,6 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | FS19669 | Cummins (Fleetguard) | Fuel filter (primary/water separator) | Liugong 836N; Liugong 838H MAX; SANY STR90C-10 PRO | Fleetguard FS1003 (CRS variant) | Low |
 | LF16238 | Cummins (Fleetguard) | Engine oil filter | Liugong 836N; Liugong 838H MAX; SANY STR90C-10 PRO | Ashok Leyland F7A01500 | Low |
 | LF9009 | Cummins (Fleetguard) | Engine oil filter | Liugong 939E; Liugong 939E HD; Sany SMG200C-8 |  | Medium |
-| 9183-462 | Delphi-TVS | Fuel filter (pre-filter/water separator) | ACE FX 230; ACE NX 360 20T; Terex Franna FR20 |  | Medium |
-| 9188-545 | Delphi-TVS | Fuel filter (main) | ACE FX 230; ACE NX 360 20T; Terex Franna FR20 |  | Medium |
 | 01174416 | Deutz | Engine oil filter | SANY STH1056A; SANY STH634A; SANY STH844A |  | Low |
 | 01180597 | Deutz | Fuel filter (Deutz) | SDLG E6135Fi; SDLG E6150F; SDLG G9240F | Deutz 01174423 | Medium |
 | 01180597 | Deutz | Fuel filter | SANY STH1056A; SANY STH634A; SANY STH844A | Deutz 01174423 (alt) | Medium |
@@ -549,11 +566,17 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | YN52V01008R100 | Kobelco | Hydraulic return filter | Kobelco SK220; Kobelco SK220XD; Kobelco SK220XDLC | STAL ST30255 | Low |
 | YN57V00004S002 | Kobelco | Hydraulic tank breather | Kobelco SK220; Kobelco SK220XD; Kobelco SK220XDLC |  | Low |
 | YR52V01004R300 | Kobelco | Hydraulic return filter | Kobelco SK30SR; Kobelco SK35SR; Kobelco SK80 | Fleetguard HF6686; HIFI SH60161 / Fleetguard HF6686; HIFI SH60161; CNH 72150036 | Medium |
+| 07063-01100 | Komatsu | Hydraulic filter element | L&T Komatsu D155A-6; L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu D85ESS-2A | Fleetguard HF6101 | Medium |
+| 154-15-65561 | Komatsu | Power train (transmission) filter element | L&T Komatsu D155A-6; L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu D375A-6 |  | Medium |
+| 20Y-62-51691 | Komatsu | Hydraulic pilot filter | L&T Komatsu D155A-6; L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | Medium |
+| 21T-60-31410 | Komatsu | Hydraulic pilot filter | Kobelco SK850LC; L&T Komatsu Komatsu PC2000-8; L&T Komatsu Komatsu PC800-8R |  | Medium |
+| 600-185-6110 | Komatsu | Air filter (outer/primary) | L&T Komatsu D155A-6; L&T Komatsu Komatsu D375A-6; L&T Komatsu Komatsu PC450LC-7 | Donaldson P777868 / Donaldson P777868; Fleetguard AF25627 | Medium |
+| 600-185-6120 | Komatsu | Air filter (inner/safety) | L&T Komatsu D155A-6; L&T Komatsu Komatsu PC450LC-7; L&T Komatsu Komatsu WA500-6R | Donaldson P777869; Fleetguard AF25468 | Medium |
 | 600-211-1341 | Komatsu | Engine oil filter | L&T Komatsu Komatsu WA480-6A; L&T Komatsu Komatsu WA500-6R; L&T Komatsu Komatsu WA600-6R |  | Medium |
 | 600-311-4510 | Komatsu | Fuel filter (cartridge, 1-1/4 in) | L&T Komatsu Komatsu GD755-5R; L&T Komatsu Komatsu GD825A-2; L&T Komatsu Komatsu WA500-6R |  | Medium |
 | 600-319-3580 | Komatsu | Fuel filter (pre-filter/water separator) | L&T Komatsu Komatsu WA480-6A; L&T Komatsu Komatsu WA500-6R; L&T Komatsu Komatsu WA600-6R |  | Low |
 | 600-319-3610 | Komatsu | Fuel filter (pre-filter/water separator) | L&T Komatsu Komatsu GD535-6; L&T Komatsu Komatsu GD555; L&T Komatsu Komatsu WA380Z-6 |  | Medium |
-| 6736-51-5142 | Komatsu | Engine oil filter | L&T Komatsu Komatsu GD535-6; L&T Komatsu Komatsu GD555; L&T Komatsu Komatsu WA380Z-6 | Fleetguard LF16006; Baldwin B7181; Donaldson P550909 (per cn-machinery cross-ref) | Medium |
+| 6742-01-4540 | Komatsu | Engine oil filter | L&T Komatsu Komatsu GD705-5; L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 | Komatsu alt 6742-01-2430; Cummins CU3318853; (Costex: SAA6D114E) / Sakura C-5707 (per Sakura GD675-3/SAA6D114E listing) | High |
 | 15221-43170 | Kubota | Fuel filter (secondary) | Fine FM20; Hyundai HX30AZ; Hyundai R30Z-9AK |  | Low |
 | HH150-32094 | Kubota | Engine oil filter | Fine FM20; Hyundai HX30AZ; Hyundai R30Z-9AK | Kubota 15241-32094 | Medium |
 | 10037617 | Liebherr | Hydraulic filter (secondary circuit) | Liebherr R 926 Litronic; Liebherr R 928 Litronic; Liebherr R 930 Litronic |  | Low |
@@ -589,7 +612,6 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 288047704904 | Tata Motors | Fuel filter (water separator) | Tata LPK 2821.K FE+ RMC; Tata Prima 2830.K REPTO RMC; Tata Signa 2830.K 8 Cum REPTO RMC | Fleetguard FS19732; Cummins 3973233 | Medium |
 | 570909130106 | Tata Motors | Air filter (outer/primary) | Tata LPK 2821.K FE+ RMC; Tata Prima 2830.K REPTO RMC; Tata Signa 2830.K 8 Cum REPTO RMC | Bosch F 002 H26 641 (outer) / F 002 H26 640 (outer+inner set with 570909130107) | Low |
 | 5009275 | VECV (Eicher) | Engine oil filter | ACE FX 230; ACE NX 360 20T; Terex Franna FR20 | Fleetguard LF0905300; Bosch F002H27505; Eicher ID337989 | Medium |
-| IB999850 | VECV (Eicher) | Engine filter set (E483) | ACE FX 230; ACE NX 360 20T; Terex Franna FR20 |  | Low |
 | 11110175 | Volvo | Air filter (outer/primary) | Volvo EC200D; Volvo EC210D; Volvo L90H |  | Medium |
 | 17500251 | Volvo | Air filter (outer/primary) | Volvo EC200D; Volvo EC210D; Volvo EC220D | SA160132; SA160133 | Medium |
 | 1000442627 | Weichai | Engine oil filter (element) | XCMG GR1705; XCMG ZL48GV; XCMG ZL55GV |  | Low |
@@ -658,13 +680,28 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | KHJ17730 | CASE | Hydraulic pilot filter (alternate number) | Case CX220C; Case CX220C LC |  | Low |
 | KRJ10590 | CASE | Hydraulic suction strainer | Case CX220C; Case CX220C LC |  | Medium |
 | KRJ15830 | CASE | Hydraulic return filter (alternate number) | Case CX220C; Case CX220C LC |  | Low |
+| 106-5534 | Cat | A/C receiver-dryer | Caterpillar Cat D6R2; Caterpillar Cat D8 |  | High |
 | 128-2686 | Cat | Air filter (outer/primary) | Caterpillar CAT 320D3; Caterpillar CAT 320D3 GC |  | Low |
+| 1R-1808 | Cat | Engine oil filter (advanced efficiency) | Caterpillar Cat D10; Caterpillar Cat D6R2 | Fleetguard LF691A / LF3566; Baldwin B7299; Donaldson P551808; WIX 57792 / Fleetguard LF691A; Baldwin B7299; Donaldson P551808 | High |
 | 231-4487 | Cat | Cab recirculation filter | Caterpillar Cat 120 GC; Caterpillar Cat 140 GC |  | High |
 | 258-2829 | Cat | Hydraulic tank breather | Caterpillar CAT 950GC; Caterpillar Cat 966H |  | High |
+| 326-1643 | Cat | Fuel filter (primary/water separator) | Caterpillar Cat 14M3; Caterpillar Cat D8 |  | High |
 | 328-3655 | Cat | Transmission filter | Caterpillar Cat 14M3; Caterpillar Cat 966H | Baldwin PT9429-MPG; Donaldson P573354; Fleetguard HF35515 (SAPAC cross-ref) | High |
+| 337-5270 | Cat | Transmission (power train) filter element | Caterpillar Cat D6R2; Caterpillar Cat D8 | Fonho UT7078 | High |
+| 358-4889 | Cat | Ether starting aid filter | Caterpillar Cat D10; Caterpillar Cat D6R2 |  | High |
+| 360-8960 | Cat | Fuel filter (secondary element, UHE) | Caterpillar 814K; Caterpillar Cat D5R2 |  | Medium |
 | 378-3187 | Cat | DEF filter element | Caterpillar Cat 120 GC; Caterpillar Cat 140 GC |  | High |
 | 389-1085 | Cat | Transmission filter | Caterpillar Cat 120 GC; Caterpillar Cat 140 GC |  | High |
+| 396-7087 | Cat | Cab air filter (fresh air) | Caterpillar Cat D6R2; Caterpillar Cat D8 |  | High |
+| 462-1171 | Cat | Engine oil filter (standard efficiency) | Caterpillar 814K; Caterpillar Cat D5R2 | MANN W 9071; WIX 57325; Donaldson P551807; Cat alt 1R-0739 | Medium |
+| 465-6506 | Cat | Hydraulic oil filter | Caterpillar CAT 950GC; Caterpillar Cat D8 |  | High |
+| 571-5253 | Cat | Transmission filter element assembly | Caterpillar 814K; Caterpillar Cat D5R2 |  | Medium |
+| 5D-7927 | Cat | Hydraulic tank suction strainer | Caterpillar Cat D10; Caterpillar Cat D6R2 |  | High |
+| 6I-2505 | Cat | Air filter (outer/primary) | Caterpillar Cat D10; Caterpillar Cat D8 | Fleetguard AF25135M; Donaldson P532505 | Medium |
+| 6I-2506 | Cat | Air filter (inner/safety) | Caterpillar Cat D10; Caterpillar Cat D8 |  | Medium |
 | 7T-7358 | Cat | Cab fresh air filter | Caterpillar Cat 120 GC; Caterpillar Cat 140 GC |  | High |
+| 9G-5127 | Cat | Power train breather | Caterpillar Cat D6R2; Caterpillar Cat D8 |  | High |
+| 9P-7121 | Cat | Fuel tank strainer | Caterpillar Cat D10; Caterpillar Cat D6R2 |  | High |
 | FS1212 | Cummins (Fleetguard) | Fuel filter (primary/water separator) | LiuGong B230; Shantui SD32W | Cummins 3315843 | Medium |
 | LF670 | Cummins (Fleetguard) | Engine oil filter | LiuGong B230; Shantui SD32W | Fleetguard LF777 (bypass); Cummins 3313279 / 3313283 / 3401544 / Fleetguard LF777; LF9009; Cummins 3313279 / 3313283 / 3401544 | Medium |
 | FS53014 | Cummins Filtration (Fleetguard) | Fuel filter (primary/water separator) | BEML BD475-2; BEML BE1000-1 |  | Medium |
@@ -722,11 +759,42 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | 5H.999.24.0.SP | Kirloskar | Engine service filter kit (KOEL consumables kit) | Escorts Digmax II XP; Escorts Jungli HT |  | Low |
 | 5H.999.25.0.SP | Kirloskar | Engine service filter kit (KOEL consumables kit) | Escorts EC 5250; Escorts EC 5250 Plus |  | Low |
 | LV57V00002S003 | Kobelco | Hydraulic tank breather | Kobelco SK520XDLC; Kobelco SK850LC |  | Low |
+| 11Y-60-28712 | Komatsu | Hydraulic/HST filter element (per dealer kit) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22 |  | Low |
+| 12Y-979-1174 | Komatsu | Air conditioner filter (per dealer kit) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22 |  | Low |
+| 205-70-19570 | Komatsu | Bucket tooth (horizontal pin type) | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | Medium |
+| 205-70-74180 / 205-70-74190 | Komatsu | Side cutter (left / right) | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | Medium |
+| 205-70-74272 | Komatsu | Bucket tooth (vertical pin type) | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | Medium |
+| 207-70-34212 | Komatsu | Bucket tooth (vertical pin type) | L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 |  | Medium |
+| 207-970-5121 | Komatsu | Breaker line filter element | L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 |  | Medium |
+| 208-979-7620 | Komatsu | Cab air filter (recirculation) | L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 |  | Medium |
+| 209-60-77531 | Komatsu | Hydraulic return filter | Kobelco SK850LC; L&T Komatsu Komatsu PC800-8R |  | Medium |
+| 209-60-77532 | Komatsu | Hydraulic return filter | L&T Komatsu Komatsu PC2000-8; L&T Komatsu Komatsu PC600-8R1 |  | Medium |
+| 20Y-62-K5890 | Komatsu | Breaker line filter element | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | Medium |
+| 20Y-934-2150 | Komatsu | Side shroud | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | Medium |
+| 20Y-979-6261 | Komatsu | Cab air filter (recirculation) | L&T Komatsu D155A-6; L&T Komatsu Komatsu PC800-8R |  | Medium |
 | 22B-60-11160 | Komatsu | Hydraulic suction strainer | L&T Komatsu Komatsu GD555; L&T Komatsu Komatsu WA470-6A |  | Medium |
+| 22U-04-21260 | Komatsu | Fuel water separator element (alt) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22 |  | Low |
+| 285-62-17320 | Komatsu | Air filter element | L&T Komatsu Komatsu D475A-5E0; L&T Komatsu Komatsu WD600-6R |  | Low |
+| 2A5-979-1551 | Komatsu | Cab air filter (recirculation) | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | High |
 | 426-07-32441 | Komatsu | Cab air filter | L&T Komatsu Komatsu WA380Z-6; L&T Komatsu Komatsu WA470-6A |  | Medium |
-| 600-185-6120 | Komatsu | Air filter (inner/safety) | L&T Komatsu D155A-6; L&T Komatsu Komatsu WA500-6R |  | Medium |
+| 600-211-1231 | Komatsu | Engine oil filter | L&T Komatsu Komatsu D85ESS-2A; L&T Komatsu Komatsu GD825A-2 | Fleetguard LF747; Hifi SO 747; Donaldson P551230 / P551670; Komatsu alt 600-211-1230 | Medium |
 | 600-311-3841 | Komatsu | Fuel filter (cartridge, 1-5/8 in) | L&T Komatsu Komatsu GD955-7; L&T Komatsu Komatsu WA500-6R |  | Medium |
-| 600-411-1151 | Komatsu | Corrosion resistor (coolant filter) | L&T Komatsu Komatsu GD825A-2; L&T Komatsu Komatsu WA470-6A |  | Medium |
+| 600-319-3111 | Komatsu | Fuel filter (primary/water separator cartridge) | L&T Komatsu Komatsu D375A-6; L&T Komatsu Komatsu WD600-6R |  | Medium |
+| 600-319-3440 | Komatsu | Fuel filter (primary/pre-filter) | Kobelco SK850LC; L&T Komatsu Komatsu PC800-8R |  | Medium |
+| 600-319-3520 | Komatsu | Fuel filter (secondary/main) | Kobelco SK850LC; L&T Komatsu Komatsu PC800-8R | Donaldson P553500 (Fleetguard FF5485 family) | Medium |
+| 600-319-4500 | Komatsu | Fuel filter (primary/pre-filter cartridge assy) | L&T Komatsu Komatsu D275A-5R; L&T Komatsu Komatsu PC2000-8 |  | Medium |
+| 600-319-4500 | Komatsu | Fuel filter (pre-filter cartridge assy) | L&T Komatsu Komatsu D375A-6; L&T Komatsu Komatsu D475A-5E0 |  | Low |
+| 600-331-2900 | Komatsu | Crankcase ventilation (KCCV) filter | L&T Komatsu Komatsu PC210-10M0; L&T Komatsu Komatsu PC210LC-10M0 |  | High |
+| 600-411-1191 | Komatsu | Corrosion resistor (coolant filter) | L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 |  | Low |
+| 6754-79-6130 | Komatsu | Fuel filter (secondary) | L&T Komatsu Komatsu PC300LC-8M0; L&T Komatsu Komatsu PC350LC-8M0 |  | Medium |
+| 708-2L-25480 | Komatsu | Hydraulic filter element (alt) | L&T Komatsu Komatsu D39EX-22; L&T Komatsu Komatsu D39PX-22 |  | Low |
+| 694 400 | Komatsu Mining Germany | Hydraulic return filter element (main tank) | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 | Hydac 00402990 | Medium |
+| 694 409 | Komatsu Mining Germany | Hydraulic return filter element (main tank) | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 | Hydac 00404751 | Medium |
+| 694 488 | Komatsu Mining Germany | Air filter (outer/primary) | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 |  | Medium |
+| 761 840 73 | Komatsu Mining Germany | Gearbox lubrication filter element | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 |  | Medium |
+| 768 441 73 | Komatsu Mining Germany | Engine oil bypass filter | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 | Fleetguard LF777; Cummins 3889311 | Medium |
+| 769 994 73 | Komatsu Mining Germany | Fuel filter | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 | Fleetguard FS1006; Cummins 3089916 | Medium |
+| 988 636 | Komatsu Mining Germany | Air filter (inner/safety) | L&T Komatsu Komatsu PC3000-6; L&T Komatsu Komatsu PC4000-6 |  | Medium |
 | 6002-11-1230 | Komatsu/BEML | Oil filter cartridge (Komatsu-numbered alternate) | BEML BD155; BEML BD355 | Komatsu 600-211-1230 | Medium |
 | 6003-11-8291 | Komatsu/BEML | Fuel filter cartridge (Komatsu-numbered alternate) | BEML BD155; BEML BD355 | Komatsu 600-311-8291 | Medium |
 | HH150-32430 | Kubota | Engine oil filter | XCMG XE20U; XCMG XE28U | Donaldson P502067; Kubota HH1J0-32430; 15853-99170 | Low |
@@ -810,6 +878,9 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | KF201000C-N | Tata Hitachi | Service filter kit (1000 h) | Tata Hitachi EX 200 Infra; Tata Hitachi EX 200LC Prime |  | Medium |
 | TE-21349 | Tata Hitachi | Air filter (outer/primary) | Tata Hitachi EX 200 Infra; Tata Hitachi EX 200LC Prime |  | Low |
 | TE01870 | Tata Hitachi | Air filter kit | Tata Hitachi EX 200 Infra; Tata Hitachi EX 200LC Prime |  | Low |
+| ID321716 | VECV (Eicher) | Engine oil filter (spin-on) | Volvo PT220; Volvo SD110 | Fleetguard LF0966700; Bosch F002H26361; Tata 252518130164 | Low |
+| ID332218 + ID332219 | VECV (Eicher) | Air filter kit (outer+inner) | Volvo PT220; Volvo SD110 | Bosch F002H26642 (kit) / F002H26643 (outer) | Low |
+| ID334370 | VECV (Eicher) | Fuel filter (secondary) | Volvo PT220; Volvo SD110 | Fleetguard 502796700; VECV alt 5006285 | Low |
 | 14530989 | Volvo | Hydraulic filter | Volvo EC380D; Volvo EC480D |  | Low |
 | 17500253 | Volvo | Air filter (inner/safety) | Volvo EC200D; Volvo EC210D |  | Medium |
 | 17500260 | Volvo | Air filter (outer/primary) | Volvo EC380D; Volvo EC480D |  | Medium |
@@ -823,6 +894,8 @@ These are the "fitment tables" a parts page should carry: the number first, then
 | VOE11110284 | Volvo | Air filter (inner/safety) | Volvo EC120D; Volvo EC140D |  | Medium |
 | VOE14509379 | Volvo | Hydraulic return filter element | Volvo EC200D; Volvo EC210D | Fleetguard HF6319; Donaldson P551210 / Fleetguard HF6319; Donaldson P551210; Baldwin PT483; Sakura H-7911 | Medium |
 | 250200144 | XCMG | Transmission filter | XCMG ZL48GV; XCMG ZL55GV | XCMG 860116239 (alt) | Low |
+| 800104344 | XCMG | Air filter (inner/safety) | XCMG XE230C LC; XCMG XE380C GM | Donaldson P537877 | High |
+| 800104345 | XCMG | Air filter (outer/primary) | XCMG XE230C LC; XCMG XE380C GM | Donaldson P537876 | High |
 | 800171742 | XCMG | Fuel filter (primary/water separator) | XCMG XE80C; XCMG XE80C Pro |  | Low |
 | 800173432 | XCMG | Engine oil filter | XCMG XE80C; XCMG XE80C Pro | Kubota 1C020-32434; HH1C0-32430 | Low |
 | 800173433 | XCMG | Fuel filter (secondary, cartridge) | XCMG XE80C; XCMG XE80C Pro |  | Low |
@@ -870,8 +943,12 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 06.436.01.0.00 | Kirloskar | Engine oil filter (spin-on) | Bosch (OEM supplier) | AJAX Engg AJAX ARGO 3000 |
 | 06.436.01.0.00 | Kirloskar | Engine oil filter (spin-on) | Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 | Bull Machines Bull HD76 2WD |
 | 06.436.01.0.00 | Kirloskar | Engine oil filter (spin-on) | Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 (Elofic lists these for JCB 3DX KOEL 4R1040, JCB no. 550/40575) | ACE ACE AX 130 |
+| 06.436.01.0.00 | Kirloskar | Engine oil filter (spin-on) | Fleetguard LF16075; Donaldson P502908; Elofic EK-6259 (Elofic lists these for KOEL 4R1040 on JCB 3DX) | L&T Komatsu Komatsu PC71 |
 | 06.474.50.0.00 | Kirloskar | Fuel filter (spin-on, main) | Stanadyne (OEM supplier) | Conmat Conmat MR 60C |
+| 0703BAN00041N | Mahindra | Transmission filter (spin-on, Carraro) | CASE BU4430033; Terex/L&T 6190810M1; Donaldson P554408 | Mahindra CE Mahindra Roadmaster G100 |
 | 0703BAN00041N | Mahindra | Transmission filter (spin-on, Carraro) | CASE BU4430033; Terex/L&T 6190810M1; Donaldson P554408 (per Elofic EK-6440) | Mahindra CE Mahindra Earthmaster SX |
+| 07063-01054 | Komatsu | Power train (transmission) filter element | Fleetguard HF6354 | L&T Komatsu Komatsu D85ESS-2A |
+| 07063-01100 | Komatsu | Hydraulic filter element | Fleetguard HF6101 | L&T Komatsu Komatsu D275A-5R |
 | 10003413 | Schwing | Sealing gland set 45/65 x 27.5 (grooved ring) | Alt. 10007414 sealing gland set 45/65 x 27.5 | Schwing Stetter Schwing Stetter BP 350 D |
 | 1000428205 | Weichai | Engine oil filter | Weichai 1000424655 (alt) | Shantui Shantui DH24C3 |
 | 1000495963 | Weichai | Fuel filter (primary) | Donaldson P582086; Fleetguard FS20071 | Shantui Shantui DH13B3 |
@@ -905,16 +982,28 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 144-0832 | Cat | Hydraulic filter (steering/implement) | Baldwin BT9371-MPG; Fleetguard HF35523; Donaldson P167162; MANN WD 13 003 X | Caterpillar Cat 966H |
 | 14403813 | SDLG | Fuel filter (Donaldson LG6210 listing) | water separator 11214252 | SDLG SDLG E6135Fi |
 | 14532687 | Volvo | Hydraulic filter (spin-on line filter) | CVA 14532687 | Volvo Volvo EC200D |
+| 156-1200 | Cat | Fuel filter (primary/water separator) | MANN WK 8126 | Caterpillar CAT 216B Series 3 |
 | 16Y-75-13100 | Shantui | Transmission/torque converter filter | Komatsu-pattern 195-13-13420 | Shantui Shantui DH16B3 |
 | 171081-55910 | Yanmar | Fuel pre-filter | Sakura FC-1022 | Yanmar Yanmar Vi025-6 |
+| 175-49-11580 | Komatsu | Transmission / steering filter (spin-on) | Hifi SH 56122; Fleetguard HF6072; Donaldson P551158; Baldwin BT8851? | L&T Komatsu Komatsu D85ESS-2A |
 | 175-49-11580 | Shantui | Transmission filter | Shantui 175-49-11231 | Shantui Shantui SD32W |
 | 17500251 | Volvo | Air filter (outer/primary) | SA160132; SA160133 | Volvo Volvo EC220D |
 | 1873014 | Scania | Engine oil filter | Fleetguard LF17487 | SANY SANY SY980C-10HD |
 | 1873018 | Scania | Fuel filter | Fleetguard FF5683 | LiuGong Liugong 965E HD |
+| 1G-8878 | Cat | Hydraulic oil filter | Baldwin BT8851-MPG; WIX 51494; Donaldson P164056 / P165332 | Caterpillar CAT 216B Series 3 |
+| 1R-0749 | Cat | Fuel filter (secondary, advanced efficiency) | Fleetguard FF5319; Baldwin BF7587; Donaldson P551311 | Caterpillar Caterpillar 824K |
+| 1R-0749 | Cat | Fuel filter (secondary, advanced efficiency) | Fleetguard FF5319; Baldwin BF7587; Donaldson P551311; WIX 33674 | Caterpillar Cat D8 |
 | 1R-0762 | Cat | Fuel filter (secondary) | Fleetguard FF5624; Donaldson P550625; Baldwin BF7753; Sakura FC-5517 (SAPAC cross-ref) | Caterpillar Cat 966H |
+| 1R-0762 | Cat | Fuel filter (secondary, advanced efficiency) | Fleetguard FF5624; Baldwin BF7753; Donaldson P550625; WIX 33640 | Caterpillar Cat D6R2 |
 | 1R-1808 | Cat | Engine oil filter | Baldwin B7299; Donaldson P551808; Fleetguard LF691A; MANN WD 13 145/18; Sakura C-5507 (SAPAC cross-ref) | Caterpillar Cat 966H |
 | 1R-1808 | Cat | Engine oil filter | Baldwin B7299; Donaldson P551808; Fleetguard LF691A; WIX 57792; Luber-finer LFP4005RN | Caterpillar Cat 14M3 |
+| 1R-1808 | Cat | Engine oil filter | Donaldson P551808; Fleetguard LF691A; Baldwin B7299 | Caterpillar Cat D11 |
+| 1R-1808 | Cat | Engine oil filter | Fleetguard LF691A / LF3566; Baldwin B7299; Donaldson P551808 | Caterpillar Caterpillar 824K |
+| 1R-1808 | Cat | Engine oil filter (advanced efficiency) | Fleetguard LF691A / LF3566; Baldwin B7299; Donaldson P551808; WIX 57792 | Caterpillar Cat D6R2 |
+| 1R-1808 | Cat | Engine oil filter (advanced efficiency) | Fleetguard LF691A; Baldwin B7299; Donaldson P551808 | Caterpillar Cat D10 |
 | 2022275 | Scania | Engine oil filter (insert) | Scania 2037556 (alt) | LiuGong Liugong 965E HD |
+| 207-60-71182 | Komatsu | Hydraulic return filter | Donaldson P550787; Fleetguard HF35360 | L&T Komatsu D155A-6 |
+| 207-60-71182 | Komatsu | Hydraulic return filter | Donaldson P550787; Fleetguard HF35360; Baldwin PT9351-MPG (aftermarket catalogues merge 71180/81/82/83 - 71182 is the glass-fibre Eco-White element) | L&T Komatsu Komatsu PC210-10M0 |
 | 207-60-71182 | Komatsu | Hydraulic return filter | Fleetguard HF35360; Donaldson P550787; Baldwin PT9351-MPG (SAPAC cross-ref) | L&T Komatsu Komatsu WA470-6A |
 | 20976003 | Volvo | Fuel filter (secondary) | Fleetguard FF5507; Volvo 20430751 | Volvo Volvo EC380D |
 | 2106AAA00070N | Mahindra | Hydraulic suction strainer | Elofic EK-4388 (suction filter) | Mahindra CE Mahindra Earthmaster SX |
@@ -925,6 +1014,7 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 21707133 | Volvo | Engine oil filter (full-flow, long-life) | MANN 478736; Donaldson P550425; Fleetguard LF667; Baldwin B76 | Volvo Volvo EC380D |
 | 21707133 | Volvo | Engine oil filter (full-flow, long-life) | MANN 478736; Fleetguard LF667 | Volvo Volvo EC550E |
 | 21707133 | Volvo | Engine oil filter (full-flow, long-life) | MANN 478736; Fleetguard LF667/LF3675; Donaldson P554004 | Volvo Volvo EC750D |
+| 220-1523 | Cat | Engine oil filter | MANN W 712/83; WIX 57000; K&N HP-1002 | Caterpillar CAT 216B Series 3 |
 | 220747709902 | Tata Motors | Fuel filter | Bosch F 002 H26 567; Fleetguard FS1003 (Cummins 220747700109) | Tata Motors CV Tata LPK 2821.K FE+ RMC |
 | 225-4118 | Cat | Hydraulic filter (hydraulic system) | Baldwin BT9353-MPG; Fleetguard HF6588; Donaldson P165675; MANN WH 1257/3 (SAPAC cross-ref) | Caterpillar Cat 966H |
 | 229488005 | Putzmeister | Spectacle wear plate (DURO 22) | Carbide version 571451; carbide with insert ring 275608004 + insert ring 485385 | Putzmeister Putzmeister BSA 1405 D Classic |
@@ -979,6 +1069,7 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 320/B4420 | JCB | Engine oil filter | MANN W 950/38; Fleetguard LF17556; Donaldson P502465 (crossrefs listed against 320/04133) | JCB JCB 530-110 |
 | 320/B4420 | JCB | Engine oil filter | MANN W 950/38; Fleetguard LF17556; Donaldson P502465 (listed against 320/04133) | JCB JCB 433-5 |
 | 326-1644 | Cat | Fuel filter (primary/water separator) | Baldwin BF1811-SP; Fleetguard FS20007; Donaldson P550900 (SAPAC cross-ref) | Caterpillar Cat 966H |
+| 326-1644 | Cat | Fuel filter (primary/water separator) | Fleetguard FS20007; Baldwin BF1399-SP; MANN WK 980/1 | Caterpillar Caterpillar 824K |
 | 328-3655 | Cat | Transmission filter | Baldwin PT9429-MPG; Donaldson P573354; Fleetguard HF35515 (SAPAC cross-ref) | Caterpillar Cat 966H |
 | 3318853 | Cummins | Engine oil filter | Fleetguard LF3000; alt. 3401544 / LF9009 (DCEC 6CTA) | ACE ACE ALN 500 |
 | 332/Y3163 | JCB | Fuel filter (water separator) | Fleetguard FS1275 (Cummins 4093733) per Elofic JS140 6BT listing | JCB JCB NXT 205 |
@@ -993,6 +1084,7 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 334/Y2810 | JCB | Air filter (outer/primary) | Donaldson P613334; Baldwin RS30257; Hifi SA18160; Cummins 4315239/5025658 | JCB JCB NXT 205 |
 | 335/D7242 | JCB | Air filter (outer/primary) | Donaldson-brand element sold by Indian dealer | JCB JCB VMT330 |
 | 335/D7243 | JCB | Air filter (inner/safety) | Donaldson-brand element sold by Indian dealer | JCB JCB VMT330 |
+| 337-5270 | Cat | Transmission (power train) filter element | Fonho UT7078 | Caterpillar Cat D6R2 |
 | 3831236 | Volvo | Engine oil filter | Donaldson P553771 | Volvo Volvo EC200D |
 | 3831236 | Volvo | Engine oil filter | Volvo 17457469; Donaldson P553771 | Volvo Volvo L90H |
 | 3890206 | Cummins | Fuel filter (primary/water separator) | Fleetguard FS1280 (per AG International); alt. listed 3931866 / TE20760 / CSDEG002 / 278609119903 | Tata Hitachi Tata Hitachi EX 200 Infra |
@@ -1005,6 +1097,7 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 3931063 | Cummins | Fuel filter (secondary) | Fleetguard FF5052; Donaldson P550440; Baldwin BF788 | ACE ACE ALN 300 |
 | 3937743 | Cummins | Engine oil filter | Fleetguard LF3552 (6B5.9 automotive) / LF3349 (3937145, 6BT5.9 generator) / LF3345 (3908616, 4BT) | ACE ACE ALN 300 |
 | 3H.132.10.0.00 | Kirloskar | Fuel filter (spin-on twin bowl, primary+secondary) | Elofic EK-4293 (mesh/primary, Fleetguard FF5525) & EK-4294 (paper/secondary, Fleetguard FF5526) listed for KOEL 4R1040 on JCB 3DX | ACE ACE AX 130 |
+| 3H.132.10.0.00 | Kirloskar | Fuel filter (spin-on twin bowl, primary+secondary) | Elofic EK-4293 (primary, Fleetguard FF5525) / EK-4294 (secondary, Fleetguard FF5526) | L&T Komatsu Komatsu PC71 |
 | 3H.132.10.0.00 | Kirloskar | Fuel filter (spin-on twin bowl, primary+secondary) | Elofic EK-4293 (primary, Fleetguard FF5525); EK-4294 (secondary, Fleetguard FF5526) | Bull Machines Bull HD76 2WD |
 | 40/300893 | JCB | Hydraulic return filter | Fleetguard HF7992; Donaldson P502910 | JCB JCB 3DX |
 | 40/303603 | JCB | Bucket tooth (twin-strap) | also JCB 332/34388 | JCB JCB 2DX |
@@ -1041,6 +1134,7 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 4363399 | Hitachi | Hydraulic drain/spin-on filter | Donaldson P556005; HiFi SH60134 | Tata Hitachi Tata Hitachi ZAXIS 470H |
 | 4370435 | Hitachi | Hydraulic pilot filter | Donaldson P173238 | Tata Hitachi Tata Hitachi ZAXIS 140H Ultra |
 | 4370435 | Hitachi | Hydraulic pilot filter | Donaldson P173238; Fleetguard HF7954 | Tata Hitachi Tata Hitachi ZAXIS 220LC |
+| 439-5037 | Cat | Fuel filter (primary/water separator) | MANN WK 1080/7 x | Caterpillar Cat D5R2 |
 | 4437838 | Hitachi | Hydraulic tank breather | Fleetguard AF26675 | Tata Hitachi Tata Hitachi ZAXIS 370LCH Ultra |
 | 4437838 | Hitachi | Hydraulic tank breather | Fleetguard AF26675; Sure SA12572 | Tata Hitachi Tata Hitachi ZAXIS 370LCH |
 | 4448336 | Hitachi | Engine oil filter | Fleetguard LF9008; Baldwin B7217; Donaldson P550596 | Tata Hitachi Tata Hitachi ZAXIS 370LCH |
@@ -1061,6 +1155,7 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 4486014 | Hitachi | Air filter (inner/safety) | Donaldson P829333 | Tata Hitachi Tata Hitachi ZAXIS 140H Ultra |
 | 4616545 | Hitachi | Fuel filter (primary/water separator) | Donaldson P552564; earlier L4206080 (Fleetguard FF5108) | Tata Hitachi Tata Hitachi ZAXIS 220LC |
 | 462-1171 | Cat | Engine oil filter | MANN W 9071; WIX 57791 (per filterverified.com) | Caterpillar CAT 950GC |
+| 462-1171 | Cat | Engine oil filter (standard efficiency) | MANN W 9071; WIX 57325; Donaldson P551807; Cat alt 1R-0739 | Caterpillar Cat D5R2 |
 | 4630525 | Hitachi | Hydraulic pilot filter | ECE FLP2606; Fleetguard HF35516/HF35519; Baldwin BT9440; Donaldson P573481 | Tata Hitachi Tata Hitachi ZAXIS 220LC |
 | 4630525 | Hitachi | Hydraulic pilot filter | Fleetguard HF35519 | Tata Hitachi Tata Hitachi Zaxis 870-5G |
 | 4630525 | Hitachi | Hydraulic pilot filter | Fleetguard HF35519; Baldwin BT9440 | Tata Hitachi Tata Hitachi ZAXIS 650H |
@@ -1114,7 +1209,28 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 5712316 | SEM | Fuel filter (secondary) | SEM Select 5984189 | SEM SEM 818F |
 | 581/18063 | JCB | Transmission filter | Fleetguard HF35139; Donaldson P551204 | JCB JCB 3DX |
 | 5878467 | SEM | Transmission filter | SEM 6039195 (second transmission filter) | SEM SEM 818F |
+| 600-185-3100 | Komatsu | Air filter (element assembly outer+inner) | Donaldson P781039 (outer) / P777639 (inner) per dktrade PC210-10 listing | L&T Komatsu Komatsu PC210-10M0 |
+| 600-185-6110 | Komatsu | Air filter (outer/primary) | Donaldson P777868 | L&T Komatsu Komatsu D375A-6 |
+| 600-185-6110 | Komatsu | Air filter (outer/primary) | Donaldson P777868; Fleetguard AF25627 | L&T Komatsu D155A-6 |
+| 600-185-6120 | Komatsu | Air filter (inner/safety) | Donaldson P777869; Fleetguard AF25468 | L&T Komatsu D155A-6 |
+| 600-211-1231 | Komatsu | Engine oil filter | Fleetguard LF747; Hifi SO 747; Donaldson P551230 / P551670; Komatsu alt 600-211-1230 | L&T Komatsu Komatsu D85ESS-2A |
+| 600-211-1231 | Komatsu | Engine oil filter (additional filter spec) | Fleetguard LF747 | L&T Komatsu Komatsu D475A-5E0 |
 | 600-211-1340 | Komatsu | Engine oil filter | Fleetguard LF9070 / LF9018; Baldwin BD7154 | Kobelco Kobelco SK850LC |
+| 600-211-1340 | Komatsu | Engine oil filter | Fleetguard LF9070 / LF9018; Donaldson P559000; Baldwin BD7154 | L&T Komatsu Komatsu PC600-8R1 |
+| 600-211-1340 | Komatsu | Engine oil filter | Fleetguard LF9070 / LF9018; Donaldson P559000; Baldwin BD7154; Hifi SO10020 | L&T Komatsu Komatsu PC450LC-7 |
+| 600-211-1340 | Komatsu | Engine oil filter | Fleetguard LF9070; Donaldson P559000 | L&T Komatsu Komatsu D475A-5E0 |
+| 600-211-1340 | Komatsu | Engine oil filter | Fleetguard LF9070; Donaldson P559000; Baldwin BD7154 | L&T Komatsu D155A-6 |
+| 600-311-8293 | Komatsu | Fuel filter (spin-on) | Fleetguard FF5253; Hifi SN 25025; Baldwin BF1248 | L&T Komatsu Komatsu D85ESS-2A |
+| 600-311-8321 | Komatsu | Fuel filter (spin-on, current number) | Elofic EK-6396; Fleetguard FF198 / FF5253; Donaldson P550108 | L&T Komatsu Komatsu D85ESS-2A |
+| 600-319-3520 | Komatsu | Fuel filter (secondary/main) | Donaldson P553500 (Fleetguard FF5485 family) | L&T Komatsu Komatsu PC800-8R |
+| 600-319-3550 | Komatsu | Fuel filter (secondary/main) | Donaldson P553500 | L&T Komatsu D155A-6 |
+| 600-319-3610 | Komatsu | Fuel filter (primary/water separator) | MANN WK 9104 Z; Donaldson P551864 | L&T Komatsu Komatsu D39EX-22 |
+| 600-319-3610 | Komatsu | Fuel filter (primary/water separator) | MANN WK 9104 Z; Donaldson P551864; Hifi SN25120 | L&T Komatsu Komatsu PC210-10M0 |
+| 600-319-3750 | Komatsu | Fuel filter (secondary) | Donaldson P550774 | L&T Komatsu Komatsu D39EX-22 |
+| 600-319-3750 | Komatsu | Fuel filter (secondary) | Donaldson P550774; Hifi SN40604 | L&T Komatsu Komatsu PC210-10M0 |
+| 600-411-1151 | Komatsu | Corrosion resistor (coolant filter) | Donaldson P554073/P554074; Baldwin BW5137 | L&T Komatsu Komatsu PC450LC-7 |
+| 600-411-1151 | Komatsu | Corrosion resistor (coolant filter) | Fleetguard WF2144 | L&T Komatsu Komatsu D475A-5E0 |
+| 600-411-1151 | Komatsu | Corrosion resistor (coolant filter) | Fleetguard WF2144; Hifi WE 2067; Donaldson P554074; Elofic EK-6382 | L&T Komatsu Komatsu D85ESS-2A |
 | 60017773 | SANY | Fuel filter (primary/water separator, cartridge) | Donaldson P502424 | SANY SANY SY500C-10HD |
 | 6002-11-1230 | Komatsu/BEML | Oil filter cartridge (Komatsu-numbered alternate) | Komatsu 600-211-1230 | BEML BEML BD155 |
 | 6003-11-8291 | Komatsu/BEML | Fuel filter cartridge (Komatsu-numbered alternate) | Komatsu 600-311-8291 | BEML BEML BD155 |
@@ -1145,15 +1261,31 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 60336531 | SANY | Fuel filter | Yanmar 129A00-55800 | SANY SANY SY33C PRO |
 | 60C2472 | LiuGong | Air filter kit (outer+inner) | Donaldson X012252; elements 40C2178 (outer) / 40C2179 (inner) | LiuGong Liugong 848H |
 | 61000070005 | Weichai | Engine oil filter | Weichai 1000424655 (alt) | LiuGong LiuGong B160C |
+| 6125-81-7032 | Komatsu | Air filter kit (outer+inner, dual pack) | Fleetguard AF1905M (primary) + AF1904M (secondary) | L&T Komatsu Komatsu D85ESS-2A |
 | 612600081334 | Weichai | Fuel filter (secondary) | Shantui 6I0273T (air) listed alongside | LiuGong LiuGong B160C |
 | 614080740 | Shantui | Fuel filter | Shantui 614080739 | Shantui Shantui SD32W |
 | 6736-51-5142 | Komatsu | Engine oil filter | Fleetguard LF16006; Baldwin B7181; Donaldson P550909 (per cn-machinery cross-ref) | L&T Komatsu Komatsu WA380Z-6 |
+| 6736-51-5142 | Komatsu | Engine oil filter | MANN W 9133; Donaldson P550909 | L&T Komatsu Komatsu D39EX-22 |
+| 6736-51-5142 | Komatsu | Engine oil filter | MANN W 9133; Donaldson P550909; Fleetguard LF16352 (per MANN / dktrade listings) | L&T Komatsu Komatsu PC210-10M0 |
+| 6742-01-4540 | Komatsu | Engine oil filter | Komatsu alt 6742-01-2430; Cummins CU3318853; (Costex: SAA6D114E) | L&T Komatsu Komatsu PC300LC-8M0 |
 | 6742-01-4540 | Komatsu | Engine oil filter | Sakura C-5707 (per Sakura GD675-3/SAA6D114E listing) | L&T Komatsu Komatsu GD705-5 |
+| 694 400 | Komatsu Mining Germany | Hydraulic return filter element (main tank) | Hydac 00402990 | L&T Komatsu Komatsu PC3000-6 |
+| 694 409 | Komatsu Mining Germany | Hydraulic return filter element (main tank) | Hydac 00404751 | L&T Komatsu Komatsu PC3000-6 |
+| 695 835 73 | Komatsu Mining Germany | Coolant (water) filter | Fleetguard WF2076; Cummins 4058965 | L&T Komatsu Komatsu PC3000-6 |
+| 696 257 73 | Komatsu Mining Germany | Hydraulic tank breather (aeration filter) | 4.409.658 | L&T Komatsu Komatsu PC3000-6 |
+| 6I-2501 | Cat | Air filter (outer/primary) | Donaldson P532501 equivalent family | Caterpillar Cat D6R2 |
+| 6I-2505 | Cat | Air filter (outer/primary) | Fleetguard AF25135M; Donaldson P532505 | Caterpillar Cat D10 |
+| 767 544 73 | Komatsu Mining Germany | Hydraulic return filter element (leakage oil chamber) | Hydac 0126 3345 | L&T Komatsu Komatsu PC3000-6 |
+| 768 440 73 | Komatsu Mining Germany | Engine oil filter | Fleetguard LF670; Cummins 3889310 | L&T Komatsu Komatsu PC3000-6 |
+| 768 441 73 | Komatsu Mining Germany | Engine oil bypass filter | Fleetguard LF777; Cummins 3889311 | L&T Komatsu Komatsu PC3000-6 |
+| 769 994 73 | Komatsu Mining Germany | Fuel filter | Fleetguard FS1006; Cummins 3089916 | L&T Komatsu Komatsu PC3000-6 |
+| 792 330 73 | Komatsu Mining Germany | Centrifuge sludge paper | Cummins 3393592 | L&T Komatsu Komatsu PC3000-6 |
 | 799966 | Manitou | Engine oil filter | ECE FLP3208 | Manitou MANITOU MRT-X 1645 |
 | 799967 | Manitou | Fuel filter (secondary) | Donaldson P959195; ECE FLP3145 | Manitou MANITOU MRT-X 1645 |
 | 799968 | Manitou | Fuel filter (primary/water separator) | Donaldson P959143; ECE FLP2999 | Manitou MANITOU MRT-X 1645 |
 | 800104344 | XCMG | Air filter (inner/safety) | Donaldson P537877 | XCMG XCMG XE380C GM |
 | 800104345 | XCMG | Air filter (outer/primary) | Donaldson P537876 | XCMG XCMG XE380C GM |
+| 800104393 | XCMG | Fuel filter (Isuzu 6BG1, alt) | RXL02003 / XCMG-RXL-02001 | XCMG XCMG XE230C LC |
 | 800104393 | XCMG | Fuel filter (secondary, alt) | Donaldson P552564 | XCMG XCMG XE210i |
 | 800105027 | XCMG | Fuel filter (primary/water separator) | Donaldson P551000; Fleetguard FS1000 | XCMG XCMG XE520C |
 | 800105552 | XCMG | Fuel filter (primary/water separator) | Donaldson P551026 | XCMG XCMG XE210i |
@@ -1162,8 +1294,11 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | 800155885 | XCMG | Fuel filter (water separator cartridge) | Donaldson P502424 | XCMG XCMG XE380C GM |
 | 800173432 | XCMG | Engine oil filter | Kubota 1C020-32434; HH1C0-32430 | XCMG XCMG XE80C |
 | 803169358 | XCMG | Engine oil filter (alt) | XCMG 803374058; 800156859 | XCMG XCMG XE520C |
+| 803172727 | XCMG | Hydraulic return filter | TLX-235L; alt 803198447 / 803172056 / 800104424 | XCMG XCMG XE230C LC |
+| 803182167 | XCMG | Hydraulic pilot filter | XCMG-XDL-03010 / 803423782; Sany 60029588; CH114 / FE040FD1 | XCMG XCMG XE230C LC |
 | 803302602 | XCMG | Engine oil filter | Donaldson P559000; Fleetguard LF9009 | XCMG XCMG XE520C |
 | 819909162 | XCMG | Engine oil filter | Donaldson P550596 | XCMG XCMG XE380C GM |
+| 860121090 | XCMG | Hydraulic suction filter | TL235RC/100 | XCMG XCMG XE230C LC |
 | 860133763 | XCMG | Engine oil filter (ZL50GV listing) | Shangchai 2D17-002-02 | XCMG XCMG ZL48GV |
 | 860134745 | XCMG | Fuel filter (secondary, ZL50GV listing) | Shangchai D638-002-02 | XCMG XCMG ZL48GV |
 | 91756080 | CASE | Fuel filter (primary/water separator, spin-on) | Donaldson P551000 | CASE CASE 770 EX |
@@ -1223,6 +1358,9 @@ OEM number → equivalents stated by a cross-reference source (Fleetguard, Donal
 | HH150-32430 | Kubota | Engine oil filter | Donaldson P502067; Kubota HH1J0-32430; 15853-99170 | XCMG XCMG XE20U |
 | HH1C0-32430 | Kubota | Engine oil filter | Kubota HH164-32430 (alt) | SANY SANY SY80C-9 |
 | HH1C0-32430 | Kubota | Engine oil filter | replaces Kubota 1C020-32430 / 1C020-32434 | Tata Hitachi Tata Hitachi Shinrai Power |
+| ID321716 | VECV (Eicher) | Engine oil filter (spin-on) | Fleetguard LF0966700; Bosch F002H26361; Tata 252518130164 | Volvo Volvo PT220 |
+| ID332218 + ID332219 | VECV (Eicher) | Air filter kit (outer+inner) | Bosch F002H26642 (kit) / F002H26643 (outer) | Volvo Volvo PT220 |
+| ID334370 | VECV (Eicher) | Fuel filter (secondary) | Fleetguard 502796700; VECV alt 5006285 | Volvo Volvo PT220 |
 | KBJ1691A | JCB | Hydraulic pilot filter | Donaldson P550576; Fleetguard HF28836 | JCB JCB NXT 140 |
 | KC3098117099 | Hitachi | Hydraulic tank breather | Donaldson P502563; ECE FLP2908 | Tata Hitachi Tata Hitachi ZAXIS 220LC |
 | KNJ0288A | JCB | Hydraulic drain (case drain) filter | Donaldson P556005; Baldwin BT334; Fleetguard HF7551; Hifi SH60120 | JCB JCB NXT 205 |
