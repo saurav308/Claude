@@ -135,7 +135,13 @@ Tracked here so each Mon/Thu Site Inventory read can re-check specific known URL
 
 **Update (2026-11-25): `/bull-2/` recurred** — the first case of this pattern repeating on the *same* page rather than appearing once on a new page. This is the first real exception the pattern note above anticipated. Two readings are possible: (a) it's still just a timing artifact, but this one page happens to sit at a boundary that trips the check repeatedly (e.g. a cache or CDN edge case specific to that URL); or (b) something about `/bull-2/` specifically is genuinely unstable and the 11-18 "resolution" was itself just the same timing lag resolving temporarily, not a real fix. Don't assume outcome (a) by default this time — confirm directly via Site Inventory on the next scheduled read (Thursday 11-26) rather than waiting to see if the alert clears on its own.
 
+**Update (2026-11-26): `/bull-2/` cleared again** — Thursday's Site Inventory read directly confirms Robots=index, no flags, and all 3 alerts gone. A plausible (unconfirmed) cause surfaced this time: a "hub group" redesign/rebuild touching 245 category/brand/brand-category pages went live 2026-11-25 02:04 (per Actions & Results), which could have incidentally regenerated this page — the sheet doesn't say so explicitly, so treat this as a reasonable inference rather than a confirmed root cause. Re-closing this entry, but given it has now recurred once, a third occurrence on this same page would be the real signal that something about `/bull-2/` specifically (not just sync timing) needs a direct fix.
+
 None of the first four entries above (`/skid-steer-loader/vertical-lift/`, `/skid-steer-loader/radial-lift/`, `/blog/excavator-attachments-guide-types-benefits/`, `/komatsu/`) have been confirmed fixed or confirmed intentional by Saurav as of 2026-11-22. Each Site Inventory pass should re-check this list directly by URL (cheap) in addition to whatever broader row-scan it has budget for.
+
+## Separate item (not part of the sync-lag pattern): `/wheel-loader/compact-0-8-ton/`
+
+Found 2026-11-26 via the Alerts tab: HTTP 301, archive:product-category. The alert's own text cites "rule 9: never fix by noindex/redirect" — i.e. this page is in a state that violates a standing internal rule, not just a routine indexability blip of the kind tracked above. Unlike `/bull-2/`/`/hindustan/`/`/transit-mixer/`, don't assume this clears on its own — worth a direct look at why it's redirecting and whether "rule 9" implies a required fix method (e.g. restore the page rather than redirect it).
 
 ## Retired / out of scope
 
