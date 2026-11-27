@@ -143,6 +143,8 @@ None of the first four entries above (`/skid-steer-loader/vertical-lift/`, `/ski
 
 Found 2026-11-26 via the Alerts tab: HTTP 301, archive:product-category. The alert's own text cites "rule 9: never fix by noindex/redirect" — i.e. this page is in a state that violates a standing internal rule, not just a routine indexability blip of the kind tracked above. Unlike `/bull-2/`/`/hindustan/`/`/transit-mixer/`, don't assume this clears on its own — worth a direct look at why it's redirecting and whether "rule 9" implies a required fix method (e.g. restore the page rather than redirect it).
 
+**Update (2026-11-27): the alert dropped off the Alerts tab, but this is NOT confirmed as resolved.** No corroborating fix event found anywhere in the sheet (no matching Actions & Results entry since 11-25, no rebuild event like the one that plausibly explains `/bull-2/`'s clearings). Since this item was explicitly flagged as not fitting the self-resolving sync-lag pattern, don't read the alert's disappearance as a fix — confirm directly via Site Inventory's Robots/redirect status on the next scheduled read (Monday 11-30) before closing this out.
+
 ## Retired / out of scope
 
 - PR#2 `claude/search-console-errors-9frpb9` (GSC triage) — one-shot runbook; merge into canonical branch, retire session.
